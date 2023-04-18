@@ -361,3 +361,15 @@ select {
     background-color: hsla(0,0%,100%,.8)!important;
     border-radius: 10px;
 }
+
+
+.menu_sidebar,
+.menu_sidebar a,
+.accordion-button a {
+    color: #fff;
+}
+
+.menu_sidebar a:hover,
+.accordion-button a:hover {
+    color: #0057f7;
+}

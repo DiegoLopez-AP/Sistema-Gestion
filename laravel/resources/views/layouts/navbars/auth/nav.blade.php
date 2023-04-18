@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class=" navbar navbar-main navbar-expand-lg px-0 shadow-none colornav" id="navbarBlur" navbar-scroll="true">
+<nav class=" navbar navbar-main navbar-expand-lg px-0 shadow-none colornav" id="navbarBlur" navbar-scroll="false" style="height: 80px;">
     <div class="container-fluid py-1 px-5">
         <nav aria-label="breadcrumb">
             <h6 class="font-weight-bolder mb-0 text-capitalize">{{ str_replace('-', ' ', Request::path()) }}</h6>
