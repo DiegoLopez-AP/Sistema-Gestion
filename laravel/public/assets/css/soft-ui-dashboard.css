@@ -361,3 +361,8 @@ select {
     background-color: hsla(0,0%,100%,.8)!important;
     border-radius: 10px;
 }
+
+.px-5 {
+    padding-left: 0rem!important;
+    padding-right: 3rem!important;
+}
