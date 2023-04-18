@@ -58,9 +58,6 @@
    padding-right: 10px;
 }
 
-
-
-
 .dropdown-menu {
     background-clip: padding-box;
     background-color: #003366;
@@ -224,8 +221,6 @@ a:hover {
 
 }
 
-
-
 .colorhead{
     background-color: #003366;
 }
@@ -293,7 +288,7 @@ a:hover {
     background-color: #0077b3;
   }
 
-/* DRAG AND DROP */
+
 
 
 /* MEDIDA NAV */
@@ -366,3 +361,17 @@ select {
     padding-left: 0rem!important;
     padding-right: 3rem!important;
 }
+
+.menu_sidebar,
+.menu_sidebar a,
+.accordion-button a {
+    color: #fff;
+}
+
+.menu_sidebar a:hover,
+.accordion-button a:hover {
+    color: #0057f7;
+}
+
+
+
