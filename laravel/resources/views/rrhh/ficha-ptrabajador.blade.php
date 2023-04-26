@@ -1,7 +1,7 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h3 class="m-2">Comercial/Clientes</h3>
+    <h3 class="m-2">RRHH/Ficha personal trabajador</h3>
     <div class="row">
         <div class="col-12">
             <div class="card mb-2 mx-2 cartacolor p-5">
@@ -12,9 +12,9 @@
                         <span class="py-1 px-2 my-2">
                             <i class="fas fa-search"></i>
                         </span>
-                        <a href="{{ url('#') }}"
-                            class="btn bg-gradient-primary btn-sm m-2 px-4 justify-content-end{{ Request::is('#') ?: '' }} justify-content-end"
-                            type="button">EXCEL
+                        <a href="{{ url('formulario-ftrabajador') }}"
+                            class="btn bg-gradient-primary btn-sm m-2 px-4 justify-content-end{{ Request::is('formulario-ftrabajador') ?: '' }} justify-content-end"
+                            type="button">Nuevo
                         </a>
 
                     </div>
@@ -26,81 +26,71 @@
                             <thead class="colortabla">
                                 <tr class="colorletratabla">
                                     <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
+                                        Nombre
+                                    </th>
+                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
                                         Rut
                                     </th>
                                     <th class="text-center text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Indic.
-                                    </th>
-                                    <th class="text-center text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Dias de Pago
+                                        F.Contrato
                                     </th>
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Nombre Fantasia
+                                        Celular
                                     </th>
 
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Razón Social
+                                        Mail
                                     </th>
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Dirección
+                                        Cargo
                                     </th>
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Giro
-                                    </th>
-                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Telefono
-                                    </th>
-                                    <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                        Pag. Web
-                                    </th>
-                                    <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
                                         Vigencia
                                     </th>
+                                    <th class="text-center text-uppercase  text-white text-xxs font-weight-bolder">
+                                        Acción
+                                    </th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0">78.956.120-6</p>
+                                        <p class="text-xs font-weight-bold mb-0">ACEVEDO FLORES MIGUEL ANGEL</p>
+                                    </td>
+
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0">10.253.468-9</p>
                                     </td>
 
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">U.F</p>
+                                        <p class="text-xs font-weight-bold mb-0">01/09/2019</p>
+                                    </td>
+
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0">978251502</p>
+                                    </td>
+
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0">m.acevedoflores@yahoo.com</p>
+                                    </td>
+
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0">Digitador Junior</p>
+                                    </td>
+
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0">Vigente</p>
                                     </td>
 
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">30</p>
+                                        <a href="{{ url('#') }}"
+                                            class="btn bg-gradient-primary btn-sm m-2 py-2 px-3 {{ Request::is('#') ?: '' }} justify-content-end"
+                                            type="button">Ir
+                                        </a>
                                     </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">AGROMERCIAL VERDE <br> ANDES LTDA.</p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Agromercial Verde <br> Andes Ltda.</p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Enrique Foster <br> sur 150-A</p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">No hay <br> información</p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">3345622</span>
-                                    </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">Agricola,<br> Industria,
-                                            Servicios</span>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">No Vigente</span>
-                                    </td>
-
                                 </tr>
+
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">96.839.120-8</p>
@@ -133,14 +123,8 @@
                                     <td class="text-left">
                                         <span class="text-secondary text-xs font-weight-bold">7730000</span>
                                     </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">www.aguasalquimia.cl</span>
-                                    </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">No Vigente</span>
-                                    </td>
-
                                 </tr>
+
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">89.121.400-6</p>
@@ -169,14 +153,8 @@
                                     <td class="text-left">
                                         <span class="text-secondary text-xs font-weight-bold">6216400</span>
                                     </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">www.aluminioselroble.cl</span>
-                                    </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">No Vigente</span>
-                                    </td>
-
                                 </tr>
+
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">96.612.400-8</p>
@@ -206,15 +184,8 @@
                                         <span class="text-secondary text-xs font-weight-bold">5569420</span>
                                     </td>
                                     </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">www.diplas.cl</span>
-                                    </td>
-                                    </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">No Vigente</span>
-                                    </td>
-
                                 </tr>
+
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">78.122.390-5</p>
@@ -241,13 +212,6 @@
                                     <td class="text-left">
                                         <span class="text-secondary text-xs font-weight-bold">5552214</span>
                                     </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">www.arrequip.cl</span>
-                                    </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">No Vigente</span>
-                                    </td>
-
                                 </tr>
                             </tbody>
                         </table>

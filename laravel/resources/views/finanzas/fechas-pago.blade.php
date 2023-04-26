@@ -4,7 +4,7 @@
     <h3 class="m-2">Finanzas/Fechas de pago</h3>
         <div class="row">
             <div class="col-12">
-                <div class="card mb-4 mx-2 cartacolor">
+                <div class="card mb-4 mx-2 cartacolor p-5">
                     <div class="card-header pb-3">
                         <div class="d-flex flex-row justify-content-center">
                             <h6 class="fecha-actual">{fecha Actual}</h6>

@@ -4,17 +4,17 @@
     <h3 class="m-2">Comercial/Contactos</h3>
     <div class="row">
         <div class="col-12">
-            <div class="card mb-4 mx-2 cartacolor p-5">
+            <div class="card mb-4 mx-1 cartacolor p-5">
                 <div class="card-header py-3">
                     
                     <div class="d-flex flex-row ">
                         
                         <select id="cliente" class="form-select p-1 me-2" aria-label="Seleccione Contacto">
                             <option selected>Seleccione Cliente</option>
-                            <option value="cliente1">Contacto 1</option>
-                            <option value="cliente2">Contacto 2</option>
-                            <option value="cliente3">Contacto 3</option>
-                            <option value="cliente4">Contacto 4</option>
+                            <option value="cliente1">Cliente 1</option>
+                            <option value="cliente2">Cliente 2</option>
+                            <option value="cliente3">Cliente 3</option>
+                            <option value="cliente4">Cliente 4</option>
                         </select>
 
                         <a href="{{ url('#') }}"
