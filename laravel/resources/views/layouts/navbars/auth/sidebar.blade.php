@@ -81,9 +81,10 @@
                     <div class="accordion-body">
                         <ul class="menu_sidebar">
                             <li><a href="{{ route('indicador-rrhh') }}">Indicadores</a></li>
-                            <li><a href="#">Enlace 1</a></li>
-                            <li><a href="#">Enlace 2</a></li>
-                            <li><a href="#">Enlace 3</a></li>
+                            <li><a href="{{ route('ficha-ptrabajador') }}">Ficha trabajador</a></li>
+                            <li><a href="{{ route('ap-rech-vaca') }}">Apr.Rech.Vacaciones</a></li>
+                            <li><a href="{{ route('curriculum') }}">Curriculum</a></li>
+                            <li><a href="{{ route('solicitud-vacaciones') }}">Solicitud de Vacaciones</a></li>
                         </ul>
                     </div>
                 </div>
@@ -125,6 +126,7 @@
                             <li><a href="{{ route('permisos') }}">Permisos</a></li>
                             <li><a href="{{ route('indicadores-adm') }}">Indicadores</a></li>
                             <li><a href="{{ route('valores') }}">Valores</a></li>
+                            
                         </ul>
                     </div>
                 </div>

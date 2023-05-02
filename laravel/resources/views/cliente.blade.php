@@ -103,6 +103,7 @@
                                         <td class="text-center">
                                             <p class="text-xs font-weight-bold mb-0">U.F</p>
                                         </td>
+                                        
                                         <td class="text-center">
                                             <p class="text-xs font-weight-bold mb-0">30</p>
                                         </td>

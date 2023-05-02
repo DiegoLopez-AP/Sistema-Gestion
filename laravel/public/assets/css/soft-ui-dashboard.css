@@ -218,20 +218,28 @@ a:hover {
 
 .colortabla th{
     color: #000 !important;
+    text-align: left;
+    font-weight: bold;
+    /* min-width: auto; */
+    /* margin: auto; */
+    /* padding: auto; */
 
 }
 
 .colorhead{
     background-color: #003366;
+
 }
 
 /* .cartacolor{
     border: #003366 1px solid;
 } */
+
+
 /* Formulario */
 /* Estilos generales para el formulario */
 .form {
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: #003366;
@@ -310,13 +318,14 @@ select {
     outline: none;
     background-color: #f4f4f4;
     padding: 5px;
-    width: 80%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+
   }
   
   /* Estilo para el label */
@@ -344,6 +353,9 @@ select {
     font-size: 13px;
   }
   
+  select:hover{
+    /* background-color: #0057f7; */
+  }
 
 /* ESTILOS PERFIL */
 .perfil{
@@ -378,5 +390,186 @@ select {
 .abs-center {
     align-items: center;
     height: 80px;
+}/* NUEVOS ESTILOS TABLA Y BOTONES */
+
+.table thead th {
+    border-bottom: 1px solid #e9ecef;
+    letter-spacing: 0;
+    padding: 10px 5px;
+    text-transform: capitalize;
+    color: red;
 }
 
+.table>:not(caption)>*>* {
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    padding: 10px;
+}
+
+.table>:not(caption)>*>* {
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    padding: 5px;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    border-radius: 0.5rem;
+    font-size: 12px;
+    padding: 10px 30px;
+    vertical-align: middle;
+}
+
+/* .progreso{
+    border-top: #4a4b4d 4px solid;
+    border-radius: 5px;
+} */
+
+.colortabla{
+    background-color: #003366 !important;
+
+}
+
+.colortabla th {
+    color: #fff !important;
+    text-align: left;
+    font-weight: bold;
+    /* min-width: auto; */
+    /* margin: auto; */
+}
+
+.form-control1 {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid #d2d6da;
+    border-radius: 0.5rem;
+    color: #495057;
+    display: block;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    padding: 0.5rem 0.75rem;
+    transition: box-shadow .15s ease,border-color .15s ease;
+    width: 30%;
+}
+
+.fecha-actual{
+    color: #003366 !important;
+    font-weight: bold;
+}
+
+.card .card-header {
+    padding: 0px;
+}
+
+.card-body1{
+    border-top: gray 5px solid;
+    border-radius: 10px;
+}
+.card-body2{
+    border-top: green 5px solid;
+    border-radius: 10px;
+}
+.card-body3{
+    border-top: red 5px solid;
+    border-radius: 10px;
+}
+.card-body4{
+    border-top: blue 5px solid;
+    border-radius: 10px;
+}
+
+.color-coti{
+    background-color: #003366 !important;
+}
+
+/* ESTILOS */
+
+.paso_footer{
+    text-align: end;
+}
+
+.paso_title{
+    text-align: left;
+}
+
+.modal-curriculum{
+    /* background-color: #003366; */
+    width: 100%;
+    color: #000;
+}
+
+.form-curriculum{
+    color: #000 !important;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: 	#E5E4E2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form__label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: left;
+    
+}
+.form_input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    border: 1.5px solid #d2d6da;
+}
+
+/* .ancho-modal{
+    min-width: 900px !important;
+} */
+
+.btn-subir{
+    margin-top: 32px;
+}
+
+
+.prof-titulo{
+    color: #000;
+    text-align: left;
+    background-color: var(--bs-table-bg);
+    margin-bottom: 0;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.foot-tabla{
+    background-color: #003366;
+}
+
+.curriculum{
+    text-align: left;
+}
+
+.des-vaca{
+    text-align: left;
+    color: var(--bs-gray);
+}
+
+.tit-vaca{
+    color: #fff;
+}
+
+.datos{
+    background-color: gainsboro;
+    text-align: left;
+    font-weight: bold;
+    padding: 0;
+    
+}

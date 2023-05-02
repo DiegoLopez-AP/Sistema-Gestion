@@ -162,6 +162,29 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('rrhh/indicador-rrhh');
 	})->name('indicador-rrhh');
 
+	Route::get('ficha-ptrabajador', function(){
+		return view('rrhh/ficha-ptrabajador');
+	})->name('ficha-ptrabajador');
+
+	Route::get('formulario-ftrabajador', function(){
+		return view('rrhh/formulario-ftrabajador');
+	})->name('formulario-ftrabajador');
+
+	Route::get('ap-rech-vaca', function(){
+		return view('rrhh/ap-rech-vaca');
+	})->name('ap-rech-vaca');
+
+	Route::get('curriculum', function(){
+		return view('rrhh/curriculum');
+	})->name('curriculum');
+
+	Route::get('solicitud-vacaciones', function(){
+		return view('rrhh/solicitud-vacaciones');
+	})->name('solicitud-vacaciones');
+
+
+
+
 	// RUTAS INFORMES
 	Route::get('indicador-inf', function(){
 		return view('informes/indicador-inf');
