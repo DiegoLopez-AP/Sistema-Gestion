@@ -116,7 +116,7 @@
 
 @media (min-width: 992px){
     .dropdown:not(.dropdown-hover) .dropdown-menu {
-        margin-top: 30px!important;
+        margin-top: -10px!important;
     } 
 }
 
@@ -125,7 +125,7 @@
 /* SIDEBAR */
 
 .colorsidenav{
-    background-color: #003366;
+    background-color: #003366 !important;
 }
 
 .navbar-vertical .navbar-nav .nav-link {
@@ -364,14 +364,19 @@ select {
 
 .menu_sidebar,
 .menu_sidebar a,
-.accordion-button a {
+.accordion-button a,
+.menu_usuario a {
     color: #fff;
 }
 
 .menu_sidebar a:hover,
-.accordion-button a:hover {
+.accordion-button a:hover,
+.menu_usuario a:hover {
     color: #0057f7;
 }
 
-
+.abs-center {
+    align-items: center;
+    height: 80px;
+}
 
