@@ -14,7 +14,7 @@
                         </span>
                         <a href="{{ url('#') }}"
                             class="btn bg-gradient-primary  m-2 px-4 justify-content-end{{ Request::is('#') ?: '' }} justify-content-end"
-                            type="button">Excel<i class="fas fa-file-excel ps-1 py-1 "></i>
+                            type="button">Excel
                         </a>
 
                     </div>

@@ -127,6 +127,7 @@
                             <li><a href="{{ route('permisos') }}">Permisos</a></li>
                             <li><a href="{{ route('indicadores-adm') }}">Indicadores</a></li>
                             <li><a href="{{ route('valores') }}">Valores</a></li>
+                            
                         </ul>
                     </div>
                 </div>
