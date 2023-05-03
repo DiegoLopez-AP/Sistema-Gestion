@@ -15,13 +15,13 @@
                         </div>
                     </a>
                 </li>
-                <li class="nav-item dropdown pe-2">
-                    <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton"
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link text-white pe-2" id="dropdownMenuButton"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="me-2">Bienvenido {user}</span>
                         <img src="../assets/img/user.png" width="45px" height="45px">
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-end px-2 py-3" aria-labelledby="dropdownMenuButton">
+                    <ul class="dropdown-menu px-2" aria-labelledby="dropdownMenuButton">
                         <li class="mb-2">
                             <a class="dropdown-item border-radius-md hover-menu {{ Request::is('user-profile') ?: '' }} "
                                 href="{{ url('user-profile') }}">
@@ -37,7 +37,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="mb-2">
+                        <li>
                             <a href="{{ url('/logout') }}" class="dropdown-item border-radius-md hover-menu">
                                 <div class="d-flex py-1">
                                     <div class="my-auto">
