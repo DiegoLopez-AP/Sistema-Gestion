@@ -68,8 +68,6 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('dashboard');
 	})->name('sign-up');
 
-
-	
 });
 
 	// RUTAS HTML
@@ -119,6 +117,10 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('contactos', function(){
 		return view('comercial/contactos');
 	})->name('contactos');
+
+	Route::get('preventa', function(){
+		return view('comercial/preventa');
+	})->name('preventa');
 
 
 	// RUTAS OPERACIONES

@@ -33,6 +33,7 @@
                             <li><a href="{{ route('cotizaciones') }}">Cotizaciones</a></li>
                             <li><a href="{{ route('clientes') }}">Clientes</a></li>
                             <li><a href="{{ route('contactos') }}">Contactos</a></li>
+                            <li><a href="{{ route('preventa') }}">Preventa</a></li>
                         </ul>
                     </div>
                 </div>
@@ -126,7 +127,6 @@
                             <li><a href="{{ route('permisos') }}">Permisos</a></li>
                             <li><a href="{{ route('indicadores-adm') }}">Indicadores</a></li>
                             <li><a href="{{ route('valores') }}">Valores</a></li>
-                            
                         </ul>
                     </div>
                 </div>

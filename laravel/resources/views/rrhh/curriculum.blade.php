@@ -1,7 +1,7 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h3 class="m-2">RRHH/Curriculum</h3>
+    <h5 class="m-2">RRHH/Curriculum</h5>
     <div class="row">
         <div class="col-12">
             <div class="card mb-2 mx-2 cartacolor p-5">
@@ -12,10 +12,10 @@
                         <span class="py-1 px-2 my-2">
                             <i class="fas fa-search"></i>
                         </span>
-                        <a href="{{ url('#') }}"
-                            class="btn bg-gradient-primary btn-sm m-2 px-4 justify-content-end{{ Request::is('#') ?: '' }} justify-content-end"
-                            type="button">Nuevo
-                        </a>
+                        <button type="button" class="btn bg-gradient-primary m-2 px-4 py-2" data-bs-toggle="modal"
+                            data-bs-target="#curriculum">
+                            Nuevo
+                        </button>
 
                     </div>
 
@@ -84,10 +84,11 @@
 
                                     <td class="text-center">
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn bg-gradient-secondary m-2 px-4 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#curriculum">
-                                            Ver
-                                        </button>
+                                        
+                                        <a href="{{ url('#') }}" class="" data-bs-toggle="modal"
+                                            data-bs-target="#curriculum" type=""><i class="fas fa-file-invoice"></i>
+                                        </a>
+                                        
 
                                         <!-- Modal -->
                                         <div class="modal fade bd-example-modal-lg" id="curriculum" tabindex="-1"
@@ -96,104 +97,152 @@
                                                 <div class="modal-content ">
                                                     <div class="modal-header">
                                                         <h1 class="modal-title fs-5" id="exampleModalLabel">Curriculum</h1>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        <button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body modal-curriculum">
                                                         <div class="container">
-                                                            
+
                                                             <form class="form" action="#" method="post">
-                                                    
-                                                    
+
+
                                                                 <div class="form-register_body">
                                                                     <div class="paso active" id="paso-1">
                                                                         <div class="paso_header">
-                                                                            <h4 class="paso_title curriculum">Información personal</h4>
+                                                                            <h4 class="paso_title curriculum">Información
+                                                                                personal</h4>
                                                                         </div>
                                                                         <div class="paso_body">
                                                                             <div class="step active" id="paso-1">
-                                                    
+
                                                                             </div>
                                                                             <div class="row">
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Nombre</label>
-                                                                                    <input class="form__input" type="text" id="nombre" name="nombre">
+                                                                                    <label class="form__label"
+                                                                                        for="">Nombre</label>
+                                                                                    <input class="form__input"
+                                                                                        type="text" id="nombre"
+                                                                                        name="nombre">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Ap. Paterno</label>
-                                                                                    <input class="form__input" type="text" id="ap-paterno" name="ap-materno">
+                                                                                    <label class="form__label"
+                                                                                        for="">Ap. Paterno</label>
+                                                                                    <input class="form__input"
+                                                                                        type="text" id="ap-paterno"
+                                                                                        name="ap-materno">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Ap. Materno</label>
-                                                                                    <input class="form__input" type="text" id="ap-materno" name="ap-materno">
+                                                                                    <label class="form__label"
+                                                                                        for="">Ap. Materno</label>
+                                                                                    <input class="form__input"
+                                                                                        type="text" id="ap-materno"
+                                                                                        name="ap-materno">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Rut</label>
-                                                                                    <input class="form__input" type="text" id="rut" name="rut">
+                                                                                    <label class="form__label"
+                                                                                        for="">Rut</label>
+                                                                                    <input class="form__input"
+                                                                                        type="text" id="rut"
+                                                                                        name="rut">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Fecha de Nacimiento <i
-                                                                                            class="fa fa-calendar"></i></label>
-                                                                                    <input class="form__input" type="text" id="datepicker">
-                                                                                </div>                                                                              
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Dirección</label>
-                                                                                    <input class="form__input" type="text" id="nombre" name="nombre">
+                                                                                    <label class="form__label"
+                                                                                        for="">Fecha de Nacimiento</label>
+                                                                                            <input type="date" id="start"
+                                                                                            name="trip-start" class="form-control">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Comuna</label>
-                                                                                    <select class="form-select" name="vigencia" id="vigencia">
-                                                                                        <option value="0">Seleccione comuna</option>
-                                                                                        <option value="1">Comuna 1</option>
-                                                                                        <option value="2">Comuna 2</option>
+                                                                                    <label class="form__label"
+                                                                                        for="">Dirección</label>
+                                                                                    <input class="form__input"
+                                                                                        type="text" id="nombre"
+                                                                                        name="nombre">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <label class="form__label"
+                                                                                        for="">Comuna</label>
+                                                                                    <select class="form-select"
+                                                                                        name="vigencia" id="vigencia">
+                                                                                        <option value="0">Seleccione
+                                                                                            comuna</option>
+                                                                                        <option value="1">Comuna 1
+                                                                                        </option>
+                                                                                        <option value="2">Comuna 2
+                                                                                        </option>
                                                                                     </select>
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Ciudad</label>
-                                                                                    <input class="form__input" type="text" id="rut" name="rut">
+                                                                                    <label class="form__label"
+                                                                                        for="">Ciudad</label>
+                                                                                    <input class="form__input"
+                                                                                        type="text" id="rut"
+                                                                                        name="rut">
                                                                                 </div>
-                                                                            </div>                                
+                                                                            </div>
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Fono Particular</label>
-                                                                                    <input size="16" type="number" class="form-control" id="fono-parti">
+                                                                                    <label class="form__label"
+                                                                                        for="">Fono
+                                                                                        Particular</label>
+                                                                                    <input size="16" type="number"
+                                                                                        class="form-control"
+                                                                                        id="fono-parti">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Celular</label>
-                                                                                    <input class="form__input" type="number" id="celular" name="celular">
+                                                                                    <label class="form__label"
+                                                                                        for="">Celular</label>
+                                                                                    <input class="form__input"
+                                                                                        type="number" id="celular"
+                                                                                        name="celular">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Estado Civil</label>
-                                                                                    <input class="form__input" type="text" id="e-civil" name="e-civil">
+                                                                                    <label class="form__label"
+                                                                                        for="">Estado Civil</label>
+                                                                                    <input class="form__input"
+                                                                                        type="text" id="e-civil"
+                                                                                        name="e-civil">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label" for="">Nacionalidad</label>
-                                                                                    <input class="form__input" type="text" id="nacionalidad" name="nacionalidad">
+                                                                                    <label class="form__label"
+                                                                                        for="">Nacionalidad</label>
+                                                                                    <input class="form__input"
+                                                                                        type="text" id="nacionalidad"
+                                                                                        name="nacionalidad">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-5">
-                                                                                    <label class="form__label" for="">Mail</label>
-                                                                                    <input class="form__input" type="text" id="mail" name="mail">
+                                                                                    <label class="form__label"
+                                                                                        for="">Mail</label>
+                                                                                    <input class="form__input"
+                                                                                        type="text" id="mail"
+                                                                                        name="mail">
                                                                                 </div>
                                                                                 <div class="col-md-7">
-                                                                                    <label for="formFile" class="form__label text-left">Foto</label>
-                                                                                    <input class="form-control" type="file" id="foto-eme">
+                                                                                    <label for="formFile"
+                                                                                        class="form__label text-left">Foto</label>
+                                                                                    <input class="form-control"
+                                                                                        type="file" id="foto-eme">
                                                                                 </div>
                                                                             </div>
-                                                    
+
                                                                             <div class="paso_footer">
-                                                                                <button type="button" class="btn btn-danger mt-4 px-4" data-to_step="1"
+                                                                                <button type="button"
+                                                                                    class="btn btn-danger mt-4 px-4"
+                                                                                    data-to_step="1"
                                                                                     data-step="2">Regresar</button>
-                                                                                <button type="button" class=" btn btn-secondary mt-4 px-4" data-to_step="2"
+                                                                                <button type="button"
+                                                                                    class=" btn btn-secondary mt-4 px-4"
+                                                                                    data-to_step="2"
                                                                                     data-step="1">Siguiente</button>
-                                                                                <button type="submit" class="btn btn-success mt-4 px-4">Crear</button>
+                                                                                <button type="submit"
+                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                    
+
                                                                     <div class="paso" id="paso-2">
                                                                         <div class="paso_header">
                                                                             <h4 class="paso_title">Profesión</h4>
@@ -202,19 +251,23 @@
                                                                             <div class="row mt-2">
                                                                                 ...
                                                                             </div>
-                                                                            
+
 
 
                                                                         </div>
                                                                         <div class="paso_footer">
-                                                                            <button type="button" class="btn btn-danger mt-4 px-4" data-to_step="1"
+                                                                            <button type="button"
+                                                                                class="btn btn-danger mt-4 px-4"
+                                                                                data-to_step="1"
                                                                                 data-step="2">Regresar</button>
-                                                                            <button type="button" class=" btn btn-secondary mt-4 px-4" data-to_step="2"
+                                                                            <button type="button"
+                                                                                class=" btn btn-secondary mt-4 px-4"
+                                                                                data-to_step="2"
                                                                                 data-step="1">Siguiente</button>
                                                                             {{-- <button type="submit" class="step_button mt-4 px-4">Crear</button> --}}
                                                                         </div>
                                                                     </div>
-                                                    
+
                                                                     <div class="paso" id="paso-3">
                                                                         <div class="paso_header">
                                                                             <h4 class="paso_title curriculum">Resumen</h4>
@@ -222,83 +275,110 @@
                                                                         <div class="paso_body">
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-12">
-                                                                                    
-                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10" placeholder="Escriba sus datos..."></textarea>
+
+                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
+                                                                                        placeholder="Escriba sus datos..."></textarea>
                                                                                 </div>
                                                                             </div>
-                                                    
+
                                                                             <div class="paso_footer">
-                                                                                <button type="button" class="btn btn-danger mt-4 px-4" data-to_step="1"
+                                                                                <button type="button"
+                                                                                    class="btn btn-danger mt-4 px-4"
+                                                                                    data-to_step="1"
                                                                                     data-step="2">Regresar</button>
-                                                                                <button type="button" class=" btn btn-secondary mt-4 px-4" data-to_step="2"
+                                                                                <button type="button"
+                                                                                    class=" btn btn-secondary mt-4 px-4"
+                                                                                    data-to_step="2"
                                                                                     data-step="1">Siguiente</button>
-                                                                                <button type="submit" class="btn btn-success mt-4 px-4">Crear</button>
+                                                                                <button type="submit"
+                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="paso" id="paso-4">
                                                                         <div class="paso_header">
-                                                                            <h4 class="paso_title curriculum">Experiencia</h4>
+                                                                            <h4 class="paso_title curriculum">Experiencia
+                                                                            </h4>
                                                                         </div>
                                                                         <div class="paso_body">
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-12">
-                                                                                    
-                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10" placeholder="Escriba sus datos..."></textarea>
+
+                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
+                                                                                        placeholder="Escriba sus datos..."></textarea>
                                                                                 </div>
                                                                             </div>
-                                                    
+
                                                                             <div class="paso_footer">
-                                                                                <button type="button" class="btn btn-danger mt-4 px-4" data-to_step="1"
+                                                                                <button type="button"
+                                                                                    class="btn btn-danger mt-4 px-4"
+                                                                                    data-to_step="1"
                                                                                     data-step="2">Regresar</button>
-                                                                                <button type="button" class=" btn btn-secondary mt-4 px-4" data-to_step="2"
+                                                                                <button type="button"
+                                                                                    class=" btn btn-secondary mt-4 px-4"
+                                                                                    data-to_step="2"
                                                                                     data-step="1">Siguiente</button>
-                                                                                <button type="submit" class="btn btn-success mt-4 px-4">Crear</button>
+                                                                                <button type="submit"
+                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="paso" id="paso-5">
                                                                         <div class="paso_header">
-                                                                            <h4 class="paso_title curriculum">Formación Académica</h4>
+                                                                            <h4 class="paso_title curriculum">Formación
+                                                                                Académica</h4>
                                                                         </div>
                                                                         <div class="paso_body">
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-12">
-                                                                                    
-                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10" placeholder="Escriba sus datos..."></textarea>
+
+                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
+                                                                                        placeholder="Escriba sus datos..."></textarea>
                                                                                 </div>
                                                                             </div>
-                                                    
+
                                                                             <div class="paso_footer">
-                                                                                <button type="button" class="btn btn-danger mt-4 px-4" data-to_step="1"
+                                                                                <button type="button"
+                                                                                    class="btn btn-danger mt-4 px-4"
+                                                                                    data-to_step="1"
                                                                                     data-step="2">Regresar</button>
-                                                                                <button type="button" class=" btn btn-secondary mt-4 px-4" data-to_step="2"
+                                                                                <button type="button"
+                                                                                    class=" btn btn-secondary mt-4 px-4"
+                                                                                    data-to_step="2"
                                                                                     data-step="1">Siguiente</button>
-                                                                                <button type="submit" class="btn btn-success mt-4 px-4">Crear</button>
+                                                                                <button type="submit"
+                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="paso" id="paso-6">
                                                                         <div class="paso_header">
-                                                                            <h4 class="paso_title curriculum">Conocimientos</h4>
+                                                                            <h4 class="paso_title curriculum">Conocimientos
+                                                                            </h4>
                                                                         </div>
                                                                         <div class="paso_body">
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-12">
-                                                                                    
-                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10" placeholder="Escriba sus datos..."></textarea>
+
+                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
+                                                                                        placeholder="Escriba sus datos..."></textarea>
                                                                                 </div>
                                                                             </div>
-                                                    
+
                                                                             <div class="paso_footer">
-                                                                                <button type="button" class="btn btn-danger mt-4 px-4" data-to_step="1"
+                                                                                <button type="button"
+                                                                                    class="btn btn-danger mt-4 px-4"
+                                                                                    data-to_step="1"
                                                                                     data-step="2">Regresar</button>
-                                                                                <button type="button" class=" btn btn-secondary mt-4 px-4" data-to_step="2"
+                                                                                <button type="button"
+                                                                                    class=" btn btn-secondary mt-4 px-4"
+                                                                                    data-to_step="2"
                                                                                     data-step="1">Siguiente</button>
-                                                                                <button type="submit" class="btn btn-success mt-4 px-4">Crear</button>
+                                                                                <button type="submit"
+                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -310,17 +390,23 @@
                                                                         <div class="paso_body">
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-12">
-                                                                                    
-                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10" placeholder="Escriba sus datos..."></textarea>
+
+                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
+                                                                                        placeholder="Escriba sus datos..."></textarea>
                                                                                 </div>
                                                                             </div>
-                                                    
+
                                                                             <div class="paso_footer">
-                                                                                <button type="button" class="btn btn-danger mt-4 px-4" data-to_step="1"
+                                                                                <button type="button"
+                                                                                    class="btn btn-danger mt-4 px-4"
+                                                                                    data-to_step="1"
                                                                                     data-step="2">Regresar</button>
-                                                                                <button type="button" class=" btn btn-secondary mt-4 px-4" data-to_step="2"
+                                                                                <button type="button"
+                                                                                    class=" btn btn-secondary mt-4 px-4"
+                                                                                    data-to_step="2"
                                                                                     data-step="1">Siguiente</button>
-                                                                                <button type="submit" class="btn btn-success mt-4 px-4">Crear</button>
+                                                                                <button type="submit"
+                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -369,8 +455,9 @@
                                     </td>
 
                                     <td class="text-center">
-                                        <a class="btn bg-gradient-secondary m-2 px-4 py-2" href=""
-                                            type="button">Ver</i></a>
+                                        <a href="{{ url('#') }}" class="" data-bs-toggle="modal"
+                                            data-bs-target="#curriculum" type=""><i class="fas fa-file-invoice"></i>
+                                        </a>
                                     </td>
                                 </tr>
 
@@ -400,8 +487,9 @@
                                         <p class="text-xs font-weight-bold mb-0">lpcerda@uc.cl</p>
                                     </td>
                                     <td class="text-center">
-                                        <a class="btn bg-gradient-secondary m-2 px-4 py-2" href=""
-                                            type="button">Ver</i></a>
+                                        <a href="{{ url('#') }}" class="" data-bs-toggle="modal"
+                                            data-bs-target="#curriculum" type=""><i class="fas fa-file-invoice"></i>
+                                        </a>
                                     </td>
                                 </tr>
 
@@ -431,8 +519,9 @@
                                         <p class="text-xs font-weight-bold mb-0">jamorale@fen.uchile.cl</p>
                                     </td>
                                     <td class="text-center">
-                                        <a class="btn bg-gradient-secondary m-2 px-4 py-2" href=""
-                                            type="button">Ver</i></a>
+                                        <a href="{{ url('#') }}" class="" data-bs-toggle="modal"
+                                            data-bs-target="#curriculum" type=""><i class="fas fa-file-invoice"></i>
+                                        </a>
                                     </td>
                                 </tr>
 

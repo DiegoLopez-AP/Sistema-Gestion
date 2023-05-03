@@ -9,9 +9,9 @@
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-5 col-md-5 d-flex flex-column mx-auto">
               <div class="card card-plain mt-5 bg-white">
-                <div class="card-header pb-0 text-center bg-transparent mt-4">
+                <div class="card-header pb-0 text-center bg-transparent mt-5">
                   <img src="../assets/img/logo-white.png" alt="">
-                  <h4 class="font-weight-bolder text-info text-gradient mt-2">Sistema de Gestión</h4>
+                  <h4 class="font-weight-bolder text-info text-gradient pt-2 ">Sistema de Gestión</h4>
                 </div>
                 <div class="card-body">
                   <form role="form" method="POST" action="/session">

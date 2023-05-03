@@ -3,6 +3,6 @@
 @section('content')
 
 <div class="container">
-    <h3>Operaciones/Carta Gantt</h3>
+    <h5>Operaciones/Carta Gantt</h5>
 </div>
 @endsection

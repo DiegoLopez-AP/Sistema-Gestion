@@ -50,9 +50,8 @@
 
                         <div class="row mt-2">
                             <div class="col-md-3">
-                                <label class="form__label" for="">Fecha de Nacimiento <i
-                                        class="fa fa-calendar"></i></label>
-                                <input class="form__input" type="text" id="datepicker">
+                                <label class="form__label" for="">Fecha de Nacimiento</label>
+                                <input type="date" id="start" name="trip-start" class="form-control">
                             </div>
                             <div class="col-md-3">
                                 <label class="form__label" for="">Dirección</label>
@@ -114,14 +113,12 @@
                                 <input class="form__input" type="text" id="gerencia" name="gerencia">
                             </div>
                             <div class="col-md-3">
-                                <label class="form__label" for="">F. Contrato Inicio <i
-                                        class="fa fa-calendar"></i></label>
-                                <input class="form__input" type="text" id="datepicker">
+                                <label class="form__label" for="">F. Contrato Inicio</label>
+                                <input type="date" id="start" name="trip-start" class="form-control">
                             </div>
                             <div class="col-md-3">
-                                <label class="form__label" for="">F. Contrato Término<i
-                                        class="fa fa-calendar"></i></label>
-                                <input class="form__input" type="text" id="datepicker">
+                                <label class="form__label" for="">F. Contrato Término</label>
+                                <input type="date" id="start" name="trip-start" class="form-control">
                             </div>
                         </div>
 
@@ -174,9 +171,8 @@
                                 </select>
                             </div>
                             <div class="col-md-2">
-                                <label class="form__label" for="">Fecha 1° Cot.AFP <i
-                                        class="fa fa-calendar"></i></label>
-                                <input class="form__input" type="text" id="datepicker">
+                                <label class="form__label" for="">Fecha 1° Cot.AFP</label>
+                                <input type="date" id="start" name="trip-start" class="form-control">
                             </div>
                             <div class="col-md-4">
                                 <label class="form__label" for="">Mail G-talent</label>

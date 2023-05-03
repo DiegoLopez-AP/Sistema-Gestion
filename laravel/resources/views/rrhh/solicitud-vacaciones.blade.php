@@ -1,7 +1,7 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h3 class="m-2">RRHH/Solicitud de Vacaciones</h3>
+    <h5 class="m-2">RRHH/Solicitud de Vacaciones</h5>
     <div class="row">
         <div class="col-12">
             <div class="card mb-2 mx-2 cartacolor p-5">
@@ -78,7 +78,7 @@
                                     </td>
                                     <td class="text-center">
                                         <a href="{{ url('#') }}" class="" data-bs-toggle="modal"
-                                            data-bs-target="#vacaciones" type=""><i class="fa fa-user"></i>
+                                            data-bs-target="#vacaciones" type=""><i class="fas fa-file-alt"></i>
                                         </a>
 
                                         <!-- Modal -->
@@ -87,7 +87,8 @@
                                             <div class="modal-dialog modal-xl" role="dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Modulo solicitud de vacaciones</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Modulo solicitud de
+                                                            vacaciones</h5>
                                                         <button type="button" class="close" data-bs-dismiss="modal"
                                                             aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
@@ -99,132 +100,143 @@
                                                             <div class="form-register_body">
                                                                 <div class="paso active" id="paso-1">
                                                                     <div class="paso_header p-3">
-                                                                        <h4 class="paso_title tit-vaca">Control Solicitud Vacaciones</h4>
-                                                                        <p class="des-vaca">Para empleados con más de un contrato activo, debe repetir operación para todos los contratos del empleado</p>
+                                                                        <h4 class="paso_title tit-vaca">Control Solicitud
+                                                                            Vacaciones</h4>
+                                                                        <p class="des-vaca">Para empleados con más de un
+                                                                            contrato activo, debe repetir operación para
+                                                                            todos los contratos del empleado.</p>
                                                                     </div>
                                                                     <div class="datos p-2">
-                                                                        <h6 class="text-black-50">ID: </h6>
-                                                                        <h6 class="text-black-50">RUT: </h6>
-                                                                        <h6 class="text-black-50">NOMBRE: </h6>
+                                                                        <h6>ID: </h6>
+                                                                        <h6>RUT: </h6>
+                                                                        <h6>NOMBRE: </h6>
                                                                     </div>
-                                                                    <div class="paso_body p-3">
-                                                                        
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
+                                                                    <div class="paso_body">
+
+                                                                        <div class="row p-3">
+                                                                            <div class="col-md-6">
                                                                                 <label class="form__label"
-                                                                                    for="">Cod. Trabajador</label>
-                                                                                <input class="form__input" type="text"
-                                                                                    id="cod-trabajador"
-                                                                                    name="cod-trabajador">
+                                                                                    for="">Fecha de Ingreso</label>
+                                                                                <input type="date" id="start"
+                                                                                    name="trip-start" class="form-control">
                                                                             </div>
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-6">
                                                                                 <label class="form__label"
-                                                                                    for="">Vigencia</label>
-                                                                                <select class="form-select" name="vigencia"
-                                                                                    id="vigencia">
-                                                                                    {{-- <option value="0">seleccione vigencia</option> --}}
-                                                                                    <option value="1">Vigente</option>
-                                                                                    <option value="2">No Vigente
-                                                                                    </option>
-                                                                                </select>
+                                                                                    for="">Fecha de
+                                                                                    Solicitud</label>
+                                                                                <input type="date" id="start"
+                                                                                    name="trip-start" class="form-control">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row mt-2">
-                                                                            <div class="col-md-3">
-                                                                                <label class="form__label"
-                                                                                    for="">Nombre</label>
-                                                                                <input class="form__input" type="text"
-                                                                                    id="cod-trabajador"
-                                                                                    name="cod-trabajador">
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <label class="form__label"
-                                                                                    for="">Ap. Paterno</label>
-                                                                                <input class="form__input" type="text"
-                                                                                    id="nombre" name="nombre">
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <label class="form__label"
-                                                                                    for="">Ap. Materno</label>
-                                                                                <input class="form__input" type="text"
-                                                                                    id="nombre" name="nombre">
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <label class="form__label"
-                                                                                    for="">Rut</label>
-                                                                                <input class="form__input" type="text"
-                                                                                    id="rut" name="rut">
-                                                                            </div>
+                                                                        {{-- SUBTITULOS --}}
+                                                                        <div class="d-habiles py-1 my-2">
+                                                                            <h5 class="">Días Hábiles</h5>
                                                                         </div>
 
-                                                                        <div class="row mt-2">
-                                                                            <div class="col-md-3">
+                                                                        <div class="row mt-2 p-3">
+                                                                            <div class="col-md-4">
                                                                                 <label class="form__label"
-                                                                                    for="">Fecha de Nacimiento <i
-                                                                                        class="fa fa-calendar"></i></label>
-                                                                                <input class="form__input" type="text"
-                                                                                    id="datepicker">
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <label class="form__label"
-                                                                                    for="">Dirección</label>
-                                                                                <input class="form__input" type="text"
-                                                                                    id="nombre" name="nombre">
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <label class="form__label"
-                                                                                    for="">Comuna</label>
-                                                                                <select class="form-select"
-                                                                                    name="vigencia" id="vigencia">
-                                                                                    <option value="0">Seleccione
-                                                                                        comuna</option>
-                                                                                    <option value="1">Comuna 1
-                                                                                    </option>
-                                                                                    <option value="2">Comuna 2
-                                                                                    </option>
-                                                                                </select>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <label class="form__label"
-                                                                                    for="">Ciudad</label>
-                                                                                <input class="form__input" type="text"
-                                                                                    id="rut" name="rut">
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row mt-2">
-                                                                            <div class="col-md-3">
-                                                                                <label class="form__label"
-                                                                                    for="">Fono Particular</label>
-                                                                                <input size="16" type="number"
-                                                                                    class="form-control" id="fono-parti">
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <label class="form__label"
-                                                                                    for="">Celular</label>
+                                                                                    for="">Días hábiles ganados
+                                                                                    acumulados</label>
                                                                                 <input class="form__input" type="number"
-                                                                                    id="celular" name="celular">
+                                                                                    id="dg-acumulados" name="dg-acumulados">
                                                                             </div>
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-4">
                                                                                 <label class="form__label"
-                                                                                    for="">Estado Civil</label>
-                                                                                <input class="form__input" type="text"
-                                                                                    id="e-civil" name="e-civil">
+                                                                                    for="">(-) Días progresivos
+                                                                                    tomados acumulados</label>
+                                                                                <input class="form__input" type="number"
+                                                                                    id="dp-acumulados" name="nombre">
                                                                             </div>
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-4">
                                                                                 <label class="form__label"
-                                                                                    for="">Nacionalidad</label>
-                                                                                <input class="form__input" type="text"
-                                                                                    id="nacionalidad" name="nacionalidad">
+                                                                                    for="">Días progresivos
+                                                                                    disponibles</label>
+                                                                                <input class="form__input" type="number"
+                                                                                    id="dp-dispo" name="dp-dispo">
                                                                             </div>
+
+                                                                        </div>
+                                                                        {{-- SUBTITULOS --}}
+                                                                        <div class="d-habiles py-1 my-2">
+                                                                            <h5 class="">Saldos Acumulados</h5>
                                                                         </div>
 
-                                                                        <div class="paso_footer">
-                                                                            {{-- <button class="btn btn-danger volver-pag1 volver">Volver</button> --}}
-                                                                            <button type="button"
-                                                                                class=" btn btn-secondary step_button step_button--next mt-4 px-4"
-                                                                                data-to_step="2"
-                                                                                data-step="1">Siguiente</button>
+                                                                        <div class="row mt-2 p-3">
+                                                                            <div class="col-md-6">
+                                                                                <label class="form__label"
+                                                                                    for="">Periodos
+                                                                                    Acumulados</label>
+                                                                                <input class="form__input" type="number"
+                                                                                    id="per-acumulado"
+                                                                                    name="per-acumulado">
+                                                                            </div>
+
+                                                                            <div class="col-md-6">
+                                                                                <label class="form__label"
+                                                                                    for="">Saldo de días
+                                                                                    acumulados</label>
+                                                                                <input class="form__input" type="number"
+                                                                                    id="saldo-acum" name="saldo-acum">
+                                                                            </div>
+                                                                        </div>
+                                                                        {{-- SUBTITULOS --}}
+                                                                        <div class="d-habiles py-1 my-2">
+                                                                            <h5 class="">Solicitud</h5>
+                                                                        </div>
+
+                                                                        <div class="row mt-2 p-3">
+                                                                            <div class="col-md-3">
+                                                                                <label class="form__label"
+                                                                                    for="">N°Comprobante</label>
+                                                                                <input class="form__input" type="number"
+                                                                                    id="n-comprobante"
+                                                                                    name="n-comprobante">
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <label class="form__label"
+                                                                                    for="">Fecha Inicio</label>
+                                                                                <input type="date" id="start"
+                                                                                    name="trip-start"
+                                                                                    class="form-control">
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <label class="form__label"
+                                                                                    for="">Fecha Termino</label>
+                                                                                <input type="date" id="start"
+                                                                                    name="trip-start"
+                                                                                    class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row px-3 pb-3">
+                                                                            <div class="col-md-4">
+                                                                                <label class="form__label"
+                                                                                    for="">Días Hábiles</label>
+                                                                                <input class="form__input" type="number"
+                                                                                    id="d-habil" name="d-habil">
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <label class="form__label"
+                                                                                    for="">Días Inhábiles</label>
+                                                                                <input class="form__input" type="number"
+                                                                                    id="d-inhabil" name="d-inhabil">
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <label class="form__label"
+                                                                                    for="">Días Progresivos
+                                                                                    (hábiles)</label>
+                                                                                <input class="form__input" type="number"
+                                                                                    id="d-habil" name="d-habil">
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="row px-3 pb-3">
+                                                                            <div class="col-md-12">
+                                                                                <label class="form__label"
+                                                                                    for="">Saldo Final</label>
+                                                                                <input class="form__input" type="number"
+                                                                                    id="sal-final" name="sal-final">
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
