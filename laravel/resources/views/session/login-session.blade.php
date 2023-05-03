@@ -2,9 +2,9 @@
 
 @section('content')
 
-  <main class="main-content  mt-0 bg-fondo">
+  <main class="main-content mt-0 bg-fondo">
     <section>
-      <div class="page-header min-vh-75">
+      <div class="page-header min-vh_p">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-5 col-md-5 d-flex flex-column mx-auto">

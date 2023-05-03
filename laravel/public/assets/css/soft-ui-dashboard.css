@@ -573,3 +573,14 @@ select {
     padding: 0;
     
 }
+
+
+.min-vh_p {
+    min-height: 88.7vh !important;
+}
+
+@media (min-width: 1400px) {
+    .min-vh_p {
+        min-height: 92.8vh !important;
+    }
+}
