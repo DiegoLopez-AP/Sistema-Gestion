@@ -1,7 +1,7 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h3 class="m-2">Comercial/Clientes</h3>
+    <h5 class="m-2">Comercial/Clientes</h5>
     <div class="row">
         <div class="col-12">
             <div class="card mb-2 mx-2 cartacolor p-5">
@@ -13,8 +13,8 @@
                             <i class="fas fa-search"></i>
                         </span>
                         <a href="{{ url('#') }}"
-                            class="btn bg-gradient-primary btn-sm m-2 px-4 justify-content-end{{ Request::is('#') ?: '' }} justify-content-end"
-                            type="button">EXCEL
+                            class="btn bg-gradient-primary  m-2 px-4 justify-content-end{{ Request::is('#') ?: '' }} justify-content-end"
+                            type="button">Excel<i class="fas fa-file-excel ps-1 py-1 "></i>
                         </a>
 
                     </div>

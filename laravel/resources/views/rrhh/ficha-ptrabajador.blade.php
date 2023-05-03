@@ -1,7 +1,7 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h3 class="m-2">RRHH/Ficha personal trabajador</h3>
+    <h5 class="m-2">RRHH/Ficha personal trabajador</h5>
     <div class="row">
         <div class="col-12">
             <div class="card mb-2 mx-2 cartacolor p-5">
@@ -84,9 +84,9 @@
                                     </td>
 
                                     <td class="text-center">
-                                        <a href="{{ url('#') }}"
-                                            class="btn bg-gradient-primary btn-sm m-2 py-2 px-3 {{ Request::is('#') ?: '' }} justify-content-end"
-                                            type="button">Ir
+                                        <a href="{{ url('formulario-ftrabajador') }}" class="{{ Request::is('formulario-ftrabajador') ?: '' }}" 
+                                             type="">
+                                            <i class="fas fa-user"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -120,8 +120,11 @@
                                         <p class="text-xs font-weight-bold mb-0">Servicios<br>, Industria, Quimíca</p>
                                     </td>
 
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">7730000</span>
+                                    <td class="text-center">
+                                        <a href="{{ url('formulario-ftrabajador') }}" class="{{ Request::is('formulario-ftrabajador') ?: '' }}" 
+                                             type="">
+                                            <i class="fas fa-user"></i>
+                                        </a>
                                     </td>
                                 </tr>
 
@@ -150,8 +153,11 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Manufactura</p>
                                     </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">6216400</span>
+                                    <td class="text-center">
+                                        <a href="{{ url('formulario-ftrabajador') }}" class="{{ Request::is('formulario-ftrabajador') ?: '' }}" 
+                                             type="">
+                                            <i class="fas fa-user"></i>
+                                        </a>
                                     </td>
                                 </tr>
 
@@ -180,9 +186,11 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Manufactura <br> Industria</p>
                                     </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">5569420</span>
-                                    </td>
+                                    <td class="text-center">
+                                        <a href="{{ url('formulario-ftrabajador') }}" class="{{ Request::is('formulario-ftrabajador') ?: '' }}" 
+                                             type="">
+                                            <i class="fas fa-user"></i>
+                                        </a>
                                     </td>
                                 </tr>
 
@@ -209,8 +217,11 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Servicio <br> Construcción</p>
                                     </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">5552214</span>
+                                    <td class="text-center">
+                                        <a href="{{ url('formulario-ftrabajador') }}" class="{{ Request::is('formulario-ftrabajador') ?: '' }}" 
+                                             type="">
+                                            <i class="fas fa-user"></i>
+                                        </a>
                                     </td>
                                 </tr>
                             </tbody>

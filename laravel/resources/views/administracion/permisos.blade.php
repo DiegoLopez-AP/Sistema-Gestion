@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h3 class="m-2">Administración/Permisos</h3>
+    <h5 class="m-2">Administración/Permisos</h5>
     <div class="row">
         <div class="col-12">
             <div class="card mb-4 mx-2 cartacolor p-5">

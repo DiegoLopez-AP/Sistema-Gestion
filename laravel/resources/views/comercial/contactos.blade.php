@@ -1,7 +1,7 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h3 class="m-2">Comercial/Contactos</h3>
+    <h5 class="m-2">Comercial/Contactos</h5>
     <div class="row">
         <div class="col-12">
             <div class="card mb-4 mx-1 cartacolor p-5">
