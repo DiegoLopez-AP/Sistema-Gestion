@@ -1,30 +1,18 @@
-@extends('layouts.user_type.auth')
-
-@section('content')
-    <h5 class="m-2">Comercial/Clientes</h5>
+<h5>Comercial/Preventa</h5>
     <div class="row">
         <div class="col-12">
-            <div class="card mb-2 mx-2 cartacolor p-5 py-4">
+            <div class="card mb-2 mx-2 cartacolor p-4 py-4">
                 <div class="card-header mb-1">
+                    <!-- TODO FILTROS TABLA -->
                     <div class="d-flex flex-row p-2 ps-0">
-
-                        <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
+                        {{-- <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
                         <span class="py-1 px-2 my-2">
                             <i class="fas fa-search"></i>
                         </span>
-                        {{-- <a href="#"
-                            class="btn bg-gradient-primary btn-sm m-2 px-4 py-2 justify-content-end justify-content-end"
-                            type="button">Excel
-                        </a>
-                        <button class="btn bg-gradient-primary btn-sm m-2 px-4 py-2 justify-content-end justify-content-end boton"
-                            type="button" data-bs-toggle="modal" data-bs-target="#agregar-cliente">Agregar Cliente
-                        </button> --}}
                         <div class="icono agregar px-2 my-2 pt-1">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#agregar-cliente"><i class="fas fa-plus"></i></a>
-                        </div>
-                        
-
-
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#agregar-cliente"><i
+                                    class="fas fa-plus"></i></a>
+                        </div> --}}
                         {{-- TODO MODAL AGREAGAR CLIENTE ------------------------------------------------------------------------------------------- --}}
                         <div class="modal fade" id="agregar-cliente" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
@@ -123,69 +111,113 @@
                         </div>
 
                     </div>
-                    {{-- TODO INICIO TABLA CLIENTE ------------------------------------------------------------------------------------------ --}}
+                    <!-- TODO INICIO TABLA -->
                 </div>
                 <div class="card-body px-0 pt-0 pb-2">
                     <div class="table-responsive ">
-                        <table class="table align-items-center table-striped table-hover mb-0 " width="100%">
+                        <table class="table align-items-center table-striped table-hover mb-0 ">
                             <thead class="colortabla">
+                                <!-- TODO TITULOS TABLA -->
                                 <tr class="colorletratabla">
                                     <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
-                                        Rut
+                                        ID
                                     </th>
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Nombre Fantasia
-                                    </th>
-
-                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Razón Social
+                                        Cliente
                                     </th>
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Dirección
+                                        Contacto
                                     </th>
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Telefono
+                                        Fecha
+                                    </th>
+                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                        Días
                                     </th>
                                     <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                        Pag. Web
+                                        Moneda
                                     </th>
                                     <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                        Vigencia
+                                        Estado
                                     </th>
                                     <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
-                                        Acción
+                                        Archivo
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
+                                        EDT
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
+                                        Preventa
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
+                                        Cotización
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
+                                        Comercial
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder sticky">
+                                        Acciones
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- TODO ITEM 1 TABLA -->
                                 <tr>
                                     <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0">78.956.120-6</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">AGROMERCIAL VERDE <br> ANDES LTDA.</p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Agromercial Verde <br> Andes Ltda.</p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Enrique Foster <br> sur 150-A</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">3345622</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">Agricola,<br> Industria,
-                                            Servicios</span>
-                                    </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">No Vigente</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-center">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cliente"><i
-                                                class="fas fa-pen text-xs"></i></a>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-preventa">
+                                            <i class="fa fa-paperclip"></i>
+                                        </a>
+                                    </td>
+                                    <td class="text-center text-sm">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-preventa">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-preventa">
+                                            <i class="fa fa-dollar-sign"></i>
+                                        </a>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm sticky">
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-pen mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-plus mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
                                     </td>
                                     {{-- TODO MODAL EDITAR CLIENTE--------------------------------------------------------------------------------- --}}
                                     <div class="modal fade" id="editar-cliente" tabindex="-1"
@@ -248,7 +280,7 @@
                                                                             class="form-label">Dirección</label>
                                                                         <input type="text" class="form-control"
                                                                             placeholder="Doctor Garcia
-                                                                            Guerrero 1192"
+                                                                        Guerrero 1192"
                                                                             id="direc-contac">
                                                                     </div>
                                                                     <div class="col-md-4">
@@ -256,7 +288,7 @@
                                                                             class="form-label">Giro</label>
                                                                         <input type="text" class="form-control"
                                                                             placeholder="Servicios
-                                                                            , Industria, Quimíca"
+                                                                        , Industria, Quimíca"
                                                                             id="giro-cli">
                                                                     </div>
                                                                     <div class="col-md-4">
@@ -281,7 +313,7 @@
                                                                         <select class="form-select" name=""
                                                                             id="vigen-cli">
                                                                             {{-- <option value="1">Seleccione Vigencia
-                                                                            </option> --}}
+                                                                        </option> --}}
                                                                             <option value="2">Vigente</option>
                                                                             <option value="3">No Vigente</option>
                                                                         </select>
@@ -304,126 +336,219 @@
                                                 </div>
                                             </div>
                                         </div>
-
+                                    </div>
                                 </tr>
+                                <!-- TODO ITEM 2 TABLA -->
                                 <tr>
                                     <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0">96.839.120-8</p>
+                                        <p class="text-xs font-weight-bold mb-0">5375</p>
                                     </td>
                                     <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">ALQUIMIA S.A</p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Alquimia S.A</p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Doctor Garcia<br> Guerrero 1192</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">7730000</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">www.aguasalquimia.cl</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">Vigente</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-                                    <td class="text-center">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cliente"><i
-                                                class="fas fa-pen text-xs"></i></a>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm sticky">
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-pen mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-plus mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                    </td>
                                 </tr>
+                                <!-- TODO ITEM 3 TABLA -->
                                 <tr>
                                     <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0">89.121.400-6</p>
+                                        <p class="text-xs font-weight-bold mb-0">5350</p>
                                     </td>
                                     <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">ALUMINIOS EL <br> ROBLE</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Aluminios El Roble</p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">El Roble 0242</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">6216400</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span
-                                            class="text-secondary text-xs font-weight-bold">www.aluminioselroble.cl</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">No Vigente</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-                                    <td class="text-center">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cliente"><i
-                                                class="fas fa-pen text-xs"></i></a>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm sticky">
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-pen mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-plus mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                    </td>
                                 </tr>
+                                <!-- TODO ITEM 4 TABLA -->
                                 <tr>
                                     <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0">96.612.400-8</p>
+                                        <p class="text-xs font-weight-bold mb-0">5349</p>
                                     </td>
                                     <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">ANGUITA COMERCIAL <br> DIPLAS</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Anguita Comercial <br> Diplas</p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Av. Matta #1150</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">5569420</span>
-                                    </td>
-                                    </td>
-                                    <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">www.diplas.cl</span>
-                                    </td>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">Vigente</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-                                    <td class="text-center">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cliente"><i
-                                                class="fas fa-pen text-xs"></i></a>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm sticky">
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-pen mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-plus mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                    </td>
                                 </tr>
+                                <!-- TODO ITEM 5 TABLA -->
                                 <tr>
                                     <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0">78.122.390-5</p>
+                                        <p class="text-xs font-weight-bold mb-0">5336</p>
                                     </td>
                                     <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">ARREQUIP</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Arrequip</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Nataniel Cox <br>1607</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">5552214</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">www.arrequip.cl</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
-                                        <span class="text-secondary text-xs font-weight-bold">No Vigente</span>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-                                    <td class="text-center">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cliente"><i
-                                                class="fas fa-pen text-xs"></i></a>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm sticky">
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-pen mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-plus mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -432,4 +557,3 @@
             </div>
         </div>
     </div>
-@endsection

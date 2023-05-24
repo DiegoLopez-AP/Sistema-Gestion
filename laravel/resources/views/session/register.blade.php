@@ -30,17 +30,17 @@
                                         </div>
                                         <div class="row justify-content-center align-items-center g-2 pt-3">
                                             <div class="col-md-6 ps-2">
-                                                <label for="" class="text-dark">Mail Personal</label>
+                                                <label for="" class="text-dark">Correo Personal</label>
                                                 <input type="email" class=" form-control" id="mail-perso">
                                             </div>
                                             <div class="col-md-6 ps-2">
-                                                <label for="" class="text-dark">Mail G-talent</label>
+                                                <label for="" class="text-dark">Correo G-Talent</label>
                                                 <input type="email" class=" form-control" id="mail-gtalent">
                                             </div>
                                         </div>
                                         <div class="row justify-content-center align-items-center g-2 pt-3">
                                             <div class="col-md-6 ps-2">
-                                                <label for="" class="text-dark">Cod.Trabajador</label>
+                                                <label for="" class="text-dark">Cód. Trabajador</label>
                                                 <input type="number" class=" form-control" id="cod-trabjador">
                                             </div>
                                             <div class="col-md-6 ps-2">
@@ -56,23 +56,24 @@
                                         </div>
                                         <div class="row justify-content-center align-items-center g-2 pt-3">
                                             <div class="col-md-12 ps-2">
-                                                <label for="" class="text-dark">Confirmar Contraseña</label>
+                                                <label for="" class="text-dark">Confirmar contraseña</label>
                                                 <input type="password" class=" form-control" id="confir-contra">
                                             </div>
                                         </div>
                                         <div class="text-center">
-                                          <button type="reset" class="btn bg-gradient-secondary w-50 mt-4 mb-0">Limpiar Todo</button>
-                                        </div>
+                                            <button type="submit" class="btn bg-gradient-info w-50 mt-4 mb-0">Registrarme</button>
+                                          </div>
                                         <div class="text-center">
-                                          <button type="submit" class="btn bg-gradient-info w-50 mt-2 mb-0">Registrarse</button>
+                                          <button type="reset" class="btn bg-gradient-secondary w-50 mt-2 mb-0">Limpiar Todo</button>
                                         </div>
+                                        
                                     </form>
                                 </div>
                                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                     <p class="text-sm mx-auto">
-                                        Ya tienes cuenta?
+                                        ¿Ya tienes cuenta?
                                         <a href="/logout" class=" font-weight-bold" style="color: #0e50d7;">Inicia
-                                            Sesión</a>
+                                            sesión</a>
                                     </p>
                                 </div>
                             </div>

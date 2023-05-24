@@ -86,42 +86,40 @@
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-xl" role="dialog">
                                                 <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Modulo solicitud de
+                                                    <div class="modal-header bg-fondo">
+                                                        <h5 class="modal-title text-white" id="exampleModalLabel">Modulo solicitud de
                                                             vacaciones</h5>
-                                                        <button type="button" class="close" data-bs-dismiss="modal"
-                                                            aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
+                                                            <button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
                                                     </div>
-                                                    <div class="modal-body">
+                                                    <div class="modal-body ">
                                                         <h5 class="m-2"></h5>
-                                                        <form class="form p-0" action="#" method="post">
+                                                        <form class="form p-0 bg-white" action="#" method="post">
                                                             <div class="form-register_body">
                                                                 <div class="paso active" id="paso-1">
                                                                     <div class="paso_header p-3">
-                                                                        <h4 class="paso_title tit-vaca">Control Solicitud
+                                                                        <h4 class="paso_title tit-vaca text-dark">Control Solicitud
                                                                             Vacaciones</h4>
                                                                         <p class="des-vaca">Para empleados con más de un
                                                                             contrato activo, debe repetir operación para
                                                                             todos los contratos del empleado.</p>
                                                                     </div>
-                                                                    <div class="datos p-2">
-                                                                        <h6>ID: </h6>
-                                                                        <h6>RUT: </h6>
-                                                                        <h6>NOMBRE: </h6>
+                                                                    <div class="datos p-2 ">
+                                                                        <h6 class="text-dark font-weight-bolder">ID: </h6>
+                                                                        <h6 class="text-dark font-weight-bolder">RUT: </h6>
+                                                                        <h6 class="text-dark font-weight-bolder">NOMBRE: </h6>
                                                                     </div>
-                                                                    <div class="paso_body">
+                                                                    <div class="paso_body text-start">
 
                                                                         <div class="row p-3">
                                                                             <div class="col-md-6">
-                                                                                <label class="form__label"
+                                                                                <label class="form-label"
                                                                                     for="">Fecha de Ingreso</label>
                                                                                 <input type="date" id="start"
                                                                                     name="trip-start" class="form-control">
                                                                             </div>
                                                                             <div class="col-md-6">
-                                                                                <label class="form__label"
+                                                                                <label class="form-label"
                                                                                     for="">Fecha de
                                                                                     Solicitud</label>
                                                                                 <input type="date" id="start"
@@ -135,24 +133,24 @@
 
                                                                         <div class="row mt-2 p-3">
                                                                             <div class="col-md-4">
-                                                                                <label class="form__label"
+                                                                                <label class="form-label"
                                                                                     for="">Días hábiles ganados
                                                                                     acumulados</label>
-                                                                                <input class="form__input" type="number"
+                                                                                <input class="form-control" type="number"
                                                                                     id="dg-acumulados" name="dg-acumulados">
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <label class="form__label"
+                                                                                <label class="form-label"
                                                                                     for="">(-) Días progresivos
                                                                                     tomados acumulados</label>
-                                                                                <input class="form__input" type="number"
+                                                                                <input class="form-control" type="number"
                                                                                     id="dp-acumulados" name="nombre">
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <label class="form__label"
+                                                                                <label class="form-label"
                                                                                     for="">Días progresivos
                                                                                     disponibles</label>
-                                                                                <input class="form__input" type="number"
+                                                                                <input class="form-control" type="number"
                                                                                     id="dp-dispo" name="dp-dispo">
                                                                             </div>
 

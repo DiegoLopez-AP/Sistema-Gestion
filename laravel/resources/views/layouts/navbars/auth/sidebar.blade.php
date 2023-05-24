@@ -23,17 +23,17 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseComercial" aria-expanded="false" aria-controls="flush-collapseComercial">
-                    <i class="fas fa-business-time me-2"></i> Comercial
+                    <i class="fas fa-business-time me-2"></i> Comercial 
                 </button>
                 </h2>
                 <div id="flush-collapseComercial" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <ul class="menu_sidebar">
-                            <li><a class="active" href="{{ route('indicador-com') }}">Indicadores</a></li>
+                            <li><a class="active" href="{{ route('indicador-com') }}">Indicadores</a></li>           
+                            <li><a href="{{ route('preventa') }}">Preventa</a></li>
                             <li><a href="{{ route('cotizaciones') }}">Cotizaciones</a></li>
                             <li><a href="{{ route('clientes') }}">Clientes</a></li>
                             <li><a href="{{ route('contactos') }}">Contactos</a></li>
-                            <li><a href="{{ route('preventa') }}">Preventa</a></li>
                         </ul>
                     </div>
                 </div>
@@ -67,7 +67,10 @@
                             <li><a href="{{ route('indicador-fin') }}">Indicadores</a></li>
                             <li><a href="{{ route('fechas-pago') }}">Fechas de pago</a></li>
                             <li><a href="{{ route('facturacion') }}">Facturación</a></li>
-                            <li><a href="{{ route('cobranzas') }}">Cobranzas</a></li>
+                            <li><a href="{{ route('proveedores') }}">Proveedores</a></li>
+                            <li><a href="{{ route('flujo-caja') }}">Flujos de caja</a></li>
+                            <li><a href="{{ route('orden-compra-cli') }}">Ordenes de compra Clientes</a></li>
+                            <li><a href="{{ route('orden-compra-int') }}">Ordenes de compra Internas</a></li>
                         </ul>
                     </div>
                 </div>
@@ -75,7 +78,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseRRHH" aria-expanded="false" aria-controls="flush-collapseRRHH">
-                    <i class="fas fa-user-friends me-2"></i> RRHH
+                    <i class="fas fa-user-friends me-2"></i> RRHH 
                 </button>
                 </h2>
                 <div id="flush-collapseRRHH" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -86,6 +89,7 @@
                             <li><a href="{{ route('ap-rech-vaca') }}">Apr.Rech.Vacaciones</a></li>
                             <li><a href="{{ route('curriculum') }}">Curriculum</a></li>
                             <li><a href="{{ route('solicitud-vacaciones') }}">Solicitud de Vacaciones</a></li>
+                            <li><a href="{{ route('evaluacion-desemp') }}">Evaluación de Desempeño</a></li>
                         </ul>
                     </div>
                 </div>
@@ -127,7 +131,7 @@
                             <li><a href="{{ route('permisos') }}">Permisos</a></li>
                             <li><a href="{{ route('indicadores-adm') }}">Indicadores</a></li>
                             <li><a href="{{ route('valores') }}">Valores</a></li>
-                            
+                            <li><a href="{{ route('charts') }}">Graficos</a></li>
                         </ul>
                     </div>
                 </div>
