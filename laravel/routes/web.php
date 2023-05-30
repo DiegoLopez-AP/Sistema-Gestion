@@ -101,7 +101,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
-	// RUTAS COMERCIAL
+	//TODO RUTAS COMERCIAL
 	Route::get('indicador-com', function(){
 		return view('comercial/indicador-com');
 	})->name('indicador-com');
@@ -123,7 +123,7 @@ Route::group(['middleware' => 'auth'], function () {
 	})->name('preventa');
 
 
-	// RUTAS OPERACIONES
+	//TODO RUTAS OPERACIONES
 	Route::get('indicador-op', function(){
 		return view('operaciones/indicador-op');
 	})->name('indicador-op');
@@ -141,7 +141,7 @@ Route::group(['middleware' => 'auth'], function () {
 	})->name('carta-gantt');
 
 
-	// RUTAS FINANZAS
+	//TODO RUTAS FINANZAS
 	Route::get('indicador-fin', function(){
 		return view('finanzas/indicador-fin');
 	})->name('indicador-fin');
@@ -158,8 +158,29 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('finanzas/cobranzas');
 	})->name('cobranzas');
 
+	Route::get('proveedores', function(){
+		return view('finanzas/proveedores');
+	})->name('proveedores');
 
-	// RUTAS  RRHH
+	Route::get('flujo-caja', function(){
+		return view('finanzas/flujo-caja');
+	})->name('flujo-caja');
+	
+	Route::get('flujo-caja', function(){
+		return view('finanzas/flujo-caja');
+	})->name('flujo-caja');
+
+	Route::get('orden-compra-cli', function(){
+		return view('finanzas/orden-compra-cli');
+	})->name('orden-compra-cli');
+
+	Route::get('orden-compra-int', function(){
+		return view('finanzas/orden-compra-int');
+	})->name('orden-compra-int');
+
+
+
+	//TODO RUTAS  RRHH
 	Route::get('indicador-rrhh', function(){
 		return view('rrhh/indicador-rrhh');
 	})->name('indicador-rrhh');
@@ -183,11 +204,14 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('solicitud-vacaciones', function(){
 		return view('rrhh/solicitud-vacaciones');
 	})->name('solicitud-vacaciones');
+	
+	Route::get('evaluacion-desemp', function(){
+		return view('rrhh/evaluacion-desemp');
+	})->name('evaluacion-desemp');
 
 
 
-
-	// RUTAS INFORMES
+	//TODO RUTAS INFORMES
 	Route::get('indicador-inf', function(){
 		return view('informes/indicador-inf');
 	})->name('indicador-inf');
@@ -201,7 +225,7 @@ Route::group(['middleware' => 'auth'], function () {
 	})->name('capacites');
 
 
-	// RUTAS ADMINISTRACIÓN
+	//TODO RUTAS ADMINISTRACIÓN
 	Route::get('usuarios', function(){
 		return view('administracion/usuarios');
 	})->name('usuarios');
@@ -217,6 +241,10 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('valores', function(){
 		return view('administracion/valores');
 	})->name('valores');
+
+	Route::get('charts', function(){
+		return view('administracion/charts');
+	})->name('charts');
 
 	
 

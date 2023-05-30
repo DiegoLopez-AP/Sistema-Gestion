@@ -10,8 +10,8 @@
                             <div class="card card-plain mt-0 bg-white py-2">
                                 <div class="card-header pb-0 text-center bg-transparent mt-4">
                                     <img src="../assets/img/logo-white.png" alt="">
-                                    <h4 class="font-weight-bolder text-info text-gradient pt-4 mt-2 ">Olvidaste tu contraseña? <h6
-                                            class="text-secondary">
+                                    <h4 class="font-weight-bolder text-info text-gradient pt-4 mt-2 ">¿Olvidaste tu
+                                        contraseña? <h6 class="text-secondary">
                                             Introduzca su correo aquí</h6>
                                     </h4>
                                 </div>
@@ -24,25 +24,21 @@
                                             </div>
                                         </div>
                                         <div class="text-center pt-4 mt-0 ">
-                                            <a href="{{ url('logout') }}"
-                                                class="btn bg-gradient-secondary btn-sm mt-3 w-60 {{ Request::is('logout') ?: '' }}"
-                                                type="button">Volver al Inicio
-                                            </a>
-                                            <a href=""
-                                                class="btn bg-gradient-info btn-sm mt-2 w-60  "
-                                                type="button">Recuperar contraseña
-                                            </a>
-                                        </div>
-                                        <div class="text-center">
-                                            
+                                            <button type="submit" class="btn bg-gradient-info w-60 mt-2 mb-0">Recuperar
+                                                Contraseña</button>
                                         </div>
                                     </form>
+                                </div>
+                                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                                    <small class="text-muted">
+                                        <a href="/logout" class=" font-weight-bold"
+                                            style="color: #0e50d7;">Volver al Inicio</a>
+                                    </small>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
 @endsection

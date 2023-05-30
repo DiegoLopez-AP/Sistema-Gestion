@@ -95,15 +95,15 @@
                                             aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
                                             <div class="modal-dialog modal-xl">
                                                 <div class="modal-content ">
-                                                    <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Curriculum</h1>
+                                                    <div class="modal-header bg-fondo">
+                                                        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Curriculum</h1>
                                                         <button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body modal-curriculum">
                                                         <div class="container">
 
-                                                            <form class="form" action="#" method="post">
+                                                            <form class="form bg-white" action="#" method="post">
 
 
                                                                 <div class="form-register_body">
@@ -112,56 +112,53 @@
                                                                             <h4 class="paso_title curriculum">Información
                                                                                 personal</h4>
                                                                         </div>
-                                                                        <div class="paso_body">
-                                                                            <div class="step active" id="paso-1">
-
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                        <div class="paso_body text-start">
+                                                                            <div class="row ">
+                                                                                <div class="col-md-3 ">
+                                                                                    <label class="form-label"
                                                                                         for="">Nombre</label>
-                                                                                    <input class="form__input"
+                                                                                    <input class="form-control"
                                                                                         type="text" id="nombre"
                                                                                         name="nombre">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Ap. Paterno</label>
-                                                                                    <input class="form__input"
+                                                                                    <input class="form-control"
                                                                                         type="text" id="ap-paterno"
                                                                                         name="ap-materno">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Ap. Materno</label>
-                                                                                    <input class="form__input"
+                                                                                    <input class="form-control"
                                                                                         type="text" id="ap-materno"
                                                                                         name="ap-materno">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Rut</label>
-                                                                                    <input class="form__input"
+                                                                                    <input class="form-control"
                                                                                         type="text" id="rut"
                                                                                         name="rut">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Fecha de Nacimiento</label>
                                                                                             <input type="date" id="start"
                                                                                             name="trip-start" class="form-control">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Dirección</label>
-                                                                                    <input class="form__input"
+                                                                                    <input class="form-control"
                                                                                         type="text" id="nombre"
                                                                                         name="nombre">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Comuna</label>
                                                                                     <select class="form-select"
                                                                                         name="vigencia" id="vigencia">
@@ -174,16 +171,16 @@
                                                                                     </select>
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Ciudad</label>
-                                                                                    <input class="form__input"
+                                                                                    <input class="form-control"
                                                                                         type="text" id="rut"
                                                                                         name="rut">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Fono
                                                                                         Particular</label>
                                                                                     <input size="16" type="number"
@@ -191,38 +188,38 @@
                                                                                         id="fono-parti">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Celular</label>
-                                                                                    <input class="form__input"
+                                                                                    <input class="form-control"
                                                                                         type="number" id="celular"
                                                                                         name="celular">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Estado Civil</label>
-                                                                                    <input class="form__input"
+                                                                                    <input class="form-control"
                                                                                         type="text" id="e-civil"
                                                                                         name="e-civil">
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Nacionalidad</label>
-                                                                                    <input class="form__input"
+                                                                                    <input class="form-control"
                                                                                         type="text" id="nacionalidad"
                                                                                         name="nacionalidad">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-5">
-                                                                                    <label class="form__label"
+                                                                                    <label class="form-label"
                                                                                         for="">Mail</label>
-                                                                                    <input class="form__input"
+                                                                                    <input class="form-control"
                                                                                         type="text" id="mail"
                                                                                         name="mail">
                                                                                 </div>
                                                                                 <div class="col-md-7">
                                                                                     <label for="formFile"
-                                                                                        class="form__label text-left">Foto</label>
+                                                                                        class="form-label text-left">Foto</label>
                                                                                     <input class="form-control"
                                                                                         type="file" id="foto-eme">
                                                                                 </div>
@@ -275,7 +272,6 @@
                                                                         <div class="paso_body">
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-12">
-
                                                                                     <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
                                                                                         placeholder="Escriba sus datos..."></textarea>
                                                                                 </div>

@@ -36,14 +36,14 @@
                     </div>
                   </form>
                 </div>
-                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                <div class="card-footer text-center pt-0 px-lg-2 px-1 ">
                 <small class="text-muted">
                   <a href="/login/forgot-password" class=" font-weight-bold" style="color: #0e50d7;" >¿Olvidaste tu contraseña?</a>
                 </small>
-                  <p class="mb-4 text-sm mx-auto">
-                    No tienes cuenta?
+                  {{-- <p class="mb-4 text-sm mx-auto">
+                    ¿No tienes cuenta?
                     <a href="/register" class=" font-weight-bold" style="color: #0e50d7;">Registrate</a>
-                  </p>
+                  </p> --}}
                 </div>
               </div>
             </div>
