@@ -3,29 +3,43 @@
 @section('content')
     <h5>Operaciones/Indicadores</h5>
     <div class="row mt-4">
+        {{-- Graico costos generales --}}
         <div class="col-lg-5 mb-lg-0 mb-4">
             <div class="card z-index-2">
                 <div class="card-header pb-1 bg-fondo p-2">
                     {{-- <h6 class="text-dark p-2 pt-3">Grafico de Ventas</h6> --}}
                     <i class="fas fa-dollar-sign fa-sm text-success"></i>
-                    <span class="text-white">Costos Generales</span>
+                    <span class="text-white fw-bold">Costos Generales</span>
                     <span class="text-sm float-end">
                         <i class="fa fa-arrow-up text-success"></i>
                         <span class="font-weight-bold ">4% más</span> en 2023
                     </span>
                 </div>
                 <div class="card-body p-3">
+                    {{-- <div class="descripcion d-flex py-2">
+                        <i class="fas fa-check p-1"></i>
+                        <span class="text-dark">En curso</span>
+                    </div> --}}
                     <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
                         <div class="chart">
                             <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
                         </div>
                     </div>
-                    <h6 class="ms-2 mt-2 mb-0 text-dark"> Usuarios activos </h6>
-                    <p class="text-sm ms-2"> <span class="font-weight-bolder text-success me-1 ">(+23%)</span>Esta semana
-                    </p>
-                    <div class="container border-radius-lg w-100 bg-fondo text-white">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        {{-- Grafico resumen de costos --}}
+        <div class="col-lg-7">
+            <div class="card z-index-2">
+                <div class="card-header p-2 ps-3 pb-0 bg-fondo">
+                    <h6 class="fw-bold">Resumen de Costos</h6>
+                </div>
+                <div class="card-body">
+                    <div class="container border-radius-lg w-100 ">
                         <div class="row">
-                            <div class="col-3 py-3 ps-0">
+                            <div class="col-4 py-3 ps-0">
                                 <div class="d-flex mb-2">
                                     <div
                                         class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-primary text-center me-2 d-flex align-items-center justify-content-center">
@@ -49,15 +63,15 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <p class="text-xs mt-1 mb-0 font-weight-bold">Usuarios</p>
+                                    <p class="text-xs mt-1 mb-0 font-weight-bold">Q Proyecto</p>
                                 </div>
-                                <h4 class="font-weight-bolder precio">36K</h4>
+                                <h4 class="font-weight-bolder">56%</h4>
                                 <div class="progress w-75">
-                                    <div class="progress-bar bg-success w-60" role="progressbar" aria-valuenow="60"
+                                    <div class="progress-bar bg-gradient-primary w-60" role="progressbar" aria-valuenow="60"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="col-3 py-3 ps-0">
+                            <div class="col-4 py-3 ps-0">
                                 <div class="d-flex mb-2">
                                     <div
                                         class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-info text-center me-2 d-flex align-items-center justify-content-center">
@@ -87,15 +101,15 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <p class="text-xs mt-1 mb-0 font-weight-bold">Proyectos</p>
+                                    <p class="text-xs mt-1 mb-0 font-weight-bold">Q Clientes</p>
                                 </div>
-                                <h4 class="font-weight-bolder precio">2m</h4>
+                                <h4 class="font-weight-bolder">89,4%</h4>
                                 <div class="progress w-75">
-                                    <div class="progress-bar bg-success w-90" role="progressbar" aria-valuenow="90"
+                                    <div class="progress-bar bg-gradient-primary w-90" role="progressbar" aria-valuenow="90"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="col-3 py-3 ps-0">
+                            <div class="col-4 py-3 ps-0">
                                 <div class="d-flex mb-2">
                                     <div
                                         class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-warning text-center me-2 d-flex align-items-center justify-content-center">
@@ -119,15 +133,17 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <p class="text-xs mt-1 mb-0 font-weight-bold">Ventas</p>
+                                    <p class="text-xs mt-1 mb-0 font-weight-bold">Q Tareas semanales</p>
                                 </div>
-                                <h4 class="font-weight-bolder precio">435$</h4>
+                                <h4 class="font-weight-bolder">28,5%</h4>
                                 <div class="progress w-75">
-                                    <div class="progress-bar bg-success w-30" role="progressbar" aria-valuenow="30"
+                                    <div class="progress-bar bg-gradient-primary w-30" role="progressbar" aria-valuenow="30"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="col-3 py-3 ps-0">
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-3 ps-0">
                                 <div class="d-flex mb-2">
                                     <div
                                         class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-danger text-center me-2 d-flex align-items-center justify-content-center">
@@ -154,22 +170,81 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <p class="text-xs mt-1 mb-0 font-weight-bold">Equipos</p>
+                                    <p class="text-xs mt-1 mb-0 font-weight-bold">% HH Planificado semana</p>
                                 </div>
-                                <h4 class="font-weight-bolder precio">43</h4>
+                                <h4 class="font-weight-bolder">48%</h4>
                                 <div class="progress w-75">
-                                    <div class="progress-bar bg-success w-50" role="progressbar" aria-valuenow="50"
+                                    <div class="progress-bar bg-gradient-primary  w-50" role="progressbar" aria-valuenow="50"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
+                            <div class="col-6 py-3 ps-0">                               
+                                    <div class="d-flex mb-2">
+                                        <div
+                                            class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-danger text-center me-2 d-flex align-items-center justify-content-center">
+                                            <svg width="10px" height="10px" viewBox="0 0 40 40" version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <title>settings</title>
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF"
+                                                        fill-rule="nonzero">
+                                                        <g transform="translate(1716.000000, 291.000000)">
+                                                            <g transform="translate(304.000000, 151.000000)">
+                                                                <polygon class="color-background" opacity="0.596981957"
+                                                                    points="18.0883333 15.7316667 11.1783333 8.82166667 13.3333333 6.66666667 6.66666667 0 0 6.66666667 6.66666667 13.3333333 8.82166667 11.1783333 15.315 17.6716667">
+                                                                </polygon>
+                                                                <path class="color-background"
+                                                                    d="M31.5666667,23.2333333 C31.0516667,23.2933333 30.53,23.3333333 30,23.3333333 C29.4916667,23.3333333 28.9866667,23.3033333 28.48,23.245 L22.4116667,30.7433333 L29.9416667,38.2733333 C32.2433333,40.575 35.9733333,40.575 38.275,38.2733333 L38.275,38.2733333 C40.5766667,35.9716667 40.5766667,32.2416667 38.275,29.94 L31.5666667,23.2333333 Z"
+                                                                    opacity="0.596981957"></path>
+                                                                <path class="color-background"
+                                                                    d="M33.785,11.285 L28.715,6.215 L34.0616667,0.868333333 C32.82,0.315 31.4483333,0 30,0 C24.4766667,0 20,4.47666667 20,10 C20,10.99 20.1483333,11.9433333 20.4166667,12.8466667 L2.435,27.3966667 C0.95,28.7083333 0.0633333333,30.595 0.00333333333,32.5733333 C-0.0583333333,34.5533333 0.71,36.4916667 2.11,37.89 C3.47,39.2516667 5.27833333,40 7.20166667,40 C9.26666667,40 11.2366667,39.1133333 12.6033333,37.565 L27.1533333,19.5833333 C28.0566667,19.8516667 29.01,20 30,20 C35.5233333,20 40,15.5233333 40,10 C40,8.55166667 39.685,7.18 39.1316667,5.93666667 L33.785,11.285 Z">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <p class="text-xs mt-1 mb-0 font-weight-bold">% HH semana +1</p>
+                                    </div>
+                                    <h4 class="font-weight-bolder">68,3%</h4>
+                                    <div class="progress w-75">
+                                        <div class="progress-bar bg-gradient-primary w-70" role="progressbar" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
+        {{-- grafico horas planificadas --}}
+        <div class="col-lg-12 pt-4">
+            <div class="card z-index-2">
+                <div class="card-header pb-1 bg-fondo p-2">
+                    {{-- <h6 class="text-dark p-2 pt-3">Grafico de Ventas</h6> --}}
+                    <span class="text-white fw-bold">Horas planificadas</span>
+                    <span class="text-sm float-end">
+                        <i class="fa fa-arrow-up text-success"></i>
+                        <span class="font-weight-bold ">4% más</span> en 2023
+                    </span>
+                </div>
+                <div class="card-body  p-3">
+                    <div class="chart bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
+                        <canvas id="chart-line" class="chart-canvas" height="380"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
-@endsection
+
+@endsection 
+{{-- graficos --}}
 <script>
+   
     window.onload = function() {
         var ctx = document.getElementById("chart-bars").getContext("2d");
 
@@ -178,15 +253,33 @@
             data: {
                 labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
                 datasets: [{
-                    label: "Sales",
-                    tension: 0.4,
-                    borderWidth: 0,
-                    borderRadius: 4,
-                    borderSkipped: false,
-                    backgroundColor: "#fff",
-                    data: [450, 200, 100, 220, 500, 100, 400, 230, 500],
-                    maxBarThickness: 6
-                }, ],
+                        label: "Ventas realizadas",
+                        tension: 0.4,
+                        borderWidth: 0,
+                        pointBackgroundColor: "#3A416F",
+                        borderColor: "#3A416F",
+                        backgroundColor: '#3A416F',
+                        borderRadius: 4,
+                        borderSkipped: false,
+                        backgroundColor: "#fff",
+                        data: [27, 56, 32, 72, 45, 60, 2, 78, 95],
+                        maxBarThickness: 6,
+                    },
+
+                    {
+                        type: "line",
+                        label: "Ventas esperadas",
+                        tension: 0.4,
+                        borderWidth: 0,
+                        pointRadius: 0,
+                        pointBackgroundColor: "#e3316e",
+                        borderColor: "#e3316e",
+                        borderWidth: 3,
+                        backgroundColor: 'transparent',
+                        data: [38, 38, 38, 38, 38, 38, 38, 38, 38],
+                        fill: true,
+                    }
+                ],
             },
             options: {
                 responsive: true,
@@ -205,7 +298,7 @@
                         grid: {
                             drawBorder: false,
                             display: false,
-                            drawOnChartArea: false,
+                            drawOnChartArea: true,
                             drawTicks: false,
                         },
                         ticks: {
@@ -230,14 +323,24 @@
                             drawTicks: false
                         },
                         ticks: {
-                            display: false
-                        },
+                            display: true,
+                            color: '#b2b9bf',
+                            padding: 10,
+                            font: {
+                                size: 11,
+                                family: "Open Sans",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
+                        }
                     },
                 },
             },
         });
 
+        // fin grafico costos generales
 
+        // grafico horas planificados
         var ctx2 = document.getElementById("chart-line").getContext("2d");
 
         var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
@@ -257,7 +360,7 @@
             data: {
                 labels: ["Abri", "Mayo", "Jun", "Jul", "Agos", "Sept", "Oct", "Nov", "Dic"],
                 datasets: [{
-                        label: "Aplicaciones Moviles",
+                        label: "% Real",
                         tension: 0.4,
                         borderWidth: 0,
                         pointRadius: 0,
@@ -270,7 +373,7 @@
 
                     },
                     {
-                        label: "Sitios web",
+                        label: "% Planificado",
                         tension: 0.4,
                         borderWidth: 0,
                         pointRadius: 0,
@@ -342,6 +445,7 @@
     }
 </script>
 
+{{-- grafico resumen de costos --}}
 <script type="text/javascript">
     // Line chart
     var ctx1 = document.getElementById("line-chart").getContext("2d");
