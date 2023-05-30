@@ -588,17 +588,6 @@ select {
     background-color: #003366;
 }
 
-.min-vh_p{
-    min-height: 89.3vh !important;
-}
-
-@media (min-width: 1400px){
-    .min-vh_p{
-        min-height: 92.8vh !important;
-    }
-}
-
-
 .min-vh_p {
     min-height: 88.7vh !important;
 }
