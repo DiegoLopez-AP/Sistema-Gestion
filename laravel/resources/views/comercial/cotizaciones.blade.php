@@ -576,7 +576,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header bg-fondo">
-                        <h5 class="modal-title  text-white" id="exampleModalLabel">Enviar preventa</h5>
+                        <h5 class="modal-title  text-white" id="exampleModalLabel">Enviar cotización</h5>
                         <button type="button" class="btn-close text-dark" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>

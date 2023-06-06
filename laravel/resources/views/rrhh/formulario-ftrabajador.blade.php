@@ -287,7 +287,7 @@
             // ...
 
             // Opcional: redireccionar a una página de confirmación
-            window.location.href = "confirmacion.html";
+            // window.location.href = "confirmacion.html";
         });
     </script>
 @endsection

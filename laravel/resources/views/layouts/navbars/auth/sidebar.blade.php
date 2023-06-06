@@ -16,7 +16,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button" type="button">
-                        <i class="fas fa-tachometer-alt me-2"></i> <a href="{{ route('dashboard') }}"> Dashboard</a>
+                        <i class="fas fa-tachometer-alt me-2 text-white"></i> <a href="{{ route('dashboard') }}"> Dashboard</a>
                     </button>
                 </h2>
             </div>

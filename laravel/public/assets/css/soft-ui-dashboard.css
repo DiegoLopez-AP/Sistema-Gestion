@@ -724,10 +724,10 @@ select {
     display: block;
 }
 
+
 /* KANBAN */
 * {
-    padding: 0;
-    margin: 0;
+   
     box-sizing: border-box;
     font-family: sans-serif;
   
@@ -744,48 +744,40 @@ select {
     height: 100vh;
     overflow: scroll;
   
-    background-image: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    /* background-image: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80); */
     background-position: center;
     background-size: cover;
   }
   
   /* ---- FORM ---- */
-  #todo-form {
+   /* #todo-form {
     padding: 32px 32px 0;
-  }
+  } */
   
-  #todo-form input {
-    padding: 12px;
+   #todo-form input {
+    padding:8px;
     margin-right: 12px;
     width: 225px;
-  
     border-radius: 4px;
-    border: none;
-  
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-    background: white;
-  
+    border: #f2f2f2 1px solid;
+    background: #f2f2f2;
     font-size: 14px;
     outline: none;
-  }
+  } 
   
   #todo-form button {
-    padding: 12px 32px;
-  
+    padding: 8px 32px;
     border-radius: 4px;
     border: none;
-  
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-    background: #ffffff;
-    color: black;
-  
+    color: white;
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
-  }
+    background-image: linear-gradient(310deg,#0e50d7,#0e50d7);;
+  } 
   
   /* ---- BOARD ---- */
-  .lanes {
+  /* .lanes {
     display: flex;
     align-items: flex-start;
     justify-content: start;
@@ -796,27 +788,27 @@ select {
     overflow: scroll;
     height: 100%;
   }
-  
+   */
   .heading {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 8px;
+    padding: 0;
   }
   
-  .swim-lane {
+
+  .swim-lane{
     display: flex;
     flex-direction: column;
-    gap: 12px;
-  
     background: #f4f4f4;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-  
+    gap: 12px;
     padding: 12px;
-    border-radius: 4px;
     width: 225px;
     min-height: 120px;
-  
-    flex-shrink: 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin: 10px;
+    
   }
   
   .task {
@@ -837,6 +829,29 @@ select {
     background: rgb(50, 50, 50);
     color: white;
   }
+  
+
+  /* colores head status */
+
+  .por-ini{
+        background-color: rgb(196, 196, 196);
+        color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+  }
+
+  .en-cur{
+        background-color: rgb(253, 171, 61);
+        color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+  }
+
+
+
+
+
+
 
 /* indicadores operaciones */
 
@@ -846,140 +861,12 @@ select {
     font-size: .75rem;
     height: 3px;
 }
-/* KANBAN */
-body {
-    background-color: black;
-  }
-  
-  .container {
-    width: 70%;
-    min-width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .kanban-heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: sans-serif;
-  }
-  
-  .kanban-board {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: sans-serif;
-  }
-  
-  .kanban-heading-text {
-    font-size: 1.8rem;
-    background-color: tomato;
-    padding: 0.8rem 1.7rem;
-    border-radius: 0.5rem;
-    margin: 1rem;
-  }
-  
-  .kanban-block,
-  .create-new-task-block {
-    padding: 0.6rem;
-    width: 30.5%;
-    min-width: 14rem;
-    min-height: 4.5rem;
-    border-radius: 0.3rem;
-  }
-  
-  #todo {
-    background-color: #fec6d1;
-  }
-  
-  #inprogress {
-    background-color: #ffaf00;
-    /* display: none; */
-  }
-  
-  #done {
-    background-color: #018b01;
-    /* display: none; */
-  }
-  
-  .task {
-    background-color: white;
-    margin: 0.2rem 0rem 0.3rem 0rem;
-    border: 0.1rem solid black;
-    border-radius: 0.2rem;
-    padding: 0.5rem 0.2rem 0.5rem 2rem;
-  }
-  
-  #task-button {
-    margin: 0.2rem 0rem 0.1rem 0rem;
-    background-color: white;
-    border-radius: 0.2rem;
-    width: 100%;
-    border: 0.25rem solid black;
-    padding: 0.5rem 2.7rem;
-    border-radius: 0.3rem;
-    font-size: 1rem;
-  }
-  
-  .create-new-task-block {
-    display: none;
-    /* display: flex; */
-    background: #ffaf00;
-    width: 64.4%;
-    flex-direction: column;
-  }
-  
-  .form-row {
-    display: flex;
-    flex-direction: row;
-    margin: 0.2rem;
-  }
-  
-  .form-row-label {
-    width: 15%;
-    padding: 0.2rem;
-    padding-right: 0.5rem;
-    border: 0.1rem solid black;
-    border-right: 0;
-    border-radius: 0.2rem 0rem 0rem 0.2rem;
-  }
-  
-  .form-row-input {
-    border: 0.1rem solid black;
-    border-radius: 0rem 0.2rem 0.2rem 0rem;
-    width: 85%;
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  .form-row-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0.2rem;
-  }
-  
-  #edit-button,
-  #save-button,
-  #cancel-button {
-    margin: 0.2rem 0rem 0.1rem 0rem;
-    background-color: white;
-    border-radius: 0.2rem;
-    width: 49.2%;
-    border: 0.25rem solid black;
-    padding: 0.5rem 2.7rem;
-    border-radius: 0.3rem;
-    font-size: 1rem;
-  }
-  
-  #edit-button {
-    display: none;
-  }
 
-  
-/* SEGUNDO TABLERO */
+.p-iniciar{
+    /* border-top: red 4px solid; */
+    background-color: red;
+}
 
+.proyecto{
+    border-radius: 10px;
+}
