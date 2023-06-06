@@ -648,7 +648,7 @@ select {
 
 /* TODO ESTILOS TABLA COTIZACION */
 
-.table-responsive{
+/* .table-responsive{
     max-width: 100%;
     overflow-x: scroll;
 }
@@ -685,7 +685,9 @@ select {
         color: #fff;
         font-weight: bold;
         background-color: #003366;
-    }
+    } */
+
+    
 
 
 
@@ -870,3 +872,18 @@ select {
 .proyecto{
     border-radius: 10px;
 }
+
+/* Modal cotizacion (preventa) */
+.accordion-button:after {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    content: "";
+    flex-shrink: 0;
+    height: 1rem;
+    margin-left: auto;
+    transition: transform .2s ease-in-out;
+    width: 1rem;
+    color: #000 !important;
+}
+

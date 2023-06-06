@@ -2,7 +2,6 @@
 <nav class="navbar  px-0 py-2 shadow-none colornav" id="navbarBlur" style="height: 80px;">
     <div class="container-fluid">
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4 d-flex justify-content-end" id="navbar">
-            
             <div class="nav-item d-flex position-absolute start-1">
                 <div class="UF mx-2">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold text-white">UF</p>
