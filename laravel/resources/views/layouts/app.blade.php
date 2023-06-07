@@ -14,17 +14,11 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
 <!DOCTYPE html>
-
-@if (\Request::is('rtl'))
-    <html dir="rtl" lang="ar">
-@else
-    <html lang="en">
-@endif
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     @if (env('IS_DEMO'))
         <x-demo-metas></x-demo-metas>
     @endif
@@ -44,13 +38,10 @@
     <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
-
-
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
-
 <body
-    class="g-sidenav-show bg-gray-100 {{ \Request::is('rtl') ? 'rtl' : (Request::is('virtual-reality') ? 'virtual-reality' : '') }} ">
+    class="g-sidenav-show">
     @auth
         @yield('auth')
     @endauth
@@ -71,9 +62,7 @@
     <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/fullcalendar.min.js"></script>
     <script src="../assets/js/plugins/chartjs.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"></script>
-    
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"></script>  
 
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -95,15 +84,12 @@
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
 
-
     <script>
         $(function() {
             $("#datepicker").datepicker({
                 dateFormat: "dd-mm-yy"
             });
         });
-    </script>
-    
+    </script>    
 </body>
-
 </html>

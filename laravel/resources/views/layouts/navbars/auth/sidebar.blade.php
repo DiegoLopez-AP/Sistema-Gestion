@@ -4,8 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<aside class="sidebar close bg-fondo ">
-
+<aside class="sidebar close bg-fondo">
     <div class="logo-details px-3 pt-2">
         <img src="../assets/img/iso_logo.png" alt="">
         <img class="logo_name" src="../assets/img/texto_logo.png" alt="">
