@@ -1101,7 +1101,7 @@ select {
 .main-content{
   position: relative;
   background: #E4E9F7;
-  height: 100vh;
+  height: 100%;
   left: 230px;
   width: calc(100% - 230px);
   transition: all 0.5s ease;
