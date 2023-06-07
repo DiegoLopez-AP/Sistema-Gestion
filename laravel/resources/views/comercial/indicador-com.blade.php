@@ -1,7 +1,8 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-<h5>Comercial/Indicadores</h5>
+<h5>Comercial <i class="fas fa-caret-right"></i> Indicadores</h5>
+<div class="line_title"></div>
 <main class="ct-docs-content-col" role="main">
     <div class="ct-docs-page-title">
         <div class="card mb-3">

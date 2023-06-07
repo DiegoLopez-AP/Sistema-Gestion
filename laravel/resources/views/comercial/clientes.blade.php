@@ -1,10 +1,11 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h5 class="m-2">Comercial/Clientes</h5>
-    <div class="row">
-        <div class="col-12">
-            <div class="card mb-2 mx-2 cartacolor p-5 py-4">
+    <h5>Comercial <i class="fas fa-caret-right"></i> Clientes</h5>
+    <div class="line_title"></div>
+    <main class="ct-docs-content-col" role="main">
+        <div class="ct-docs-page-title">
+            <div class="card mb-2 cartacolor p-4">
                 <div class="card-header mb-1">
                     <div class="d-flex flex-row p-2 ps-0">
 
@@ -431,5 +432,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 @endsection
