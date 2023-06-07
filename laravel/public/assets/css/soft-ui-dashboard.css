@@ -1194,3 +1194,9 @@ select {
   left: 60%;
 }
 
+.line_title {
+  width: 120px;
+  height: 5px;
+  background: #0e50d7;
+  margin-bottom: 20px;
+}

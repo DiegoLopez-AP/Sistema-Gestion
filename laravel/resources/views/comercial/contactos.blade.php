@@ -1,14 +1,14 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h5 class="m-2">Comercial/Contactos</h5>
-    <div class="row">
-        <div class="col-12">
-            <div class="card mb-4 mx-1 cartacolor p-5 py-4">
+    <h5>Comercial <i class="fas fa-caret-right"></i> Contactos</h5>
+    <div class="line_title"></div>
+    <main class="ct-docs-content-col" role="main">
+        <div class="ct-docs-page-title">
+            <div class="card mb-2 cartacolor p-4">
                 <div class="card-header py-3">
 
-                    <div class="d-flex flex-row ">
-
+                    <div class="d-flex flex-row">
                         <select id="cliente" class="form-select p-1 me-2" aria-label="Seleccione Contacto">
                             <option selected>Seleccione Cliente</option>
                             <option value="cliente1">Cliente 1</option>
@@ -16,12 +16,10 @@
                             <option value="cliente3">Cliente 3</option>
                             <option value="cliente4">Cliente 4</option>
                         </select>
-
                         <a href="#" class="btn bg-gradient-primary btn-sm mb-0 px-4 py-2" type="button">Excel</a>
-
                         <button class="btn bg-gradient-primary btn-sm mb-0 px-4 py-2 ms-2" type="button"
                             data-bs-toggle="modal" data-bs-target="#modal-agregar">Agregar Contacto</button>
-{{-- TODO MODAL AGREGAR CONTACTO ------------------------------------------------------------------------------------}}
+                        <!-- TODO MODAL AGREGAR CONTACTO -->
                         <div class="modal fade" id="modal-agregar" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-lg ">
@@ -94,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-{{-- TODO INICIO TABLA CONTACTOS ---------------------------------------------------------------------------------------------}}
+                <!-- TODO INICIO TABLA CONTACTOS --->
                 <div class="card-body px-0 pt-0 pb-2">
                     <div class="table-responsive p-0">
                         <table class="table align-items-center table-striped table-hover mb-0">
@@ -160,8 +158,8 @@
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#modal-editar"><i
                                                 class="fas fa-pen text-xs"></i></a>
                                     </td>
-{{-- TODO MODAL EDITAR CONTACTO -----------------------------------------------------------------------------------------------------}}
-                                    <div class="modal fade" id="modal-editar" tabindex="-1"
+                                    <!-- TODO MODAL EDITAR CONTACTO -->
+                                        <div class="modal fade" id="modal-editar" tabindex="-1"
                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content">
@@ -362,5 +360,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 @endsection
