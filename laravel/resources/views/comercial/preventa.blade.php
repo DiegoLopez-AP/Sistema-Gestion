@@ -4,120 +4,22 @@
     <h5>Comercial/Preventa</h5>
     <div class="row">
         <div class="col-12">
-            <div class="card mb-2 mx-2 cartacolor p-4 py-4">
-                <div class="card-header">
+            <div class="card mb-2 mx-2 p-4 py-4">
+                {{-- TODO INICIO TABLA CLIENTE ------------------------------------------------------------------------------------------ --}}
+                <div class="card-body px-0 pt-0 pb-2">
                     {{-- TODO FILTROS --}}
                     <div class="d-flex flex-row p-2 ps-0">
-                        {{-- <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
+                        <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
                         <span class="py-1 px-2 my-2">
                             <i class="fas fa-search"></i>
                         </span>
                         <div class="icono agregar px-2 my-2 pt-1">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#agregar-cliente"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#nueva-preventa"><i
                                     class="fas fa-plus"></i></a>
-                        </div> --}}
-                        {{-- TODO MODAL AGREAGAR CLIENTE ------------------------------------------------------------------------------------------- --}}
-                        <div class="modal fade" id="agregar-cliente" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-lg ">
-                                <div class="modal-content">
-                                    <div class="modal-header bg-fondo">
-                                        <h5 class="modal-title  text-white" id="exampleModalLabel">Agregar Cliente</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body modal-color">
-                                        <div class="card">
-                                            <div class="card-body py-0">
-                                                <form class="formulario mt-3 ">
-                                                    <div class="row mb-3">
-                                                        <div class="col-md-4 ">
-                                                            <label for="" class="form-label">Rut</label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Ingrese Rut" id="rut-cli">
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label for="" class="form-label">Indicador</label>
-                                                            <select class="form-select" name="" id="indica-cli">
-                                                                <option value="1">Seleccione Indicador</option>
-                                                                <option value="2">U.F</option>
-                                                                <option value="3">Dolar</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label for="" class="form-label">Dias de pago</label>
-                                                            <input class="form-control" placeholder="Ingrese Día de pago"
-                                                                id="diapago-cli" type="number">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <div class="col-md-6">
-                                                            <label for="" class="form-label">Nombre Fantasia</label>
-                                                            <input class="form-control"
-                                                                placeholder="Ingrese Nombre fantasia" type="text"
-                                                                id="nomfanta-cli">
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <label for="" class="form-label">Razón Social</label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Ingrese Razón social" id="razonsoci-cli">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <div class="col-md-4">
-                                                            <label for="" class="form-label">Dirección</label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Ingrese Dirección" id="direc-contac">
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label for="" class="form-label">Giro</label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Ingrese Giro" id="giro-cli">
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label for="" class="form-label">Telefono</label>
-                                                            <input type="number" class="form-control"
-                                                                placeholder="Ingrese Telefono" id="telefono-cli">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row mb-3">
-                                                        <div class="col-md-6">
-                                                            <label for="" class="form-label">Pag. Web</label>
-                                                            <input type="url" class="form-control"
-                                                                placeholder="Ingrese Pagina web" id="pagweb-cli">
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <label for="" class="form-label">Vigencia</label>
-                                                            <select class="form-select" name="" id="vigen-cli">
-                                                                <option value="1">Seleccione Vigencia</option>
-                                                                <option value="2">Vigente</option>
-                                                                <option value="3">No Vigente</option>
-                                                            </select>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="limpiar text-end mt-4">
-                                                        <button type="reset" class="btn btn-danger">Limpiar</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn bg-gradient-secondary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn bg-gradient-primary">Guardar Cambios</button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
-                    {{-- TODO INICIO TABLA CLIENTE ------------------------------------------------------------------------------------------ --}}
-                </div>
-                <div class="card-body px-0 pt-0 pb-2">
-                    <div class="table-responsive ">
+                    <div class="table-responsive">
                         <table class="table align-items-center table-striped table-hover mb-0 ">
                             <thead class="colortabla">
                                 {{-- TODO TITULOS TABLA --}}
@@ -132,13 +34,10 @@
                                         Contacto
                                     </th>
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Fecha
+                                        Tema
                                     </th>
                                     <th class="text-center text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Días
-                                    </th>
-                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
-                                        Moneda
+                                        Fecha
                                     </th>
                                     <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
                                         Estado
@@ -177,13 +76,10 @@
                                             Bergeret</p>
                                     </td>
                                     <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0">Lorem ipsum dolor.</p>
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">16/05/2023</p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">30</p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">UF</p>
                                     </td>
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">En proceso</p>
@@ -219,15 +115,14 @@
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-pen mx-2"></i>
                                         </a>
-                                        {{-- TODO AGREGAR PREVENTA --}}
-                                        <a class="py-1" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#nueva-preventa">
-                                            <i class="fa fa-plus mx-2"></i>
-                                        </a>
                                         {{-- TODO ENVIAR PREVENTA --}}
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#enviar-preventa">
                                             <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                        {{-- TODO GENERAR PDF --}}
+                                        <a class="py-1" href="#">
+                                            <i class="fa fa-file-pdf mx-2 "></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -264,10 +159,6 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
@@ -284,15 +175,14 @@
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-pen mx-2"></i>
                                         </a>
-                                        {{-- TODO AGREGAR PREVENTA --}}
-                                        <a class="py-1" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#editar-preventa">
-                                            <i class="fa fa-plus mx-2"></i>
-                                        </a>
                                         {{-- TODO ENVIAR PREVENTA --}}
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                        {{-- TODO GENERAR PDF --}}
+                                        <a class="py-1" href="#">
+                                            <i class="fa fa-file-pdf mx-2 "></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -341,10 +231,6 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
                                     {{-- TODO ACCIONES --}}
                                     <td class="text-center text-sm sticky">
                                         {{-- TODO EDITAR PREVENTA --}}
@@ -352,15 +238,14 @@
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-pen mx-2"></i>
                                         </a>
-                                        {{-- TODO AGREGAR PREVENTA --}}
-                                        <a class="py-1" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#editar-preventa">
-                                            <i class="fa fa-plus mx-2"></i>
-                                        </a>
                                         {{-- TODO ENVIAR PREVENTA --}}
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                        {{-- TODO GENERAR PDF --}}
+                                        <a class="py-1" href="#">
+                                            <i class="fa fa-file-pdf mx-2 "></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -399,9 +284,6 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
                                     {{-- TODO ACCIONES --}}
                                     <td class="text-center text-sm sticky">
                                         {{-- TODO EDITAR PREVENTA --}}
@@ -409,15 +291,14 @@
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-pen mx-2"></i>
                                         </a>
-                                        {{-- TODO AREGAR PREVENTA --}}
-                                        <a class="py-1" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#editar-preventa">
-                                            <i class="fa fa-plus mx-2"></i>
-                                        </a>
                                         {{-- TODO ENVIAR PREVENTA --}}
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                        {{-- TODO GENERAR PDF --}}
+                                        <a class="py-1" href="#">
+                                            <i class="fa fa-file-pdf mx-2 "></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -456,9 +337,6 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
                                     {{-- TODO ACCIONES --}}
                                     <td class="text-center text-sm sticky">
                                         {{-- TODO EDITAR PREVENTA --}}
@@ -466,15 +344,14 @@
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-pen mx-2"></i>
                                         </a>
-                                        {{-- TODO AGREGAR PREVENTA --}}
-                                        <a class="py-1" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#editar-preventa">
-                                            <i class="fa fa-plus mx-2"></i>
-                                        </a>
                                         {{-- TODO ENVIAR PREVENTA --}}
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                        {{-- TODO GENERAR PDF --}}
+                                        <a class="py-1" href="#">
+                                            <i class="fa fa-file-pdf mx-2 "></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -488,7 +365,7 @@
 
     {{-- TODO MODALS --}}
 
-    
+
     {{-- TODO MODAL EDT --}}
     <div class="modal fade" id="edt-preventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg ">
@@ -501,61 +378,39 @@
                     <div class="card">
                         <div class="card-body p-4">
                             <div class="table-responsive">
-                                <table class="table align-items-center table-striped table-hover tabla-modal">
-                                    <thead class="bg-tabla ">
-                                        {{-- TODO TITULOS TABLA --}}
-                                        <tr class="colorletratabla bg-tabla">
-                                            <th class="text-uppercase  text-xxs font-weight-bolder ps-2">
-                                                Servicio
-                                            </th>
-                                            <th class="text-left text-uppercase   text-xxs font-weight-bolder">
-                                                Horas
-                                            </th>
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-dark" scope="col">#</th>
+                                            <th class="text-dark" scope="col">Servicio</th>
+                                            <th class="text-dark" scope="col">Horas</th>
+
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {{-- TODO ITEM 1 TABLA --}}
                                         <tr>
-                                            <td class="ps-2 text-left">
-                                                <p class="text-xs font-weight-bold mb-0">Front</p>
-                                            </td>
-                                            <td class="text-left">
-                                                <p class="text-xs font-weight-bold mb-0">{Horas}</p>
-                                            </td>
+                                            <th scope="row">1</th>
+                                            <td>Front</td>
+                                            <td>{Horas}</td>
+
                                         </tr>
-                                        {{-- TODO ITEM 2 TABLA --}}
                                         <tr>
-                                            <td class="ps-2 text-left">
-                                                <p class="text-xs font-weight-bold mb-0">Back</p>
-                                            </td>
-                                            <td class="text-left">
-                                                <p class="text-xs font-weight-bold mb-0">{Horas}</p>
-                                            </td>
+                                            <th scope="row">2</th>
+                                            <td>Back-oficce</td>
+                                            <td>{Horas}</td>
+
                                         </tr>
-                                        {{-- TODO ITEM 3 TABLA --}}
                                         <tr>
-                                            <td class="ps-2 text-left">
-                                                <p class="text-xs font-weight-bold mb-0">Jp</p>
-                                            </td>
-                                            <td class="text-left">
-                                                <p class="text-xs font-weight-bold mb-0">{Horas}</p>
-                                            </td>
-                                        </tr>
-                                        {{-- TODO ITEM 4 TABLA --}}
-                                        <tr>
-                                            <td class="ps-2 text-left">
-                                                <p class="text-xs font-weight-bold mb-0">Outsourcing</p>
-                                            </td>
-                                            <td class="text-left">
-                                                <p class="text-xs font-weight-bold mb-0">{Horas}</p>
-                                            </td>
+                                            <th scope="row">3</th>
+                                            <td>Jp</td>
+                                            <td>{Horas}</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <button type="button" class=" btn bg-gradient-primary step_button step_button--next mt-4"
+                            <button type="button" class=" btn bg-gradient-primary step_button step_button--next mt-1"
                                 onclick="mostrar()"><i class="fa fa-plus"> </i></button>
-                            <div class="editar-edt" id="mostrar">
+                            <div class="editar-edt" id="mostrar" style="display: none">
                                 <script>
                                     function mostrar() {
                                         var x = document.getElementById("mostrar");
@@ -582,9 +437,9 @@
                                     </div>
                                 </form>
                             </div>
-                            
+
                         </div>
-                        <div class="guardar-cambios p-2 text-center" id="guardar-cambios">
+                        <div class="guardar-cambios p-2 text-center" id="guardar-cambios" style="display: none">
                             <script>
                                 function guardar() {
                                     var x = document.getElementById("guardar-cambios");
@@ -595,7 +450,8 @@
                                     }
                                 }
                             </script>
-                            <h6 class="text-success">Los cambios se han guardado correctamente. <span><i class="far fa-check-circle"></i></span></h6>
+                            <h6 class="text-success">Los cambios se han guardado correctamente. <span><i
+                                        class="far fa-check-circle"></i></span></h6>
                         </div>
                     </div>
                 </div>
@@ -613,127 +469,150 @@
         <div class="modal-dialog modal-lg ">
             <div class="modal-content">
                 <div class="modal-header bg-fondo">
-                    <h5 class="modal-title  text-white" id="exampleModalLabel">Cotización</h5>
+                    <h5 class="modal-title  text-white" id="exampleModalLabel">Cotización / <span>N°5334</span></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body modal-color">
                     <div class="card">
-                        <div class="card-body py-0">
-                            <form class="formulario mt-3 mb-3">
-                                <div class="identificacion-cli">
-                                    <h6 class="text-secondary font-weight-bold text-center ">Identificación Cliente</h6>
-                                    <hr>
+                        <div class="card-body py-0 py-3">
+
+                            <div class="identificacion-cli">
+                                <h6 class="text-secondary font-weight-bold text-center ">Identificación Cliente</h6>
+                                <hr>
+                            </div>
+                            <div class="tema p-2 rounded mb-2 mt-0">
+                                <div class="row">
+                                    <div class="col-md-6 "><label for="" class="form-label">Estado: <span>En
+                                                proceso</span></label></div>
+                                    <div class="col-md-6 text-end"><label for="" class="form-label">Fecha:
+                                            <span>{fecha}</span></label></div>
                                 </div>
-                                <div class="row mb-3">
+
+
+
+                            </div>
+                            <div class="tema bg-light mb-3 p-2 pb-0 rounded">
+                                <div class="row ">
                                     <div class="col-md-4 text-center">
                                         <label for="" class="form-label">Cliente: <span class="text-black">
                                                 LIPIGAS</span></label>
-
                                     </div>
                                     <div class="col-md-4 text-center">
-                                        <label for="" class="form-label">Fecha: <span>{fecha}</span></label>
+                                        <label for="" class="form-label">Contacto: <span class="text-black">
+                                                Francisco Bergeret</span></label>
                                     </div>
                                     <div class="col-md-4 text-center">
                                         <label for="" class="form-label">Preventa: <span>Enrique
                                                 Gatica</span></label>
                                     </div>
                                 </div>
-                                <div class="edt text-center">
-                                    <h6 class="text-secondary pb-2 font-weight-bold ">Estimación de tiempo</h6>
-                                </div>
-                                <div class="row mb-3 p-0">
+                            </div>
 
-                                    <div class="col-md-12">
-                                        <div class="table-responsive ">
-                                            <table class="table align-items-center table-striped table-hover tabla-modal">
-                                                <thead class="bg-tabla ">
-                                                    {{-- TODO TITULOS TABLA --}}
-                                                    <tr class="colorletratabla bg-tabla">
-                                                        <th class="text-uppercase  text-xxs font-weight-bolder ps-2">
-                                                            Servicio
-                                                        </th>
-                                                        <th class="text-left text-uppercase   text-xxs font-weight-bolder">
-                                                            Horas
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {{-- TODO ITEM 1 TABLA --}}
-                                                    <tr>
-                                                        <td class="ps-2 text-left">
-                                                            <p class="text-xs font-weight-bold mb-0">Front</p>
-                                                        </td>
-                                                        <td class="text-left">
-                                                            <p class="text-xs font-weight-bold mb-0">{Horas}</p>
-                                                        </td>
-                                                    </tr>
-                                                    {{-- TODO ITEM 2 TABLA --}}
-                                                    <tr>
-                                                        <td class="ps-2 text-left">
-                                                            <p class="text-xs font-weight-bold mb-0">Back</p>
-                                                        </td>
-                                                        <td class="text-left">
-                                                            <p class="text-xs font-weight-bold mb-0">{Horas}</p>
-                                                        </td>
-                                                    </tr>
-                                                    {{-- TODO ITEM 3 TABLA --}}
-                                                    <tr>
-                                                        <td class="ps-2 text-left">
-                                                            <p class="text-xs font-weight-bold mb-0">Jp</p>
-                                                        </td>
-                                                        <td class="text-left">
-                                                            <p class="text-xs font-weight-bold mb-0">{Horas}</p>
-                                                        </td>
-                                                    </tr>
-                                                    {{-- TODO ITEM 4 TABLA --}}
-                                                    <tr>
-                                                        <td class="ps-2 text-left">
-                                                            <p class="text-xs font-weight-bold mb-0">Outsourcing</p>
-                                                        </td>
-                                                        <td class="text-left">
-                                                            <p class="text-xs font-weight-bold mb-0">{Horas}</p>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                            {{-- <div class="row">
+                                    <div class="col-md-12 text-left">
+                                        <label class="text-danger" for="">Estado: <span>En proceso</span></label>
+                                    </div>
+                                </div> --}}
+                            <div class="tema p-2 rounded mb-3" style="background-color: #f2f2f2">
+                                <h6 class="text-dark fw-bold">Tema:</h6>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt voluptatem non
+                                    porro temporibus cumque vel, cum omnis provident fugiat culpa animi minima,
+                                    exercitationem ipsam dicta eveniet ratione id, optio ab.</p>
+                            </div>
+
+                            <div class="accordion " id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne" style="background-color: #f2f2f2">
+                                        <button class="accordion-button collapsed text-dark fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Estimación de tiempo
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body mt-2">
+                                            <div class="table-responsive ">
+                                                <table class="table table-hover table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-dark" scope="col">#</th>
+                                                            <th class="text-dark" scope="col">Servicio</th>
+                                                            <th class="text-dark" scope="col">Horas</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Front</td>
+                                                            <td>{Horas}</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2</th>
+                                                            <td>Back-oficce</td>
+                                                            <td>{Horas}</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <td>Jp</td>
+                                                            <td>{Horas}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                            </div>
+                            <div class="jp">
+                                <div class="row pt-3">
                                     <div class="col-md-12">
                                         <label for="" class="form-label">Jefe proyecto</label>
-                                        <input type="text" class="form-control" placeholder="Jefe proyecto"
-                                            id="direc-contac">
+                                        <select class="form-select" name="jproyecto" id="jproyecto">
+                                            <option value="0">Seleccione jefe de proyecto</option>
+                                            <option value="1">Nombre jefe de proyecto</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="datos-coti text-center pt-4">
-                                    <h6 class="text-secondary font-weight-bold">Ingresar cotización</h6>
-                                    <hr>
+                            </div>
+
+                            <div class="datos-coti text-left pt-4">
+                                <h6 class="text-secondary font-weight-bold">Ingresar cotización</h6>
+                                <hr>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label class="form-label">Servicios</label>
+                                    <input class="form-control">
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label class="form-label">Servicios</label>
-                                        <input class="form-control">
-                                    </div>
-                                    <div class="col-md-2">
-                                        <label class="form-label">Hora</label>
-                                        <input class="form-control">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label class="form-label">Valor</label>
-                                        <input class="form-control">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label class="form-label">Total</label>
-                                        <input class="form-control">
-                                    </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Hora</label>
+                                    <input class="form-control">
                                 </div>
-                                <div class="ingresar-cotizacion pt-3  float-end">
-                                    <a href="#" type="button" class="btn bg-gradient-primary" onclick="ingresar()">Ingresar</a>
+                                <div class="col-md-3">
+                                    <label class="form-label">Valor</label>
+                                    <input class="form-control">
                                 </div>
-                            </form>
+                                <div class="col-md-3">
+                                    <label class="form-label">Total</label>
+                                    <input class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-12">
+                                    <label class="form-label">Hitos de pago</label>
+                                    <input class="form-control">
+                                </div>
+                            </div>
+                            <div class="ingresar-cotizacion pt-3  float-start">
+                                <a href="#" type="button" class="btn bg-gradient-primary" onclick="ingresar()"><i
+                                        class="fas fa-plus"></i></a>
+                            </div>
                         </div>
-                        <div class="ingresar-datos p-1 text-center" id="ingresar-datos">
+                        <div class="ingresar-datos px-4" id="ingresar-datos" style="display: none;">
                             <script>
                                 function ingresar() {
                                     var x = document.getElementById("ingresar-datos");
@@ -744,9 +623,43 @@
                                     }
                                 }
                             </script>
-                            <h6 class="text-success">Los datos se han ingresado correctamente. <span><i class="far fa-check-circle"></i></span></h6>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label class="form-label">Servicios</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Hora</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Valor</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Total</label>
+                                    <input class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-12">
+                                    <label class="form-label">Hitos de pago</label>
+                                    <input class="form-control">
+                                </div>
+
+
+                            </div>
+                            <div class="ingresar-cotizacion pt-3  float-start">
+                                <a href="#" type="button" class="btn bg-gradient-primary" onclick="ingresar()"><i
+                                        class="fas fa-plus"></i></a>
+                            </div>
+                            {{-- <h6 class="text-success">Los datos se han ingresado correctamente. <span><i
+                                        class="far fa-check-circle"></i></span></h6> --}}
                         </div>
-                        <div class="guardar p-2 text-center" id="guardar1">
+                        
+
+
+                        <div class="guardar p-2 text-center" id="guardar1" style="display: none;">
                             <script>
                                 function guardarcamb() {
                                     var x = document.getElementById("guardar1");
@@ -757,9 +670,11 @@
                                     }
                                 }
                             </script>
-                            <h6 class="text-success">Los cambios se han guardado correctamente. <span><i class="far fa-check-circle"></i></span></h6>
+                            <h6 class="text-success">Los cambios se han guardado correctamente. <span><i
+                                        class="far fa-check-circle"></i></span></h6>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -858,7 +773,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="editar p-2 text-center" id="editar">
+                        <div class="editar p-2 text-center" id="editar" style="display: none">
                             <script>
                                 function preedit() {
                                     var x = document.getElementById("editar");
@@ -869,7 +784,8 @@
                                     }
                                 }
                             </script>
-                            <h6 class="text-success">Los datos se han editado correctamente. <span><i class="far fa-check-circle"></i></span></h6>
+                            <h6 class="text-success">Los datos se han editado correctamente. <span><i
+                                        class="far fa-check-circle"></i></span></h6>
                         </div>
                     </div>
                 </div>
@@ -896,8 +812,7 @@
                                 <div class="row mb-3">
                                     <div class="col-md-4 ">
                                         <label for="" class="form-label">Rut</label>
-                                        <input type="text" class="form-control" placeholder=""
-                                            id="rut-cli">
+                                        <input type="text" class="form-control" placeholder="" id="rut-cli">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Moneda</label>
@@ -918,34 +833,27 @@
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Nombre
                                             Fantasia</label>
-                                        <input class="form-control" type="text" id="nomfanta-cli"
-                                            placeholder="">
+                                        <input class="form-control" type="text" id="nomfanta-cli" placeholder="">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Razón
                                             Social</label>
-                                        <input type="text" class="form-control" placeholder=""
-                                            id="razonsoci-cli">
+                                        <input type="text" class="form-control" placeholder="" id="razonsoci-cli">
 
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Dirección</label>
-                                        <input type="text" class="form-control"
-                                            placeholder=""
-                                            id="direc-contac">
+                                        <input type="text" class="form-control" placeholder="" id="direc-contac">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Giro</label>
-                                        <input type="text" class="form-control"
-                                            placeholder=""
-                                            id="giro-cli">
+                                        <input type="text" class="form-control" placeholder="" id="giro-cli">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Telefono</label>
-                                        <input type="number" class="form-control" placeholder=""
-                                            id="telefono-cli">
+                                        <input type="number" class="form-control" placeholder="" id="telefono-cli">
                                     </div>
                                 </div>
 
@@ -953,8 +861,7 @@
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Pag.
                                             Web</label>
-                                        <input type="url" class="form-control" placeholder=""
-                                            id="pagweb-cli">
+                                        <input type="url" class="form-control" placeholder="" id="pagweb-cli">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Vigencia</label>
@@ -967,7 +874,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="nueva p-2 text-center" id="nueva">
+                        <div class="nueva p-2 text-center" id="nueva" style="display: none">
                             <script>
                                 function nuevapre() {
                                     var x = document.getElementById("nueva");
@@ -978,7 +885,8 @@
                                     }
                                 }
                             </script>
-                            <h6 class="text-success">La preventa se ha creado correctamente. <span><i class="far fa-check-circle"></i></span></h6>
+                            <h6 class="text-success">La preventa se ha creado correctamente. <span><i
+                                        class="far fa-check-circle"></i></span></h6>
                         </div>
                     </div>
                 </div>
@@ -1006,7 +914,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    
+
                 </div>
             </div>
         </div>

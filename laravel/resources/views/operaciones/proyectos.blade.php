@@ -1,30 +1,280 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <div class="board">
-        <form id="todo-form">
-            <input type="text" placeholder="Agregar por iniciar..." id="todo-input" />
-            <button type="submit">Agregar +</button>
-        </form>
+    <h5 class="m-2">Operaciones/Proyectos</h5>
+    <div class="card">
+        <div class="card-header bg-fondo p-3">
+            <form id="todo-form">
+                <input type="text" placeholder="Agregar por iniciar..." id="todo-input" />
+                <button type="submit">Agregar +</button>
+            </form>
+        </div>
+        <div class="card-body board px-0">
+            <div class="container ">
+                <div class="lanes d-flex">
+                    <div class="swim-lane" id="todo-lane">
+                        <h3 class="heading">Por iniciar</h3>
+                    </div>
 
-        <div class="lanes">
-            <div class="swim-lane" id="todo-lane">
-                <h3 class="heading">Por iniciar</h3>
+                    <div class="swim-lane">
+                        <h3 class="heading">En curso</h3>
+                    </div>
+
+                    <div class="swim-lane">
+                        <h3 class="heading">Stand by</h3>
+                    </div>
+                    <div class="swim-lane">
+                        <h3 class="heading">QA cliente</h3>
+                    </div>
+                </div>
             </div>
 
-            <div class="swim-lane">
-                <h3 class="heading">En curso</h3>
-            </div>
+        </div>
+    </div>
 
-            <div class="swim-lane">
-                <h3 class="heading">Stand by</h3>
+
+    {{-- Tabla Columna semanal --}}
+    <div class="card mt-3">
+        <div class="card-header  p-2 titulo-proy">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <p class="text-sm mb-0">
+                        <i class="fa fa-percent text-info" aria-hidden="true"></i>
+                        <span class="font-weight-bold text-white ms-1">Avance / </span>semanal
+                    </p>
+                </div>
+
             </div>
-            <div class="swim-lane">
-                <h3 class="heading">QA cliente</h3>
+        </div>
+        <div class="card-body px-0 pb-2">
+            <div class="table-responsive">
+                <table class="table table-hover align-items-center mb-0">
+                    <thead>
+                        <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Persona</th>
+                            <th
+                                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                Semana 1</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Semana 2</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Semana 3</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Semana 4</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Semana 5</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Semana 6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {{-- Persona 1 --}}
+                        <tr>
+                            <td>
+                                <div class="d-flex px-2 py-1">
+                                    <div>
+                                        <img src="../assets/img/team-1.jpg" class="avatar avatar-sm me-3" alt="xd">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <a class="mb-0 text-sm " href="#" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">{Nombre persona}</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class=" text-center text-sm">
+                                60%
+                            </td>
+                            <td class=" text-center text-sm">
+                                80%
+                            </td>
+                            <td class=" text-center text-sm">
+                                20%
+                            </td>
+                            <td class=" text-center text-sm">
+                                38%
+                            </td>
+                            <td class=" text-center text-sm">
+                                73%
+                            </td>
+                            <td class=" text-center text-sm">
+                                91%
+                            </td>
+                        </tr>
+
+                        {{-- Persona 2 --}}
+                        <tr>
+                            <td>
+                                <div class="d-flex px-2 py-1">
+                                    <div>
+                                        <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="atlassian">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <a class="mb-0 text-sm " href="#">{Nombre persona}</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td class="align-middle text-center text-sm">
+
+                            </td>
+                            <td class="align-middle">
+
+                            </td>
+                            <td class="align-middle">
+
+                            </td>
+                            <td class="align-middle">
+
+                            </td>
+                            <td class="align-middle">
+
+                            </td>
+                        </tr>
+                        {{-- Persona 3 --}}
+                        <tr>
+                            <td>
+                                <div class="d-flex px-2 py-1">
+                                    <div>
+                                        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="atlassian">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <a class="mb-0 text-sm" href="#">{Nombre persona}</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td class="align-middle text-center text-sm">
+
+                            </td>
+                            <td class="align-middle">
+
+                            </td>
+                            <td class="align-middle">
+
+                            </td>
+                            <td class="align-middle">
+
+                            </td>
+                            <td class="align-middle">
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 
+    {{-- Modal persona 1 --}}
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg ">
+            <div class="modal-content">
+                <div class="modal-header bg-fondo">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">{Persona 1}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-color">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="identificacion-cli">
+                                <h6 class="text-secondary font-weight-bold text-center ">
+                                    Identificación Usuario</h6>
+                                <hr>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6 text-center">
+                                    <label for="" class="form-label fw-bold" style="font-size: 13px">{Nombre persona}                                   
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <label for="" class="form-label fw-bold" style="font-size: 13px">Fecha:
+                                        <span>{fecha}</span></label>
+                                </div>
+                            </div>
+                            <div class="identificacion-cli">
+                                <h6 class="text-dark font-weight-bold text-left ">
+                                    Proyecto actual</h6>
+
+                            </div>
+                            <div class="d-flex position-relative  bg-light proyecto">
+                                <span class="ps-3 pb-3 pt-3">
+                                    <img src="../assets/img/small-logos/logo-slack.svg"
+                                    class="flex-shrink-0 me-3  bg-white rounded-3" alt="...">
+                                </span>
+                                
+                                <div class="pt-3 px-2">
+                                    <h6 class="text-dark fw-bold mt-0">{Nombre del proyecto}</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Minus quidem soluta repellendus optio maiores perspiciatis
+                                        dolore consequatur inventore adipisci voluptate aperiam
+                                        quaerat accusamus perferendis dolorum animi, id facilis.
+                                        Delectus, quae?</p>
+                                </div>
+                            </div>
+                            <div class="identificacion-cli pt-3">
+                                <h6 class="text-dark font-weight-bold text-left ">
+                                    Tabla de oras de carga (proyectos)</h6>
+                            </div>
+                            <div class="table-responsive pt-2">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th class="text-dark text-xs fw-bold">Proyectos</th>
+                                        <th class="text-center text-dark text-xs fw-bold">Horas de carga</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-2 py-1">
+                                                    <div>
+                                                        <img src="../assets/img/small-logos/logo-xd.svg"
+                                                            class="avatar avatar-sm me-3" alt="xd">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm text-black-50">Proyecto 1</h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                {Horas}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-2 py-1">
+                                                    <div>
+                                                        <img src="../assets/img/small-logos/logo-atlassian.svg"
+                                                            class="avatar avatar-sm me-3" alt="xd">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm text-black-50">Proyecto 1</h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                {Horas}
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-gradient-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     {{-- Modal --}}
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -40,356 +290,6 @@
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
-            </div>
-        </div>
-    </div>
-    <h5 class="m-2">Operaciones/Proyectos</h5>
-
-
-    <div class="card">
-        <div class="card-header  p-2 titulo-proy">
-            <div class="row">
-                <div class="col-lg-6 col-7">
-                    <p class="text-sm mb-0">
-                        <i class="fa fa-check text-info" aria-hidden="true"></i>
-                        <span class="font-weight-bold text-white ms-1">Proyectos</span> del mes
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <div class="card-body px-0 pb-2">
-            <div class="table-responsive">
-                <table class="table table-hover align-items-center mb-0">
-                    <thead>
-                        <tr>
-                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                Proyectos</th>
-                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                Equipo</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                Estado</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                Progreso</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="d-flex px-2 py-1">
-                                        <div>
-                                            <img src="../assets/img/small-logos/logo-xd.svg" class="avatar avatar-sm me-3"
-                                                alt="xd">
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 1</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="avatar-group mt-2">
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
-                                            <img src="../assets/img/team-1.jpg" alt="team1">
-                                        </a>
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
-                                            <img src="../assets/img/team-2.jpg" alt="team2">
-                                        </a>
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alexander Smith">
-                                            <img src="../assets/img/team-3.jpg" alt="team3">
-                                        </a>
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-                                            <img src="../assets/img/team-4.jpg" alt="team4">
-                                        </a>
-                                    </div>
-                                </a>
-                            </td>
-                            <td class="align-middle text-center text-sm">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <label for=""
-                                        class="text-danger font-weight-bold badge badge-danger text-xs">Pendiente</label>
-                                </a>
-                            </td>
-                            <td class="align-middle">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="progress-wrapper w-75 mx-auto">
-                                        <div class="progress-info">
-                                            <div class="progress-percentage">
-                                                <span class="text-xs font-weight-bold">60%</span>
-                                            </div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-gradient-danger w-60" role="progressbar"
-                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="d-flex px-2 py-1">
-                                        <div>
-                                            <img src="../assets/img/small-logos/logo-atlassian.svg"
-                                                class="avatar avatar-sm me-3" alt="atlassian">
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 2</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="avatar-group mt-2">
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
-                                            <img src="../assets/img/team-2.jpg" alt="team5">
-                                        </a>
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-                                            <img src="../assets/img/team-4.jpg" alt="team6">
-                                        </a>
-                                    </div>
-                                </a>
-                            </td>
-                            <td class="align-middle text-center text-sm">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <label for=""
-                                        class="text-dark font-weight-bold badge badge-secondary text-xs">Cotizado</label>
-                                </a>
-                            </td>
-                            <td class="align-middle">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="progress-wrapper w-75 mx-auto">
-                                        <div class="progress-info">
-                                            <div class="progress-percentage">
-                                                <span class="text-xs font-weight-bold ">10%</span>
-                                            </div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-gradient-dark w-10" role="progressbar"
-                                                aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="d-flex px-2 py-1">
-                                        <div>
-                                            <img src="../assets/img/small-logos/logo-slack.svg"
-                                                class="avatar avatar-sm me-3" alt="team7">
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 3</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="avatar-group mt-2">
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
-                                            <img src="../assets/img/team-3.jpg" alt="team8">
-                                        </a>
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-                                            <img src="../assets/img/team-1.jpg" alt="team9">
-                                        </a>
-                                    </div>
-                                </a>
-                            </td>
-                            <td class="align-middle text-center text-sm">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <label for=""
-                                        class="text-success font-weight-bold badge badge-success text-xs">Finalizado</label>
-                                </a>
-                            </td>
-                            <td class="align-middle">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="progress-wrapper w-75 mx-auto">
-                                        <div class="progress-info">
-                                            <div class="progress-percentage">
-                                                <span class="text-xs font-weight-bold">100%</span>
-                                            </div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-gradient-success w-100" role="progressbar"
-                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="d-flex px-2 py-1">
-                                        <div>
-                                            <img src="../assets/img/small-logos/logo-spotify.svg"
-                                                class="avatar avatar-sm me-3" alt="spotify">
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 4</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="avatar-group mt-2">
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
-                                            <img src="../assets/img/team-4.jpg" alt="user1">
-                                        </a>
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
-                                            <img src="../assets/img/team-3.jpg" alt="user2">
-                                        </a>
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alexander Smith">
-                                            <img src="../assets/img/team-4.jpg" alt="user3">
-                                        </a>
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-                                            <img src="../assets/img/team-1.jpg" alt="user4">
-                                        </a>
-                                    </div>
-                                </a>
-                            </td>
-                            <td class="align-middle text-center text-sm">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <label for=""
-                                        class="text-success font-weight-bold badge badge-success text-xs">Finalizado</label>
-                                </a>
-                            </td>
-                            <td class="align-middle">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="progress-wrapper w-75 mx-auto">
-                                        <div class="progress-info">
-                                            <div class="progress-percentage">
-                                                <span class="text-xs font-weight-bold">100%</span>
-                                            </div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-gradient-success w-100" role="progressbar"
-                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="d-flex px-2 py-1">
-                                        <div>
-                                            <img src="../assets/img/small-logos/logo-jira.svg"
-                                                class="avatar avatar-sm me-3" alt="jira">
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 5</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="avatar-group mt-2">
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
-                                            <img src="../assets/img/team-4.jpg" alt="user5">
-                                        </a>
-                                    </div>
-                                </a>
-                            </td>
-                            <td class="align-middle text-center text-sm">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <label for=""
-                                        class="text-dark font-weight-bold badge badge-secondary text-xs">Cotizado</label>
-                                </a>
-                            </td>
-                            <td class="align-middle">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="progress-wrapper w-75 mx-auto">
-                                        <div class="progress-info">
-                                            <div class="progress-percentage">
-                                                <span class="text-xs font-weight-bold">5%</span>
-                                            </div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-gradient-dark w-5" role="progressbar"
-                                                aria-valuenow="5" aria-valuemin="0" aria-valuemax="5"></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="d-flex px-2 py-1">
-                                        <div>
-                                            <img src="../assets/img/small-logos/logo-invision.svg"
-                                                class="avatar avatar-sm me-3" alt="invision">
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 6</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="avatar-group mt-2">
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
-                                            <img src="../assets/img/team-1.jpg" alt="user6">
-                                        </a>
-                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-                                            <img src="../assets/img/team-4.jpg" alt="user7">
-                                        </a>
-                                    </div>
-                                </a>
-                            </td>
-                            <td class="align-middle text-center text-sm">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <label for=""
-                                        class="text-danger font-weight-bold badge badge-danger text-xs">Pendiente</label>
-                                </a>
-                            </td>
-                            <td class="align-middle">
-                                <a data-bs-toggle="modal" data-bs-target="#proyectos">
-                                    <div class="progress-wrapper w-75 mx-auto">
-                                        <div class="progress-info">
-                                            <div class="progress-percentage">
-                                                <span class="text-xs font-weight-bold">40%</span>
-                                            </div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-gradient-danger w-40" role="progressbar"
-                                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="40"></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>

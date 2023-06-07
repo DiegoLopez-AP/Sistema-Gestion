@@ -1,80 +1,56 @@
 <!-- Navbar -->
-<nav class="navbar  px-0 py-2 shadow-none colornav" id="navbarBlur" style="height: 80px;">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4 d-flex justify-content-end" id="navbar">
-            
-            <div class="nav-item d-flex position-absolute start-1">
-                <div class="UF mx-2">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold text-white">UF</p>
-                    <h6 class="font-weight-bolder mb-0 text-white-50">
-                        35956.37
-                    </h6>
-                </div>
-                <div class="Dolar mx-2">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold text-white">Dolar</p>
-                    <h6 class="font-weight-bolder mb-0 text-white-50">
-                        0,022
-                    </h6>
-                </div>
-                <div class="Ventas-mes mx-2">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold text-white">Ventas mes</p>
-                    <h6 class="font-weight-bolder mb-0 text-white-50">
-                        8,54%
-                    </h6>
-                </div>
-            </div>
-            
-            <ul class="navbar-nav justify-content-end d-flex z-index-3 ">
-                <li class="nav-item d-xl-none ps-3 align-items-center">
-                    <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
-                        <div class="sidenav-toggler-inner">
-                            <i class="sidenav-toggler-line"></i>
-                            <i class="sidenav-toggler-line"></i>
-                            <i class="sidenav-toggler-line"></i>
-                        </div>
-                    </a>
+<nav class="navbar navbar-expand-lg bg-fondo">
+    <div class="container-fluid p-0">
+        <i class='bx bx-menu text-white'></i>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-end  collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <span class="nav-link active text-white fw-bold" aria-current="page" href="#">UF: <span class="text-white-50">35956.37</span></span>
                 </li>
-                <li class="nav-item ">
-                    <a href="javascript:;" class="nav-link text-white pe-2" id="dropdownMenuButton"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="me-2">Bienvenido {user}</span>
-                    
-                        <img src="../assets/img/user.png" width="45px" height="45px">
-                    </a>
-                    <ul class="dropdown-menu px-2" aria-labelledby="dropdownMenuButton">
-                        <li class="mb-2">
-                            <a class="dropdown-item border-radius-md hover-menu {{ Request::is('user-profile') ?: '' }} "
-                                href="{{ url('user-profile') }}">
-                                <div class="d-flex py-1">
-                                    <div class="my-auto">
-                                        <i class="fas fa-user me-3 text-white"></i>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center">
-                                        <h6 class="text-sm font-weight-normal mb-1 text-white">
-                                            <span class="font-weight-bold">User Profile</span>
-                                        </h6>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/logout') }}" class="dropdown-item border-radius-md hover-menu">
-                                <div class="d-flex py-1">
-                                    <div class="my-auto">
-                                        <i class="fas fa-sign-out-alt me-3 text-white"></i>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center">
-                                        <h6 class="text-sm font-weight-normal mb-1">
-                                            <span class="font-weight-bold">Salir</span>
-                                        </h6>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                <li class="nav-item">
+                    <span class="nav-link active text-white fw-bold" aria-current="page" href="#">Dolar: <span class="text-white-50">820</span></span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link active text-white fw-bold" aria-current="page" href="#">Ventas Mes: <span class="text-white-50">8,54% <span class="text-success"><i class="fas fa-arrow-up"></i></span></span></span>
                 </li>
             </ul>
+            <div class="dropdown float-end">
+                <button class="btn btn-link dropdown-toggle mt-3 btn-perfil" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="me-2 text-white fw-bold">Bienvenido {user}</span> <img src="../assets/img/user.png"
+                        width="45px" height="45px">
+                </button>
+
+                <ul class="dropdown-menu mt-4 perfil" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="{{ url('user-profile') }}"><i
+                                class="fas fa-user me-3 "></i>Perfil</a></li>
+                    <li><a class="dropdown-item" href="{{ url('/logout') }}"><i
+                                class="fas fa-sign-out-alt me-3 "></i>Salir</a></li>
+
+                </ul>
+            </div>
+
         </div>
     </div>
 </nav>
 <!--End Navbar -->
+
+<script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+            let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+            arrowParent.classList.toggle("showMenu");
+        });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+    });
+</script>
