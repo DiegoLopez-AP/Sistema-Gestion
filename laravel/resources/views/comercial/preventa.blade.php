@@ -4,8 +4,9 @@
     <h5>Comercial/Preventa</h5>
     <div class="row">
         <div class="col-12">
-            <div class="card mb-2 mx-2 cartacolor p-4 py-4">
-                <div class="card-header">
+            <div class="card mb-2 mx-2 p-4 py-4">
+                {{-- TODO INICIO TABLA CLIENTE ------------------------------------------------------------------------------------------ --}}
+                <div class="card-body px-0 pt-0 pb-2">
                     {{-- TODO FILTROS --}}
                     <div class="d-flex flex-row p-2 ps-0">
                         <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
@@ -18,11 +19,8 @@
                         </div>
 
                     </div>
-                    {{-- TODO INICIO TABLA CLIENTE ------------------------------------------------------------------------------------------ --}}
-                </div>
-                <div class="card-body px-0 pt-0 pb-2">
                     <div class="table-responsive">
-                        <table class="table align-items-center table-striped table-hover  mb-0 ">
+                        <table class="table align-items-center table-striped table-hover mb-0 ">
                             <thead class="colortabla">
                                 {{-- TODO TITULOS TABLA --}}
                                 <tr class="colorletratabla">

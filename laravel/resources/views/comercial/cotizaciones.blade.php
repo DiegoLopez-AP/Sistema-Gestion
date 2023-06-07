@@ -2,9 +2,8 @@
 
 @section('content')
     <h5>Comercial/Cotizaciones</h5>
-
-    < class="card-body modal-color p-0">
-        <form class="form bg-white p-4 " action="#" method="post">
+    <div class="card mb-2 mx-2 cartacolor p-4 py-4">
+        <div class="card-body  p-0">
             <div class="paso active" id="paso-1">
                 {{-- TODO INICIO FILTRO COTIZACIÓN --}}
 
@@ -76,22 +75,8 @@
                     }
                 }
             </script>
-
-            {{-- TODO INCIO TABLA COTIZACIONES --}}
-            <div class="table-responsive">
-                <h5 class="text-center">Cotizaciones</h5>
-                <div class="d-flex flex-row p-2 ps-0">
-                    <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
-                    <a href="#" class="py-1 px-2 my-2">
-                        <i class="fas fa-search"></i>
-                    </a>
-                    <div class="icono agregar px-2 my-2 pt-1">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#nueva-preventa"><i
-                                class="fas fa-plus"></i></a>
-                    </div>
-
-                </div>
-                <table class="table align-items-center table-striped table-hover mb-0 table-cotizacion" width="100%">
+            <div class="table-responsive" style="overflow-x: auto;">
+                <table class="table table-striped table-hover align-items-center table-cotizacion">
                     <thead class="colortabla">
                         {{-- TODO TITULOS TABLA --}}
                         <tr class="colorletratabla">
@@ -446,13 +431,11 @@
                     </tbody>
                 </table>
             </div>
-            {{-- TODO BOTONES ARCHIVOS --}}
-            <div class="archivos">
-                <button type="button" class=" btn excel mt-4 px-4">EXCEL <i class="fa fa-file-excel"></i></button>
-                <button type="button" class=" btn pdf mt-4 px-4">PDF <i class="fa fa-file-pdf"></i></button>
-            </div>
+        </div>
     </div>
-    </form>
+
+
+
     {{-- TODO MODALS --}}
 
     {{-- MODAL EDITAR COTIZACIÓN --}}
