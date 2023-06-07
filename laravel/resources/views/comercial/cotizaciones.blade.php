@@ -63,373 +63,385 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="buscar" id="myDIV" style="display: none"> --}}
-            {{-- TODO FUNCIÓN BUSCAR --}}
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("myDIV");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
+            <div class="buscar" id="myDIV" style="display: none">
+                {{-- TODO FUNCIÓN BUSCAR --}}
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myDIV");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
                     }
-                }
-            </script>
-            <div class="table-responsive" style="overflow-x: auto;">
-                <table class="table table-striped table-hover align-items-center table-cotizacion">
-                    <thead class="colortabla">
-                        {{-- TODO TITULOS TABLA --}}
-                        <tr class="colorletratabla">
-                            <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
-                                Cliente
-                            </th>
-                            <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                N° Cotización
-                            </th>
-                            <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder tema">
-                                Tema
-                            </th>
-                            <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                Fecha
-                            </th>
-                            <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                Responsable
-                            </th>
-                            <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                UF
-                            </th>
-                            <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                Estado
-                            </th>
-                            <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
-                                Ver
-                            </th>
-                            <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                OC
-                            </th>
-                            <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                Factura
-                            </th>
-                            <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                Valor $
-                            </th>
-                            <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                Valor UF
-                            </th>
-                            <th class="text-center text-uppercase text-white text-xxs font-weight-bolder sticky">
-                                Acciones
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {{-- TODO INICIO ITEM 1 --}}
-                        <tr>
-                            <td class="ps-2 text-left">
-                                <p class="text-xs font-weight-bold mb-0">LIPIGAS</p>
-                            </td>
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">GT-DS-5317</p>
-                            </td>
-                            <td class="text-left" style="width: 50px">
-                                <p class="text-xs font-weight-bold mb-0 ">MODIFICAR INGRESO PORTAL CP <br> PARA INGRESO
-                                    DE UNEMAIL VARIOS RUT</p>
-                            </td>
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">13/04/2023</p>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">Rodrigo Banda Velasquez</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">44.80</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">En desarrollo</span>
-                            </td>
-                            <td class="text-center">
-                                <span class="text-secondary text-xs font-weight-bold"><a href="#"
-                                        data-bs-toggle="modal" data-bs-target="#ver-cotizacion"><i
-                                            class="fas fa-eye "></i>
+                </script>
+                <div class="d-flex flex-row p-2 ps-0">
+                    <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
+                    <span class="py-1 px-2 my-2">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <div class="icono agregar px-2 my-2 pt-1">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#nueva-cotizacion"><i
+                                class="fas fa-plus"></i></a>
+                    </div>
+
+                </div>
+                <div class="table-responsive" style="overflow-x: auto;">
+                    <table class="table table-striped table-hover align-items-center table-cotizacion">
+                        <thead class="colortabla">
+                            {{-- TODO TITULOS TABLA --}}
+                            <tr class="colorletratabla">
+                                <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
+                                    Cliente
+                                </th>
+                                <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                    N° Cotización
+                                </th>
+                                <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder tema">
+                                    Tema
+                                </th>
+                                <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                    Fecha
+                                </th>
+                                <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                    Responsable
+                                </th>
+                                <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
+                                    UF
+                                </th>
+                                <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
+                                    Estado
+                                </th>
+                                <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
+                                    Ver
+                                </th>
+                                <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
+                                    OC
+                                </th>
+                                <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
+                                    Factura
+                                </th>
+                                <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
+                                    Valor $
+                                </th>
+                                <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
+                                    Valor UF
+                                </th>
+                                <th class="text-center text-uppercase text-white text-xxs font-weight-bolder sticky">
+                                    Acciones
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{-- TODO INICIO ITEM 1 --}}
+                            <tr>
+                                <td class="ps-2 text-left">
+                                    <p class="text-xs font-weight-bold mb-0">LIPIGAS</p>
+                                </td>
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">GT-DS-5317</p>
+                                </td>
+                                <td class="text-left" style="width: 50px">
+                                    <p class="text-xs font-weight-bold mb-0 ">MODIFICAR INGRESO PORTAL CP <br> PARA INGRESO
+                                        DE UNEMAIL VARIOS RUT</p>
+                                </td>
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">13/04/2023</p>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">Rodrigo Banda Velasquez</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">44.80</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">En desarrollo</span>
+                                </td>
+                                <td class="text-center">
+                                    <span class="text-secondary text-xs font-weight-bold"><a href="#"
+                                            data-bs-toggle="modal" data-bs-target="#ver-cotizacion"><i
+                                                class="fas fa-eye "></i>
+                                        </a>
+                                    </span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">4502099343</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold"></span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">$ 0</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                                </td>
+                                <td class="text-center sticky text-sm">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cotizacion"><i
+                                            class="fas fa-pen me-2"></i>
                                     </a>
-                                </span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">4502099343</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold"></span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">$ 0</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">0.00</span>
-                            </td>
-                            <td class="text-center sticky text-sm">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cotizacion"><i
-                                        class="fas fa-pen me-2"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#aprobar-cotizacion">
-                                    <i class="fas fa-check me-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Aprobar cotización"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#rechazar-cotizacion">
-                                    <i class="fas fa-times me-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Rechazar cotización"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#enviar-cotizacion">
-                                    <i class="fas fa-envelope-open"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        {{-- TODO INICIO ITEM 2 --}}
-                        <tr>
-                            <td class="ps-2 text-left">
-                                <p class="text-xs font-weight-bold mb-0">COPEC</p>
-                            </td>
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">GT-DS-5375</p>
-                            </td>
-
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">Restricción de litros maxima diaria
-                                    TCT-TAE
-                                </p>
-                            </td>
-
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">16/05/2023</p>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">Dennys Espinoza</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">16.20</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">Cotizada</span>
-                            </td>
-                            <td class="text-center">
-                                <span class="text-secondary text-xs font-weight-bold"><a href="#"
-                                        data-bs-toggle="modal" data-bs-target="#ver-cotizacion"><i
-                                            class="fas fa-eye "></i>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#aprobar-cotizacion">
+                                        <i class="fas fa-check me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Aprobar cotización"></i>
                                     </a>
-                                </span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold"> </span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold"> </span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">$ 0</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">0.00</span>
-                            </td>
-                            <td class="text-center sticky text-sm">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cotizacion"><i
-                                        class="fas fa-pen  me-2"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#aprobar-cotizacion">
-                                    <i class="fas fa-check me-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Aprobar cotización"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#rechazar-cotizacion">
-                                    <i class="fas fa-times me-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Rechazar cotización"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fas fa-envelope-open"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        {{-- TODO INICIO ITEM 3 --}}
-                        <tr>
-                            <td class="ps-2 text-left">
-                                <p class="text-xs font-weight-bold mb-0">ALUPROF</p>
-                            </td>
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">GT-DS-5373</p>
-                            </td>
-
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">SISTEMA COTIZACIONES ALUPROF</p>
-                            </td>
-
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">02/05/2023</p>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">Patricio Horment</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">180.00</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">Terminada</span>
-                            </td>
-                            <td class="text-center">
-                                <span class="text-secondary text-xs font-weight-bold"><a href="#"
-                                        data-bs-toggle="modal" data-bs-target="#ver-cotizacion"><i
-                                            class="fas fa-eye "></i>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#rechazar-cotizacion">
+                                        <i class="fas fa-times me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Rechazar cotización"></i>
                                     </a>
-                                </span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold"> </span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold"> </span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">$ 0</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">0.00</span>
-                            </td>
-                            <td class="text-center sticky text-sm">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cotizacion"><i
-                                        class="fas fa-pen  me-2"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#aprobar-cotizacion">
-                                    <i class="fas fa-check me-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Aprobar cotización"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#rechazar-cotizacion">
-                                    <i class="fas fa-times me-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Rechazar cotización"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fas fa-envelope-open"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        {{-- TODO INICIO ITEM 4 --}}
-                        <tr>
-                            <td class="ps-2 text-left">
-                                <p class="text-xs font-weight-bold mb-0">KILLSTORE</p>
-                            </td>
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">GT-DS-5371</p>
-                            </td>
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">ASESORÍA Y GESTION DE <br> INTEGRACIÓN PIG-T
-                                    ABRIL
-                                    2023</p>
-                            </td>
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">10/05/2023</p>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">Nahuel Velasquez</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">1.00</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">Cotizada</span>
-                            </td>
-                            <td class="text-center">
-                                <span class="text-secondary text-xs font-weight-bold"><a href="#"
-                                        data-bs-toggle="modal" data-bs-target="#ver-cotizacion"><i
-                                            class="fas fa-eye "></i>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#enviar-cotizacion">
+                                        <i class="fas fa-envelope-open"></i>
                                     </a>
-                                </span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">5371</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">4455 - 10/05/2023</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">$ 35.960</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">1.00</span>
-                            </td>
-                            <td class="text-center sticky text-sm">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cotizacion"><i
-                                        class="fas fa-pen  me-2"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#aprobar-cotizacion">
-                                    <i class="fas fa-check me-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Aprobar cotización"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#rechazar-cotizacion">
-                                    <i class="fas fa-times me-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Rechazar cotización"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fas fa-envelope-open"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        {{-- TODO INICIO ITEM 5 --}}
-                        <tr>
-                            <td class="ps-2 text-left">
-                                <p class="text-xs font-weight-bold mb-0">JETSMART</p>
-                            </td>
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">GT-DS-5367</p>
-                            </td>
+                                </td>
+                            </tr>
+                            {{-- TODO INICIO ITEM 2 --}}
+                            <tr>
+                                <td class="ps-2 text-left">
+                                    <p class="text-xs font-weight-bold mb-0">COPEC</p>
+                                </td>
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">GT-DS-5375</p>
+                                </td>
 
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">ANALISTA FUNCIONAL JUNIOR ABRIL 2023</p>
-                            </td>
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">Restricción de litros maxima diaria
+                                        TCT-TAE
+                                    </p>
+                                </td>
 
-                            <td class="text-left">
-                                <p class="text-xs font-weight-bold mb-0">09/05/2023</p>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">José Valenzuela</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">82.47</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">Terminada</span>
-                            </td>
-                            <td class="text-center">
-                                <span class="text-secondary text-xs font-weight-bold"><a href="#"
-                                        data-bs-toggle="modal" data-bs-target="#ver-cotizacion"><i
-                                            class="fas fa-eye "></i>
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">16/05/2023</p>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">Dennys Espinoza</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">16.20</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">Cotizada</span>
+                                </td>
+                                <td class="text-center">
+                                    <span class="text-secondary text-xs font-weight-bold"><a href="#"
+                                            data-bs-toggle="modal" data-bs-target="#ver-cotizacion"><i
+                                                class="fas fa-eye "></i>
+                                        </a>
+                                    </span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold"> </span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold"> </span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">$ 0</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                                </td>
+                                <td class="text-center sticky text-sm">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cotizacion"><i
+                                            class="fas fa-pen  me-2"></i>
                                     </a>
-                                </span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">5367</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">4451 - 09/05/2023</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">$ 2.965.322</span>
-                            </td>
-                            <td class="text-left">
-                                <span class="text-secondary text-xs font-weight-bold">82.47</span>
-                            </td>
-                            <td class="text-center sticky text-sm">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cotizacion"><i
-                                        class="fas fa-pen  me-2"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#aprobar-cotizacion">
-                                    <i class="fas fa-check me-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Aprobar cotización"></i>
-                                </a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#rechazar-cotizacion">
-                                    <i class="fas fa-times me-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Rechazar cotización"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fas fa-envelope-open"></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#aprobar-cotizacion">
+                                        <i class="fas fa-check me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Aprobar cotización"></i>
+                                    </a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#rechazar-cotizacion">
+                                        <i class="fas fa-times me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Rechazar cotización"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-envelope-open"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            {{-- TODO INICIO ITEM 3 --}}
+                            <tr>
+                                <td class="ps-2 text-left">
+                                    <p class="text-xs font-weight-bold mb-0">ALUPROF</p>
+                                </td>
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">GT-DS-5373</p>
+                                </td>
+
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">SISTEMA COTIZACIONES ALUPROF</p>
+                                </td>
+
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">02/05/2023</p>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">Patricio Horment</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">180.00</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">Terminada</span>
+                                </td>
+                                <td class="text-center">
+                                    <span class="text-secondary text-xs font-weight-bold"><a href="#"
+                                            data-bs-toggle="modal" data-bs-target="#ver-cotizacion"><i
+                                                class="fas fa-eye "></i>
+                                        </a>
+                                    </span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold"> </span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold"> </span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">$ 0</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                                </td>
+                                <td class="text-center sticky text-sm">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cotizacion"><i
+                                            class="fas fa-pen  me-2"></i>
+                                    </a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#aprobar-cotizacion">
+                                        <i class="fas fa-check me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Aprobar cotización"></i>
+                                    </a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#rechazar-cotizacion">
+                                        <i class="fas fa-times me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Rechazar cotización"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-envelope-open"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            {{-- TODO INICIO ITEM 4 --}}
+                            <tr>
+                                <td class="ps-2 text-left">
+                                    <p class="text-xs font-weight-bold mb-0">KILLSTORE</p>
+                                </td>
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">GT-DS-5371</p>
+                                </td>
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">ASESORÍA Y GESTION DE <br> INTEGRACIÓN PIG-T
+                                        ABRIL
+                                        2023</p>
+                                </td>
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">10/05/2023</p>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">Nahuel Velasquez</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">1.00</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">Cotizada</span>
+                                </td>
+                                <td class="text-center">
+                                    <span class="text-secondary text-xs font-weight-bold"><a href="#"
+                                            data-bs-toggle="modal" data-bs-target="#ver-cotizacion"><i
+                                                class="fas fa-eye "></i>
+                                        </a>
+                                    </span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">5371</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">4455 - 10/05/2023</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">$ 35.960</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">1.00</span>
+                                </td>
+                                <td class="text-center sticky text-sm">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cotizacion"><i
+                                            class="fas fa-pen  me-2"></i>
+                                    </a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#aprobar-cotizacion">
+                                        <i class="fas fa-check me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Aprobar cotización"></i>
+                                    </a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#rechazar-cotizacion">
+                                        <i class="fas fa-times me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Rechazar cotización"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-envelope-open"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            {{-- TODO INICIO ITEM 5 --}}
+                            <tr>
+                                <td class="ps-2 text-left">
+                                    <p class="text-xs font-weight-bold mb-0">JETSMART</p>
+                                </td>
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">GT-DS-5367</p>
+                                </td>
+
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">ANALISTA FUNCIONAL JUNIOR ABRIL 2023</p>
+                                </td>
+
+                                <td class="text-left">
+                                    <p class="text-xs font-weight-bold mb-0">09/05/2023</p>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">José Valenzuela</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">82.47</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">Terminada</span>
+                                </td>
+                                <td class="text-center">
+                                    <span class="text-secondary text-xs font-weight-bold"><a href="#"
+                                            data-bs-toggle="modal" data-bs-target="#ver-cotizacion"><i
+                                                class="fas fa-eye "></i>
+                                        </a>
+                                    </span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">5367</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">4451 - 09/05/2023</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">$ 2.965.322</span>
+                                </td>
+                                <td class="text-left">
+                                    <span class="text-secondary text-xs font-weight-bold">82.47</span>
+                                </td>
+                                <td class="text-center sticky text-sm">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#editar-cotizacion"><i
+                                            class="fas fa-pen  me-2"></i>
+                                    </a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#aprobar-cotizacion">
+                                        <i class="fas fa-check me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Aprobar cotización"></i>
+                                    </a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#rechazar-cotizacion">
+                                        <i class="fas fa-times me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Rechazar cotización"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-envelope-open"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -437,7 +449,110 @@
 
 
     {{-- TODO MODALS --}}
+    {{-- MODAL NUEVA COTIZACIÓN --}}
+    <div class="modal fade" id="nueva-cotizacion" tabindex="-1" aria-labelledby="nueva-cotizacion" aria-hidden="true">
+        <div class="modal-dialog modal-lg ">
+            <div class="modal-content">
+                <div class="modal-header bg-fondo">
+                    <h5 class="modal-title  text-white" id="exampleModalLabel">Aprobar cotización
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-color">
+                    <div class="card">
+                        <div class="card-body pb-0">
+                            <form class="formulario mt-3 ">
+                                <div class="row mb-3">
+                                    <div class="col-md-4 ">
+                                        <label for="" class="form-label">N° Cotización</label>
+                                        <input type="number" class="form-control" placeholder="GT-DS-5317"
+                                            id="ed.coti-n.coti">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Cliente</label>
+                                        <input type="text" class="form-control" placeholder="LIPIGAS"
+                                            id="ed.coti-cli">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Contacto</label>
+                                        <input type="text" class="form-control" placeholder="Francisco Bergeret"
+                                            id="ed.coti-cli">
+                                    </div>
 
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-4 ">
+                                        <label for="" class="form-label">Fecha</label>
+                                        <input type="text" class="form-control" placeholder="13/04/2023"
+                                            id="ed.coti-fecha">
+                                    </div>
+                                    <div class="col-md-4 ">
+                                        <label for="" class="form-label">Descripción
+                                            Proyecto</label>
+                                        <input type="text" class="form-control"
+                                            placeholder="MODIFICAR INGRESO PORTAL CP PARA INGRESO DE UN EMAIL VARIOS RUT."
+                                            id="ed.coti-tema">
+
+                                    </div>
+                                    <div class="col-md-4 ">
+                                        <label for="" class="form-label">Comercial</label>
+                                        <input type="text" class="form-control" placeholder="Rodrigo Banda Velasquez"
+                                            id="ed.coti-respon">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-3 ">
+                                        <label for="" class="form-label">UF</label>
+                                        <input type="number" class="form-control" placeholder="44.80" id="ed.coti-uf">
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <label for="" class="form-label">Estado</label>
+                                        <select class="form-select" name="ed.coti-estado" id="ed.coti-estado">
+                                            <option value="2">Cotizada</option>
+                                            <option value="3">Aprobada</option>
+                                            <option value="4">En desarrollo</option>
+                                            <option value="5">Terminada</option>
+                                            <option value="5">Rechazada</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <label for="" class="form-label">Valor $</label>
+                                        <input type="number" class="form-control" placeholder="$ 0"
+                                            id="ed.coti-valor$">
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <label for="" class="form-label">Valor UF</label>
+                                        <input type="text" class="form-control" placeholder="0.00"
+                                            id="ed.coti-valorUF">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="nueva p-2 text-center" id="nueva" style="display: none">
+                            <script>
+                                function nueva() {
+                                    var x = document.getElementById("nueva");
+                                    if (x.style.display === "none") {
+                                        x.style.display = "block";
+                                    } else {
+                                        x.style.display = "none";
+                                    }
+                                }
+                            </script>
+                            <h6 class="text-success">La cotización se ha realizado correctamente. <span><i
+                                        class="far fa-check-circle"></i></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn bg-gradient-primary" onclick="nueva()">Aprobar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     {{-- MODAL EDITAR COTIZACIÓN --}}
     <div class="modal fade" id="editar-cotizacion" tabindex="-1" aria-labelledby="editar-cotizacion"
         aria-hidden="true">
@@ -521,7 +636,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="editar p-2 text-center" id="editar">
+                        <div class="editar p-2 text-center" id="editar" style="display: none">
                             <script>
                                 function editar() {
                                     var x = document.getElementById("editar");
