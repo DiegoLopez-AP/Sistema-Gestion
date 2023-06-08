@@ -695,21 +695,21 @@ select {
 }
 
 .form-control {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-clip: padding-box;
-    background-color: #f2f2f2;
-    border: 1px solid #d2d6da;
-    border-radius: 0.5rem;
-    color: #495057;
-    display: block;
-    font-size: .875rem;
-    font-weight: 400;
-    line-height: 1.4rem;
-    padding: 0.5rem 0.75rem;
-    transition: box-shadow .15s ease,border-color .15s ease;
-    width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: #f2f2f2ad;
+  border: 1px solid #d2d6da96;
+  border-radius: 0.5rem;
+  color: #495057;
+  display: block;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  padding: 0.5rem 0.75rem;
+  transition: box-shadow .15s ease,border-color .15s ease;
+  width: 100%;
 }
 
 .check{
@@ -1035,7 +1035,7 @@ select {
   display: none;
 }
 .sidebar.close .nav-links li .sub-menu .link_name{
-  font-size: 18px;
+  font-size: 16px;
   opacity: 1;
   display: block;
 }
