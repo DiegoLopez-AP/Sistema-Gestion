@@ -8,30 +8,30 @@
             <div class="card mb-2 cartacolor p-4">
                 <div class="card-body px-0 pt-0 pb-2">
                     <!-- Filtro ---
-                                    <form action="">
-                                        <div class="row align-items-center g-2">
-                                            <div class="col-4">
-                                                <label for="form-label" class="form-label">Proveedor</label>
-                                                <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-                                                    <option selected>Proveedor</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-4 float-start">
-                                                <label for="form-label" class="form-label">Atención</label>
-                                                <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-                                                    <option selected>Atención</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <hr>
-                                    -------->
+                                            <form action="">
+                                                <div class="row align-items-center g-2">
+                                                    <div class="col-4">
+                                                        <label for="form-label" class="form-label">Proveedor</label>
+                                                        <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                                                            <option selected>Proveedor</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4 float-start">
+                                                        <label for="form-label" class="form-label">Atención</label>
+                                                        <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                                                            <option selected>Atención</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <hr>
+                                            -------->
                     <div class="filtros d-flex justify-content-between pb-1">
                         <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
                         <div class="input-group w-30">
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <!-- INICIO TABLA PREVENTA--
-                        ----------------------------->
+                                ----------------------------->
                     <div class="table-responsive">
                         <table class="table align-items-center table-striped table-hover mb-0 ">
                             <!-- TITULOS TABLA -->
@@ -108,81 +108,83 @@
                             <tbody>
                                 <!-- INICIO ITEM 1 -->
                                 <tr>
-                                    <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0">5334</p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">LIPIGAS</p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Francisco
-                                            Bergeret</p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Lorem ipsum dolor.</p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">16/05/2023</p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">Nuevo</p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">Sin diseño</p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">Cotización</p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">En proceso</p>
-                                    </td>
-                                    <!-- ARCHIVO -->
-                                    <td class="text-center text-sm">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#-preventa">
-                                            <i class="fa fa-paperclip"></i>
-                                        </a>
-                                    </td>
-                                    <!-- EDT -->
-                                    <td class="text-center text-sm">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#edt-preventa">
-                                            <i class="fa fa-eye"></i>
-                                        </a>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Enrique Gatica</p>
-                                    </td>
-                                    <!-- COTIZACIÓN -->
-                                    <td class="text-center">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#cotizacion-preventa">
-                                            <i class="fa fa-dollar-sign"></i>
-                                        </a>
-                                    </td>
-                                    <!-- HITOS DE PAGO -->
-                                    <td class="text-center">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#hito-preventa">
-                                            <i class="fas fa-history"></i>
-                                        </a>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">Iñaki Alaba</p>
-                                    </td>
-                                    <!-- ACCIONES -->
-                                    <td class="text-center text-sm sticky">
-                                        <!-- EDITAR PREVENTA -->
-                                        <a class="py-1" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#editar-preventa">
-                                            <i class="fa fa-pen mx-2 text-warning"></i>
-                                        </a>
-                                        <!-- ENVIAR PREVENTA -->
-                                        <a class="py-1" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#enviar-preventa">
-                                            <i class="fa fa-envelope-open mx-2 " style="color: #0e50d7;"></i>
-                                        </a>
-                                        <!-- GENERAR PDF -->
-                                        <a class="py-1" href="#">
-                                            <i class="fa fa-file-pdf mx-2 text-danger"></i>
-                                        </a>
-                                    </td>
+                                    <a href="#" >
+                                        <td class="ps-2 text-left" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">5334</p>
+                                        </td>
+                                        <td class="text-left" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">LIPIGAS</p>
+                                        </td>
+                                        <td class="text-left" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">Francisco
+                                                Bergeret</p>
+                                        </td>
+                                        <td class="text-left" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">Lorem ipsum dolor.</p>
+                                        </td>
+                                        <td class="text-center" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">16/05/2023</p>
+                                        </td>
+                                        <td class="text-center" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">Nuevo</p>
+                                        </td>
+                                        <td class="text-center" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">Sin diseño</p>
+                                        </td>
+                                        <td class="text-center" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">Cotización</p>
+                                        </td>
+                                        <td class="text-left" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">En proceso</p>
+                                        </td>
+                                        <!-- ARCHIVO -->
+                                        <td class="text-center text-sm" onclick="distrib()">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#-preventa">
+                                                <i class="fa fa-paperclip"></i>
+                                            </a>
+                                        </td>
+                                        <!-- EDT -->
+                                        <td class="text-center text-sm" onclick="distrib()">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#edt-preventa">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </td>
+                                        <td class="text-left" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">Enrique Gatica</p>
+                                        </td>
+                                        <!-- COTIZACIÓN -->
+                                        <td class="text-center" onclick="distrib()">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#cotizacion-preventa">
+                                                <i class="fa fa-dollar-sign"></i>
+                                            </a>
+                                        </td>
+                                        <!-- HITOS DE PAGO -->
+                                        <td class="text-center" onclick="distrib()">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#hito-preventa">
+                                                <i class="fas fa-history"></i>
+                                            </a>
+                                        </td>
+                                        <td class="text-left" onclick="distrib()">
+                                            <p class="text-xs font-weight-bold mb-0">Iñaki Alaba</p>
+                                        </td>
+                                        <!-- ACCIONES -->
+                                        <td class="text-center text-sm sticky" onclick="distrib()">
+                                            <!-- EDITAR PREVENTA -->
+                                            <a class="py-1" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#editar-preventa">
+                                                <i class="fa fa-pen mx-2 text-warning"></i>
+                                            </a>
+                                            <!-- ENVIAR PREVENTA -->
+                                            <a class="py-1" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#enviar-preventa">
+                                                <i class="fa fa-envelope-open mx-2 " style="color: #0e50d7;"></i>
+                                            </a>
+                                            <!-- GENERAR PDF -->
+                                            <a class="py-1" href="#">
+                                                <i class="fa fa-file-pdf mx-2 text-danger"></i>
+                                            </a>
+                                        </td>
+                                    </a>
                                 </tr>
                                 <!-- INICIO ITEM 2 -->
                                 <tr>
@@ -447,8 +449,20 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- INICIO TABLA DISTRIBUCION PREVENTA--
-                        ----------------------------------------->
+                    <div class="mostrar" id="distrib" style="display: none">
+                        <!-- FUNCION MOSTRAR -->
+                        <script>
+                            function distrib() {
+                                var x = document.getElementById("distrib");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+                        <!-- INICIO TABLA DISTRIBUCION PREVENTA--
+                            ----------------------------------------->
                     <div class="table-responsive pt-4">
                         <div class="filtros d-flex justify-content-between ">
                             <h6 class="text-dark fw-bold pt-3 pb-0">Distribución de la preventa</h6>
@@ -537,13 +551,15 @@
                             </tbody>
                         </table>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </main>
 
     <!-- MODALS -----
-            ------------------>
+                    ------------------>
 
     <!-- MODAL EDT -->
     <div class="modal fade" id="edt-preventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1241,7 +1257,7 @@
                                     <div class="col-md-4 ">
                                         <label for="" class="form-label">Rut</label>
                                         <select class="form-select" name="" id="" disabled>
-                                            <option value="1" selected >%</option>
+                                            <option value="1" selected>%</option>
                                         </select>
                                     </div>
                                     <div class="col-md-8">
