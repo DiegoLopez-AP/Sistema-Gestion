@@ -1,13 +1,13 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h5 class="m-2">RRHH/Curriculum</h5>
-    <div class="row">
-        <div class="col-12">
-            <div class="card mb-2 mx-2 cartacolor p-5">
-                <div class="card-header mb-1">
-                    <div class="d-flex flex-row">
-
+    <h5 class="m-2">RRHH <i class="fas fa-caret-right"></i> Curriculum</h5>
+    <div class="line_title"></div>
+    <main class="ct-docs-content-col" role="main">
+        <div class="ct-docs-page-title">
+            <div class="card mb-2 cartacolor p-4">
+                <div class="card-body px-0 pt-0 pb-2">
+                    <div class="d-flex flex-row pb-2">
                         <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
                         <span class="py-1 px-2 my-2">
                             <i class="fas fa-search"></i>
@@ -16,13 +16,12 @@
                             data-bs-target="#curriculum">
                             Nuevo
                         </button>
-
                     </div>
-
-                </div>
-                <div class="card-body px-0 pt-0 pb-2">
+                    <!-- INICIO TABLA CURRICULUM---
+                                ------------------------------->
                     <div class="table-responsive">
                         <table class="table align-items-center table-striped table-hover mb-0 " width="100%">
+                            <!-- TITULOS TABLA -->
                             <thead class="colortabla">
                                 <tr class="colorletratabla">
                                     <th class="text-left text-uppercase text-white text-xxs font-weight-bolder ps-2">
@@ -52,6 +51,7 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- INICIO ITEM 1 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">ACEVEDO</p>
@@ -83,344 +83,13 @@
                                     </td>
 
                                     <td class="text-center">
-                                        <!-- Button trigger modal -->
-                                        
+                                        <!-- BOTON ABRIR CURRICULUM -->
                                         <a href="{{ url('#') }}" class="" data-bs-toggle="modal"
                                             data-bs-target="#curriculum" type=""><i class="fas fa-file-invoice"></i>
                                         </a>
-                                        
-
-                                        <!-- Modal -->
-                                        <div class="modal fade bd-example-modal-lg" id="curriculum" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
-                                            <div class="modal-dialog modal-xl">
-                                                <div class="modal-content ">
-                                                    <div class="modal-header bg-fondo">
-                                                        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Curriculum</h1>
-                                                        <button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body modal-curriculum">
-                                                        <div class="container">
-
-                                                            <form class="form bg-white" action="#" method="post">
-
-
-                                                                <div class="form-register_body">
-                                                                    <div class="paso active" id="paso-1">
-                                                                        <div class="paso_header">
-                                                                            <h4 class="paso_title curriculum">Información
-                                                                                personal</h4>
-                                                                        </div>
-                                                                        <div class="paso_body text-start">
-                                                                            <div class="row ">
-                                                                                <div class="col-md-3 ">
-                                                                                    <label class="form-label"
-                                                                                        for="">Nombre</label>
-                                                                                    <input class="form-control"
-                                                                                        type="text" id="nombre"
-                                                                                        name="nombre">
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Ap. Paterno</label>
-                                                                                    <input class="form-control"
-                                                                                        type="text" id="ap-paterno"
-                                                                                        name="ap-materno">
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Ap. Materno</label>
-                                                                                    <input class="form-control"
-                                                                                        type="text" id="ap-materno"
-                                                                                        name="ap-materno">
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Rut</label>
-                                                                                    <input class="form-control"
-                                                                                        type="text" id="rut"
-                                                                                        name="rut">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row mt-2">
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Fecha de Nacimiento</label>
-                                                                                            <input type="date" id="start"
-                                                                                            name="trip-start" class="form-control">
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Dirección</label>
-                                                                                    <input class="form-control"
-                                                                                        type="text" id="nombre"
-                                                                                        name="nombre">
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Comuna</label>
-                                                                                    <select class="form-select"
-                                                                                        name="vigencia" id="vigencia">
-                                                                                        <option value="0">Seleccione
-                                                                                            comuna</option>
-                                                                                        <option value="1">Comuna 1
-                                                                                        </option>
-                                                                                        <option value="2">Comuna 2
-                                                                                        </option>
-                                                                                    </select>
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Ciudad</label>
-                                                                                    <input class="form-control"
-                                                                                        type="text" id="rut"
-                                                                                        name="rut">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row mt-2">
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Fono
-                                                                                        Particular</label>
-                                                                                    <input size="16" type="number"
-                                                                                        class="form-control"
-                                                                                        id="fono-parti">
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Celular</label>
-                                                                                    <input class="form-control"
-                                                                                        type="number" id="celular"
-                                                                                        name="celular">
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Estado Civil</label>
-                                                                                    <input class="form-control"
-                                                                                        type="text" id="e-civil"
-                                                                                        name="e-civil">
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                    <label class="form-label"
-                                                                                        for="">Nacionalidad</label>
-                                                                                    <input class="form-control"
-                                                                                        type="text" id="nacionalidad"
-                                                                                        name="nacionalidad">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row mt-2">
-                                                                                <div class="col-md-5">
-                                                                                    <label class="form-label"
-                                                                                        for="">Mail</label>
-                                                                                    <input class="form-control"
-                                                                                        type="text" id="mail"
-                                                                                        name="mail">
-                                                                                </div>
-                                                                                <div class="col-md-7">
-                                                                                    <label for="formFile"
-                                                                                        class="form-label text-left">Foto</label>
-                                                                                    <input class="form-control"
-                                                                                        type="file" id="foto-eme">
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="paso_footer">
-                                                                                <button type="button"
-                                                                                    class="btn btn-danger mt-4 px-4"
-                                                                                    data-to_step="1"
-                                                                                    data-step="2">Regresar</button>
-                                                                                <button type="button"
-                                                                                    class=" btn btn-secondary mt-4 px-4"
-                                                                                    data-to_step="2"
-                                                                                    data-step="1">Siguiente</button>
-                                                                                <button type="submit"
-                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="paso" id="paso-2">
-                                                                        <div class="paso_header">
-                                                                            <h4 class="paso_title">Profesión</h4>
-                                                                        </div>
-                                                                        <div class="paso_body">
-                                                                            <div class="row mt-2">
-                                                                                ...
-                                                                            </div>
-
-
-
-                                                                        </div>
-                                                                        <div class="paso_footer">
-                                                                            <button type="button"
-                                                                                class="btn btn-danger mt-4 px-4"
-                                                                                data-to_step="1"
-                                                                                data-step="2">Regresar</button>
-                                                                            <button type="button"
-                                                                                class=" btn btn-secondary mt-4 px-4"
-                                                                                data-to_step="2"
-                                                                                data-step="1">Siguiente</button>
-                                                                            {{-- <button type="submit" class="step_button mt-4 px-4">Crear</button> --}}
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="paso" id="paso-3">
-                                                                        <div class="paso_header">
-                                                                            <h4 class="paso_title curriculum">Resumen</h4>
-                                                                        </div>
-                                                                        <div class="paso_body">
-                                                                            <div class="row mt-2">
-                                                                                <div class="col-md-12">
-                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
-                                                                                        placeholder="Escriba sus datos..."></textarea>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="paso_footer">
-                                                                                <button type="button"
-                                                                                    class="btn btn-danger mt-4 px-4"
-                                                                                    data-to_step="1"
-                                                                                    data-step="2">Regresar</button>
-                                                                                <button type="button"
-                                                                                    class=" btn btn-secondary mt-4 px-4"
-                                                                                    data-to_step="2"
-                                                                                    data-step="1">Siguiente</button>
-                                                                                <button type="submit"
-                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="paso" id="paso-4">
-                                                                        <div class="paso_header">
-                                                                            <h4 class="paso_title curriculum">Experiencia
-                                                                            </h4>
-                                                                        </div>
-                                                                        <div class="paso_body">
-                                                                            <div class="row mt-2">
-                                                                                <div class="col-md-12">
-
-                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
-                                                                                        placeholder="Escriba sus datos..."></textarea>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="paso_footer">
-                                                                                <button type="button"
-                                                                                    class="btn btn-danger mt-4 px-4"
-                                                                                    data-to_step="1"
-                                                                                    data-step="2">Regresar</button>
-                                                                                <button type="button"
-                                                                                    class=" btn btn-secondary mt-4 px-4"
-                                                                                    data-to_step="2"
-                                                                                    data-step="1">Siguiente</button>
-                                                                                <button type="submit"
-                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="paso" id="paso-5">
-                                                                        <div class="paso_header">
-                                                                            <h4 class="paso_title curriculum">Formación
-                                                                                Académica</h4>
-                                                                        </div>
-                                                                        <div class="paso_body">
-                                                                            <div class="row mt-2">
-                                                                                <div class="col-md-12">
-
-                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
-                                                                                        placeholder="Escriba sus datos..."></textarea>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="paso_footer">
-                                                                                <button type="button"
-                                                                                    class="btn btn-danger mt-4 px-4"
-                                                                                    data-to_step="1"
-                                                                                    data-step="2">Regresar</button>
-                                                                                <button type="button"
-                                                                                    class=" btn btn-secondary mt-4 px-4"
-                                                                                    data-to_step="2"
-                                                                                    data-step="1">Siguiente</button>
-                                                                                <button type="submit"
-                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="paso" id="paso-6">
-                                                                        <div class="paso_header">
-                                                                            <h4 class="paso_title curriculum">Conocimientos
-                                                                            </h4>
-                                                                        </div>
-                                                                        <div class="paso_body">
-                                                                            <div class="row mt-2">
-                                                                                <div class="col-md-12">
-
-                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
-                                                                                        placeholder="Escriba sus datos..."></textarea>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="paso_footer">
-                                                                                <button type="button"
-                                                                                    class="btn btn-danger mt-4 px-4"
-                                                                                    data-to_step="1"
-                                                                                    data-step="2">Regresar</button>
-                                                                                <button type="button"
-                                                                                    class=" btn btn-secondary mt-4 px-4"
-                                                                                    data-to_step="2"
-                                                                                    data-step="1">Siguiente</button>
-                                                                                <button type="submit"
-                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="paso" id="paso-7">
-                                                                        <div class="paso_header">
-                                                                            <h4 class="paso_title curriculum">Idiomas</h4>
-                                                                        </div>
-                                                                        <div class="paso_body">
-                                                                            <div class="row mt-2">
-                                                                                <div class="col-md-12">
-
-                                                                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="10"
-                                                                                        placeholder="Escriba sus datos..."></textarea>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="paso_footer">
-                                                                                <button type="button"
-                                                                                    class="btn btn-danger mt-4 px-4"
-                                                                                    data-to_step="1"
-                                                                                    data-step="2">Regresar</button>
-                                                                                <button type="button"
-                                                                                    class=" btn btn-secondary mt-4 px-4"
-                                                                                    data-to_step="2"
-                                                                                    data-step="1">Siguiente</button>
-                                                                                <button type="submit"
-                                                                                    class="btn btn-success mt-4 px-4">Crear</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                            </form>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">Cerrar</button>
-                                                            <button type="button" class="btn btn-primary">Guardar
-                                                                Cambios</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </td>
                                 </tr>
-
+                                <!-- INICIO ITEM 2 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">BARRERA</p>
@@ -456,7 +125,7 @@
                                         </a>
                                     </td>
                                 </tr>
-
+                                <!-- INICIO ITEM 3 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">CERDA</p>
@@ -488,7 +157,7 @@
                                         </a>
                                     </td>
                                 </tr>
-
+                                <!-- INICIO ITEM 4 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">GATICA</p>
@@ -516,11 +185,12 @@
                                     </td>
                                     <td class="text-center">
                                         <a href="{{ url('#') }}" class="" data-bs-toggle="modal"
-                                            data-bs-target="#curriculum" type=""><i class="fas fa-file-invoice"></i>
+                                            data-bs-target="#curriculum" type=""><i
+                                                class="fas fa-file-invoice"></i>
                                         </a>
                                     </td>
                                 </tr>
-
+                                <!-- INICIO ITEM 5 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
@@ -557,5 +227,187 @@
                 </div>
             </div>
         </div>
+    </main>
+
+    <!-- MODALS -----
+        ------------------>
+
+    <!-- MODAL CURRICULUM -->
+    <div class="modal fade bd-example-modal-lg" id="curriculum" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" role="dialog">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content ">
+                <div class="modal-header bg-fondo">
+                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Curriculum</h1>
+                    <button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-curriculum">
+                    <div class="container">
+                        <form class="form bg-white" action="#" method="post">
+                            <div class="paso active" id="paso-1">
+                                <div class="paso_header">
+                                    <h4 class="paso_title curriculum">Información
+                                        personal</h4>
+                                </div>
+                                <div class="paso_body text-start">
+                                    <div class="row ">
+                                        <div class="col-md-3 ">
+                                            <label class="form-label" for="">Nombre</label>
+                                            <input class="form-control" type="text" id="nombre" name="nombre">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Ap. Paterno</label>
+                                            <input class="form-control" type="text" id="ap-paterno"
+                                                name="ap-materno">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Ap. Materno</label>
+                                            <input class="form-control" type="text" id="ap-materno"
+                                                name="ap-materno">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Rut</label>
+                                            <input class="form-control" type="text" id="rut" name="rut">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Fecha de Nacimiento</label>
+                                            <input type="date" id="start" name="trip-start" class="form-control">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Dirección</label>
+                                            <input class="form-control" type="text" id="nombre" name="nombre">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Comuna</label>
+                                            <select class="form-select" name="vigencia" id="vigencia">
+                                                <option value="0">Seleccione
+                                                    comuna</option>
+                                                <option value="1">Comuna 1
+                                                </option>
+                                                <option value="2">Comuna 2
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Ciudad</label>
+                                            <input class="form-control" type="text" id="rut" name="rut">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Fono
+                                                Particular</label>
+                                            <input size="16" type="number" class="form-control" id="fono-parti">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Celular</label>
+                                            <input class="form-control" type="number" id="celular" name="celular">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Estado Civil</label>
+                                            <input class="form-control" type="text" id="e-civil" name="e-civil">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label" for="">Nacionalidad</label>
+                                            <input class="form-control" type="text" id="nacionalidad"
+                                                name="nacionalidad">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-md-5">
+                                            <label class="form-label" for="">Mail</label>
+                                            <input class="form-control" type="text" id="mail" name="mail">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <label for="formFile" class="form-label text-left">Foto</label>
+                                            <input class="form-control" type="file" id="foto-eme">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion pt-4" id="accordionExample" >
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header bg-dark" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          Profesión
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header bg-dark" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Resumen
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header bg-dark" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          Experiencia
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn bg-gradient-primary">Guardar
+                            Cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
+
+
+
+
+<!-- FUNCIONES JS ----
+---------------------->
+
+<!-- FUNCION PAGINA SIGUIENTE -->
+<script>
+    function mostrarPagina(numeroPagina) {
+        var paginas = document.querySelectorAll('.pagina');
+
+        // Ocultar todas las páginas
+        paginas.forEach(function(pagina) {
+            pagina.classList.remove('activa');
+        });
+
+        // Mostrar la página seleccionada
+        paginas[numeroPagina - 1].classList.add('activa');
+    }
+
+    // Configurar el envío del formulario
+    document.getElementById('formulario').addEventListener('submit', function(event) {
+        // Evitar el envío del formulario por defecto
+        event.preventDefault();
+
+        // Realizar las acciones necesarias al enviar el formulario
+        // ...
+
+        // Opcional: redireccionar a una página de confirmación
+        // window.location.href = "confirmacion.html";
+    });
+</script>

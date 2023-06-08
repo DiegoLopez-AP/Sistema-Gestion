@@ -1,28 +1,27 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h5>Comercial/Preventa</h5>
-    <div class="row">
-        <div class="col-12">
-            <div class="card mb-2 mx-2 p-4 py-4">
-                {{-- TODO INICIO TABLA CLIENTE ------------------------------------------------------------------------------------------ --}}
+    <h5>Comercial <i class="fas fa-caret-right"></i> Preventa</h5>
+    <div class="line_title"></div>
+    <main class="ct-docs-content-col" role="main">
+        <div class="ct-docs-page-title">
+            <div class="card mb-2 cartacolor p-4">
                 <div class="card-body px-0 pt-0 pb-2">
-                    {{-- TODO FILTROS --}}
-                    <div class="d-flex flex-row p-2 ps-0">
+                    <!-- FILTROS -->
+                    <div class="d-flex flex-row pb-3 justify-content-between">
                         <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
-                        <span class="py-1 px-2 my-2">
-                            <i class="fas fa-search"></i>
-                        </span>
                         <div class="icono agregar px-2 my-2 pt-1">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#nueva-preventa"><i
-                                    class="fas fa-plus"></i></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#nueva-preventa">
+                                <i class="fas fa-plus"></i>
+                            </a>
                         </div>
-
                     </div>
+                    <!-- INICIO TABLA PREVENTA--
+                                ----------------------------->
                     <div class="table-responsive">
                         <table class="table align-items-center table-striped table-hover mb-0 ">
+                            <!-- TITULOS TABLA -->
                             <thead class="colortabla">
-                                {{-- TODO TITULOS TABLA --}}
                                 <tr class="colorletratabla">
                                     <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
                                         ID
@@ -63,7 +62,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                {{-- TODO INICIO ITEM 1 --}}
+                                <!-- INICIO ITEM 1 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">5334</p>
@@ -84,13 +83,13 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">En proceso</p>
                                     </td>
-                                    {{-- TODO ARCHIVO --}}
+                                    <!-- ARCHIVO -->
                                     <td class="text-center text-sm">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#-preventa">
                                             <i class="fa fa-paperclip"></i>
                                         </a>
                                     </td>
-                                    {{-- TODO EDT --}}
+                                    <!-- EDT -->
                                     <td class="text-center text-sm">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#edt-preventa">
                                             <i class="fa fa-eye"></i>
@@ -99,7 +98,7 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Enrique Gatica</p>
                                     </td>
-                                    {{-- TODO COTIZACIÓN --}}
+                                    <!-- COTIZACIÓN -->
                                     <td class="text-center">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#cotizacion-preventa">
                                             <i class="fa fa-dollar-sign"></i>
@@ -108,54 +107,29 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Iñaki Alaba</p>
                                     </td>
-                                    {{-- TODO ACCIONES --}}
+                                    <!-- ACCIONES -->
                                     <td class="text-center text-sm sticky">
-                                        {{-- TODO EDITAR PREVENTA --}}
+                                        <!-- EDITAR PREVENTA -->
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-pen mx-2"></i>
                                         </a>
-                                        {{-- TODO ENVIAR PREVENTA --}}
+                                        <!-- ENVIAR PREVENTA -->
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#enviar-preventa">
                                             <i class="fa fa-envelope-open mx-2"></i>
                                         </a>
-                                        {{-- TODO GENERAR PDF --}}
+                                        <!-- GENERAR PDF -->
                                         <a class="py-1" href="#">
                                             <i class="fa fa-file-pdf mx-2 "></i>
                                         </a>
                                     </td>
                                 </tr>
-                                {{-- TODO INICIO iTEM 2 --}}
+                                <!-- INICIO ITEM 2 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">5375</p>
                                     </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
@@ -168,88 +142,96 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-                                    {{-- TODO ACCIONES --}}
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <!-- ACCIONES -->
                                     <td class="text-center text-sm sticky">
-                                        {{-- TODO EDITAR PREVENTA --}}
+                                        <!-- EDITAR PREVENTA -->
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-pen mx-2"></i>
                                         </a>
-                                        {{-- TODO ENVIAR PREVENTA --}}
+                                        <!-- ENVIAR PREVENTA -->
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-envelope-open mx-2"></i>
                                         </a>
-                                        {{-- TODO GENERAR PDF --}}
+                                        <!-- GENERAR PDF -->
                                         <a class="py-1" href="#">
                                             <i class="fa fa-file-pdf mx-2 "></i>
                                         </a>
                                     </td>
                                 </tr>
-                                {{-- TODO INICIO ITEM 3 --}}
+                                <!-- INICIO ITEM 3 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">5350</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-                                    {{-- TODO ACCIONES --}}
+                                    <!-- ACCIONES -->
                                     <td class="text-center text-sm sticky">
-                                        {{-- TODO EDITAR PREVENTA --}}
+                                        <!-- EDITAR PREVENTA -->
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-pen mx-2"></i>
                                         </a>
-                                        {{-- TODO ENVIAR PREVENTA --}}
+                                        <!-- ENVIAR PREVENTA -->
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-envelope-open mx-2"></i>
                                         </a>
-                                        {{-- TODO GENERAR PDF --}}
+                                        <!-- GENERAR PDF -->
                                         <a class="py-1" href="#">
                                             <i class="fa fa-file-pdf mx-2 "></i>
                                         </a>
                                     </td>
                                 </tr>
-                                {{-- TODO INICIO ITEM 4 --}}
+                                <!-- INICIO ITEM 4 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">5349</p>
@@ -284,25 +266,25 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-                                    {{-- TODO ACCIONES --}}
+                                    <!-- ACCIONES -->
                                     <td class="text-center text-sm sticky">
-                                        {{-- TODO EDITAR PREVENTA --}}
+                                        <!-- EDITAR PREVENTA -->
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-pen mx-2"></i>
                                         </a>
-                                        {{-- TODO ENVIAR PREVENTA --}}
+                                        <!-- ENVIAR PREVENTA -->
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-envelope-open mx-2"></i>
                                         </a>
-                                        {{-- TODO GENERAR PDF --}}
+                                        <!-- GENERAR PDF -->
                                         <a class="py-1" href="#">
                                             <i class="fa fa-file-pdf mx-2 "></i>
                                         </a>
                                     </td>
                                 </tr>
-                                {{-- TODO INICIO ITEM 5 --}}
+                                <!-- INICIO ITEM 5 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">5336</p>
@@ -337,19 +319,19 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
-                                    {{-- TODO ACCIONES --}}
+                                    <!-- ACCIONES -->
                                     <td class="text-center text-sm sticky">
-                                        {{-- TODO EDITAR PREVENTA --}}
+                                        <!-- EDITAR PREVENTA -->
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-pen mx-2"></i>
                                         </a>
-                                        {{-- TODO ENVIAR PREVENTA --}}
+                                        <!-- ENVIAR PREVENTA -->
                                         <a class="py-1" href="#" data-bs-toggle="modal"
                                             data-bs-target="#editar-preventa">
                                             <i class="fa fa-envelope-open mx-2"></i>
                                         </a>
-                                        {{-- TODO GENERAR PDF --}}
+                                        <!-- GENERAR PDF -->
                                         <a class="py-1" href="#">
                                             <i class="fa fa-file-pdf mx-2 "></i>
                                         </a>
@@ -361,12 +343,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    {{-- TODO MODALS --}}
+    <!-- MODALS -----
+                ------------------>
 
-
-    {{-- TODO MODAL EDT --}}
+    <!-- MODAL EDT -->
     <div class="modal fade" id="edt-preventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg ">
             <div class="modal-content">
@@ -384,7 +366,6 @@
                                             <th class="text-dark" scope="col">#</th>
                                             <th class="text-dark" scope="col">Servicio</th>
                                             <th class="text-dark" scope="col">Horas</th>
-
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -392,13 +373,11 @@
                                             <th scope="row">1</th>
                                             <td>Front</td>
                                             <td>{Horas}</td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
                                             <td>Back-oficce</td>
                                             <td>{Horas}</td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
@@ -463,7 +442,7 @@
             </div>
         </div>
     </div>
-    {{-- TODO MODAL COTIZACIÓN --}}
+    <!-- MODAL COTIZACIÓN -->
     <div class="modal fade" id="cotizacion-preventa" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg ">
@@ -475,7 +454,6 @@
                 <div class="modal-body modal-color">
                     <div class="card">
                         <div class="card-body py-0 py-3">
-
                             <div class="identificacion-cli">
                                 <h6 class="text-secondary font-weight-bold text-center ">Identificación Cliente</h6>
                                 <hr>
@@ -484,42 +462,44 @@
                                 <div class="row">
                                     <div class="col-md-6 "><label for="" class="form-label">Estado: <span>En
                                                 proceso</span></label></div>
-                                    <div class="col-md-6 text-end"><label for="" class="form-label">Fecha:
-                                            <span>{fecha}</span></label></div>
+                                    <div class="col-md-6 text-end">
+                                        <label for="" class="form-label">Fecha:
+                                            <span>{fecha}</span>
+                                        </label>
+                                    </div>
                                 </div>
-
-
-
                             </div>
                             <div class="tema bg-light mb-3 p-2 pb-0 rounded">
                                 <div class="row ">
                                     <div class="col-md-4 text-center">
-                                        <label for="" class="form-label">Cliente: <span class="text-black">
-                                                LIPIGAS</span></label>
+                                        <label for="" class="form-label">Cliente:
+                                            <span class="text-black">
+                                                LIPIGAS
+                                            </span>
+                                        </label>
                                     </div>
                                     <div class="col-md-4 text-center">
-                                        <label for="" class="form-label">Contacto: <span class="text-black">
-                                                Francisco Bergeret</span></label>
+                                        <label for="" class="form-label">Contacto: 
+                                            <span class="text-black">
+                                                Francisco Bergeret
+                                            </span>
+                                        </label>
                                     </div>
                                     <div class="col-md-4 text-center">
-                                        <label for="" class="form-label">Preventa: <span>Enrique
-                                                Gatica</span></label>
+                                        <label for="" class="form-label">Preventa: 
+                                            <span>
+                                                Enrique Gatica
+                                            </span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-
-                            {{-- <div class="row">
-                                    <div class="col-md-12 text-left">
-                                        <label class="text-danger" for="">Estado: <span>En proceso</span></label>
-                                    </div>
-                                </div> --}}
                             <div class="tema p-2 rounded mb-3" style="background-color: #f2f2f2">
                                 <h6 class="text-dark fw-bold">Tema:</h6>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt voluptatem non
                                     porro temporibus cumque vel, cum omnis provident fugiat culpa animi minima,
                                     exercitationem ipsam dicta eveniet ratione id, optio ab.</p>
                             </div>
-
                             <div class="accordion " id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne" style="background-color: #f2f2f2">
@@ -539,7 +519,6 @@
                                                             <th class="text-dark" scope="col">#</th>
                                                             <th class="text-dark" scope="col">Servicio</th>
                                                             <th class="text-dark" scope="col">Horas</th>
-
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -547,13 +526,11 @@
                                                             <th scope="row">1</th>
                                                             <td>Front</td>
                                                             <td>{Horas}</td>
-
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">2</th>
                                                             <td>Back-oficce</td>
                                                             <td>{Horas}</td>
-
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">3</th>
@@ -578,7 +555,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="datos-coti text-left pt-4">
                                 <h6 class="text-secondary font-weight-bold">Ingresar cotización</h6>
                                 <hr>
@@ -646,19 +622,13 @@
                                     <label class="form-label">Hitos de pago</label>
                                     <input class="form-control">
                                 </div>
-
-
                             </div>
                             <div class="ingresar-cotizacion pt-3  float-start">
-                                <a href="#" type="button" class="btn bg-gradient-primary" onclick="ingresar()"><i
-                                        class="fas fa-plus"></i></a>
+                                <a href="#" type="button" class="btn bg-gradient-primary" onclick="ingresar()">
+                                    <i class="fas fa-plus"></i>
+                                </a>
                             </div>
-                            {{-- <h6 class="text-success">Los datos se han ingresado correctamente. <span><i
-                                        class="far fa-check-circle"></i></span></h6> --}}
                         </div>
-                        
-
-
                         <div class="guardar p-2 text-center" id="guardar1" style="display: none;">
                             <script>
                                 function guardarcamb() {
@@ -670,11 +640,13 @@
                                     }
                                 }
                             </script>
-                            <h6 class="text-success">Los cambios se han guardado correctamente. <span><i
-                                        class="far fa-check-circle"></i></span></h6>
+                            <h6 class="text-success">Los cambios se han guardado correctamente. 
+                                <span>
+                                    <i class="far fa-check-circle"></i>
+                                </span>
+                            </h6>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -684,7 +656,7 @@
             </div>
         </div>
     </div>
-    {{-- TODO MODAL EDITAR PREVENTA --}}
+    <!-- MODAL EDITAR PREVENTA -->
     <div class="modal fade" id="editar-preventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg ">
             <div class="modal-content">
@@ -705,7 +677,6 @@
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Moneda</label>
                                         <select class="form-select" name="" id="indica-cli">
-                                            {{-- <option value="1">Seleccione Indicador</option> --}}
                                             <option value="2">U.F</option>
                                             <option value="3">Dolar</option>
                                         </select>
@@ -714,7 +685,6 @@
                                         <label for="" class="form-label">Dias de
                                             pago</label>
                                         <input class="form-control" id="diapago-cli" type="number" placeholder="30">
-
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -729,22 +699,19 @@
                                             Social</label>
                                         <input type="text" class="form-control" placeholder="Alquimia S.A"
                                             id="razonsoci-cli">
-
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Dirección</label>
                                         <input type="text" class="form-control"
-                                            placeholder="Doctor Garcia
-                                                                            Guerrero 1192"
+                                            placeholder="Doctor Garcia Guerrero 1192"
                                             id="direc-contac">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Giro</label>
                                         <input type="text" class="form-control"
-                                            placeholder="Servicios
-                                                                            , Industria, Quimíca"
+                                            placeholder="Servicios, Industria, Quimíca"
                                             id="giro-cli">
                                     </div>
                                     <div class="col-md-4">
@@ -753,7 +720,6 @@
                                             id="telefono-cli">
                                     </div>
                                 </div>
-
                                 <div class="row mb-3">
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Pag.
@@ -764,8 +730,6 @@
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Vigencia</label>
                                         <select class="form-select" name="" id="vigen-cli">
-                                            {{-- <option value="1">Seleccione Vigencia
-                                                                            </option> --}}
                                             <option value="2">Vigente</option>
                                             <option value="3">No Vigente</option>
                                         </select>
@@ -784,8 +748,11 @@
                                     }
                                 }
                             </script>
-                            <h6 class="text-success">Los datos se han editado correctamente. <span><i
-                                        class="far fa-check-circle"></i></span></h6>
+                            <h6 class="text-success">Los datos se han editado correctamente. 
+                                <span>
+                                    <i class="far fa-check-circle"></i>
+                                </span>
+                            </h6>
                         </div>
                     </div>
                 </div>
@@ -797,7 +764,7 @@
             </div>
         </div>
     </div>
-    {{-- TODO MODAL AÑADIR PREVENTA --}}
+    <!-- MODAL AÑADIR PREVENTA -->
     <div class="modal fade" id="nueva-preventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg ">
             <div class="modal-content">
@@ -826,7 +793,6 @@
                                         <label for="" class="form-label">Dias de
                                             pago</label>
                                         <input class="form-control" id="diapago-cli" type="number" placeholder="">
-
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -839,7 +805,6 @@
                                         <label for="" class="form-label">Razón
                                             Social</label>
                                         <input type="text" class="form-control" placeholder="" id="razonsoci-cli">
-
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -856,7 +821,6 @@
                                         <input type="number" class="form-control" placeholder="" id="telefono-cli">
                                     </div>
                                 </div>
-
                                 <div class="row mb-3">
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Pag.
@@ -885,8 +849,11 @@
                                     }
                                 }
                             </script>
-                            <h6 class="text-success">La preventa se ha creado correctamente. <span><i
-                                        class="far fa-check-circle"></i></span></h6>
+                            <h6 class="text-success">La preventa se ha creado correctamente. 
+                                <span>
+                                    <i class="far fa-check-circle"></i>
+                                </span>
+                            </h6>
                         </div>
                     </div>
                 </div>
@@ -898,7 +865,7 @@
             </div>
         </div>
     </div>
-    {{-- TODO MODAL ENVIAR COTIZACIÓN --}}
+    <!-- MODAL ENVIAR COTIZACIÓN -->
     <div class="modal fade" id="enviar-preventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -914,7 +881,6 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-
                 </div>
             </div>
         </div>

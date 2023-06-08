@@ -1,20 +1,22 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h5 class="m-2">Administración/Usuarios</h5>
-    <div class="row">
-        <div class="col-12">
-            <div class="card mb-4 mx-2 cartacolor p-5">
-                <div class="card-header py-3">
-                    <div class="d-flex flex-row justify-content-end">
+    <h5 class="m-2">Administración <i class="fas fa-caret-right"></i> Usuarios</h5>
+    <div class="line_title"></div>
+    <main class="ct-docs-content-col" role="main">
+        <div class="ct-docs-page-title">
+            <div class="card mb-2 cartacolor p-4">
+                <div class="card-body px-0 pt-0 pb-2">
+                    <div class="d-flex flex-row justify-content-end pb-3">
                         <a href="{{ url('#') }}"
                             class="btn bg-gradient-primary btn-sm mb-0 px-4 py-2 {{ Request::is('#') ?: '' }} justify-content-end"
                             type="button">Nuevo</a>
                     </div>
-                </div>
-                <div class="card-body px-0 pt-0 pb-2">
+                    <!-- INICIO TABLA USUARIOS--- 
+                    ---------------------------->
                     <div class="table-responsive p-0">
                         <table class="table align-items-center table-striped table-hover mb-0">
+                            <!-- TITULOS TABLA -->
                             <thead class="colortabla">
                                 <tr>
                                     <th class=" text-left text-uppercase text-black text-xxs font-weight-bolder">
@@ -46,79 +48,65 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- INICIO ITEM 1 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">Administrador</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Administrador</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">1-9</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Administrador</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Administrador</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">administrador@gtalent.cl</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">13/09/2011</p>
                                     </td>
-
                                     <td class="text-left">
                                         <span class="text-secondary text-xs font-weight-bold">Vigente</span>
                                     </td>
                                 </tr>
-
+                                <!-- INICIO ITEM 2 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">aespina</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Desarrollador</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">17.752.032-2</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Alejandro Espina</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Analista Programador</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">aespina@g-talent.cl</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">02/01/2017</p>
                                     </td>
-
                                     <td class="text-left">
                                         <span class="text-secondary text-xs font-weight-bold">Vigente</span>
                                     </td>
                                 </tr>
-
+                                <!-- INICIO ITEM 3 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">arojo</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Jefe Proyecto</p>
                                     </td>
@@ -131,11 +119,9 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Gestor de Ventas</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">arojo@g-talent.cl</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">02/01/2023</p>
                                     </td>
@@ -143,12 +129,11 @@
                                         <span class="text-secondary text-xs font-weight-bold">Vigente</span>
                                     </td>
                                 </tr>
-
+                                <!-- INICIO ITEM 4 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">bperez</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Desarrollador</p>
                                     </td>
@@ -161,11 +146,9 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Analista Programador</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">bperez@g-talent.cl</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">06/01/2019</p>
                                     </td>
@@ -173,12 +156,11 @@
                                         <span class="text-secondary text-xs font-weight-bold">Vigente</span>
                                     </td>
                                 </tr>
-
+                                <!-- INICIO ITEM 5 -->
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">FSoto</p>
                                     </td>
-
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0">Outsorcing</p>
                                     </td>
@@ -201,12 +183,11 @@
                                         <span class="text-secondary text-xs font-weight-bold">Vigente</span>
                                     </td>
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 @endsection
