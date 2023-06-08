@@ -14,8 +14,7 @@
                             <i class="fas fa-search"></i>
                         </span>
                         <div class="icono agregar px-2 my-2 pt-1">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#agregar-cliente"><i
-                                    class="fas fa-plus"></i></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#agregar-cliente"><i class="fas fa-plus"></i></a>
                         </div>
                     </div>
                     <!-- INICIO TABLA CLIENTE--- 

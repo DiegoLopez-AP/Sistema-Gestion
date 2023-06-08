@@ -1200,3 +1200,31 @@ select {
   background: #0e50d7;
   margin-bottom: 20px;
 }
+
+/* BOTON CIRCULAR */
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.btn {
+  background-position-x: 25%;
+  background-size: 150%;
+  box-shadow: 0 4px 7px -1px rgba(0,0,0,.11), 0 2px 4px -1px rgba(0,0,0,.07);
+  letter-spacing: -.025rem;
+}
