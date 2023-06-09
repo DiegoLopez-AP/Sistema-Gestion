@@ -120,7 +120,7 @@
                                                 Bergeret</p>
                                         </td>
                                         <td class="text-left" onclick="distrib()">
-                                            <p class="text-xs font-weight-bold mb-0">Lorem ipsum dolor.</p>
+                                            <p class="text-xs font-weight-bold mb-0">ASESORIA SOPORTE Y MANTENIMIENTO</p>
                                         </td>
                                         <td class="text-center" onclick="distrib()">
                                             <p class="text-xs font-weight-bold mb-0">16/05/2023</p>
@@ -138,13 +138,13 @@
                                             <p class="text-xs font-weight-bold mb-0">En proceso</p>
                                         </td>
                                         <!-- ARCHIVO -->
-                                        <td class="text-center text-sm" onclick="distrib()">
+                                        <td class="text-center text-sm">
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#-preventa">
                                                 <i class="fa fa-paperclip"></i>
                                             </a>
                                         </td>
                                         <!-- EDT -->
-                                        <td class="text-center text-sm" onclick="distrib()">
+                                        <td class="text-center text-sm">
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#edt-preventa">
                                                 <i class="fa fa-eye"></i>
                                             </a>
@@ -153,14 +153,14 @@
                                             <p class="text-xs font-weight-bold mb-0">Enrique Gatica</p>
                                         </td>
                                         <!-- COTIZACIÓN -->
-                                        <td class="text-center" onclick="distrib()">
+                                        <td class="text-center">
                                             <a href="#" data-bs-toggle="modal"
                                                 data-bs-target="#cotizacion-preventa">
                                                 <i class="fa fa-dollar-sign"></i>
                                             </a>
                                         </td>
                                         <!-- HITOS DE PAGO -->
-                                        <td class="text-center" onclick="distrib()">
+                                        <td class="text-center">
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#hito-preventa">
                                                 <i class="fas fa-history"></i>
                                             </a>
@@ -1008,11 +1008,13 @@
                                         <label for="" class="form-label">Correo</label>
                                         <input type="text" class="form-control" placeholder="" id="correo-pre">
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-6">
                                         <label for="" class="form-label">Nombre
                                             Proyecto</label>
-                                        <input class="form-control" type="text" id="nomb-proy" value="ASESORIA SOPORTE Y MANTENIMIENTO MAYO 2023">
+                                        <input class="form-control" type="text" id="nomb-proy" value="ASESORIA SOPORTE Y MANTENIMIENTO">
                                     </div>
+                                </div>
+                                <div class="row mb-3">
                                     <div class="col-md-3">
                                         <label for="" class="form-label">Fecha</label>
                                         <input class="form-control" type="text" id="fecha-pre" value="16/05/2023">
@@ -1070,10 +1072,10 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="nueva p-2 text-center" id="nueva" style="display: none">
+                        <div class="nueva p-2 text-center" id="preedit" style="display: none">
                             <script>
-                                function nuevapre() {
-                                    var x = document.getElementById("nueva");
+                                function preedit() {
+                                    var x = document.getElementById("preedit");
                                     if (x.style.display === "none") {
                                         x.style.display = "block";
                                     } else {
@@ -1081,7 +1083,7 @@
                                     }
                                 }
                             </script>
-                            <h6 class="text-success">La preventa se ha creado correctamente.
+                            <h6 class="text-success">La preventa se ha editado correctamente.
                                 <span>
                                     <i class="far fa-check-circle"></i>
                                 </span>
@@ -1134,11 +1136,13 @@
                                         <label for="" class="form-label">Correo</label>
                                         <input type="text" class="form-control" placeholder="" id="correo-pre">
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-6">
                                         <label for="" class="form-label">Nombre
                                             Proyecto</label>
                                         <input class="form-control" type="text" id="nomb-proy" placeholder="">
                                     </div>
+                                </div>
+                                <div class="row mb-3">
                                     <div class="col-md-3">
                                         <label for="" class="form-label">Fecha</label>
                                         <input class="form-control" type="text" id="fecha-pre" placeholder="">
@@ -1154,7 +1158,7 @@
                                 <div class="row mb-3">
                                     <div class="col-md-8">
                                         <label for="formFileSm" class="form-label">Documentación</label>
-                                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                        <input class="form-control" id="formFileSm" type="file">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Preventa</label>
