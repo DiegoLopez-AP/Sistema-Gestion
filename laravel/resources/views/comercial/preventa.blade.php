@@ -8,30 +8,30 @@
             <div class="card mb-2 cartacolor p-4">
                 <div class="card-body px-0 pt-0 pb-2">
                     <!-- Filtro ---
-                                            <form action="">
-                                                <div class="row align-items-center g-2">
-                                                    <div class="col-4">
-                                                        <label for="form-label" class="form-label">Proveedor</label>
-                                                        <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-                                                            <option selected>Proveedor</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-4 float-start">
-                                                        <label for="form-label" class="form-label">Atención</label>
-                                                        <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-                                                            <option selected>Atención</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <hr>
-                                            -------->
+                    <form action="">
+                        <div class="row align-items-center g-2">
+                            <div class="col-4">
+                                <label for="form-label" class="form-label">Proveedor</label>
+                                <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                                    <option selected>Proveedor</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-4 float-start">
+                                <label for="form-label" class="form-label">Atención</label>
+                                <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                                    <option selected>Atención</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    -------->
                     <div class="filtros d-flex justify-content-between pb-1">
                         <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
                         <div class="input-group w-30">
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <!-- INICIO TABLA PREVENTA--
-                                ----------------------------->
+                        ----------------------------->
                     <div class="table-responsive">
                         <table class="table align-items-center table-striped table-hover mb-0 ">
                             <!-- TITULOS TABLA -->
@@ -108,7 +108,7 @@
                             <tbody>
                                 <!-- INICIO ITEM 1 -->
                                 <tr>
-                                    <a href="#" >
+                                    <a href="#">
                                         <td class="ps-2 text-left" onclick="distrib()">
                                             <p class="text-xs font-weight-bold mb-0">5334</p>
                                         </td>
@@ -154,7 +154,8 @@
                                         </td>
                                         <!-- COTIZACIÓN -->
                                         <td class="text-center" onclick="distrib()">
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#cotizacion-preventa">
+                                            <a href="#" data-bs-toggle="modal"
+                                                data-bs-target="#cotizacion-preventa">
                                                 <i class="fa fa-dollar-sign"></i>
                                             </a>
                                         </td>
@@ -462,104 +463,104 @@
                             }
                         </script>
                         <!-- INICIO TABLA DISTRIBUCION PREVENTA--
-                            ----------------------------------------->
-                    <div class="table-responsive pt-4">
-                        <div class="filtros d-flex justify-content-between ">
-                            <h6 class="text-dark fw-bold pt-3 pb-0">Distribución de la preventa</h6>
-                            <div class="boton-agregar text-end align-items-center pt-2">
-                                <button class="btn bg-gradient-primary btn-circle" data-bs-toggle="modal"
-                                    data-bs-target="#distrib-preventa">
-                                    <i class="fas fa-plus"></i>
-                                </button>
+                        ----------------------------------------->
+                        <div class="table-responsive pt-4">
+                            <div class="filtros d-flex justify-content-between ">
+                                <h6 class="text-dark fw-bold pt-3 pb-0">Distribución de la preventa</h6>
+                                <div class="boton-agregar text-end align-items-center pt-2">
+                                    <button class="btn bg-gradient-primary btn-circle" data-bs-toggle="modal"
+                                        data-bs-target="#distrib-preventa">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
                             </div>
+                            <table class="table align-items-center table-striped table-hover mb-0 ">
+                                <!-- TITULOS TABLA -->
+                                <thead class="colortabla">
+                                    <tr class="colorletratabla">
+                                        <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
+                                            Descripción
+                                        </th>
+                                        <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                            Tipo
+                                        </th>
+                                        <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                            Valor
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- INICIO ITEM 1 -->
+                                    <tr>
+                                        <td class="ps-2 text-left">
+                                            <p class="text-xs font-weight-bold mb-0">100%</p>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="text-xs font-weight-bold mb-0">%</p>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="text-xs font-weight-bold mb-0">100.00</p>
+                                        </td>
+                                    </tr>
+                                    <!-- INICIO ITEM 2 -->
+                                    <tr>
+                                        <td class="ps-2 text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                    </tr>
+                                    <!-- INICIO ITEM 3 -->
+                                    <tr>
+                                        <td class="ps-2 text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                    </tr>
+                                    <!-- INICIO ITEM 4 -->
+                                    <tr>
+                                        <td class="ps-2 text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                    </tr>
+                                    <!-- INICIO ITEM 5 -->
+                                    <tr>
+                                        <td class="ps-2 text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="text-xs font-weight-bold mb-0"></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <table class="table align-items-center table-striped table-hover mb-0 ">
-                            <!-- TITULOS TABLA -->
-                            <thead class="colortabla">
-                                <tr class="colorletratabla">
-                                    <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
-                                        Descripción
-                                    </th>
-                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Tipo
-                                    </th>
-                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                        Valor
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- INICIO ITEM 1 -->
-                                <tr>
-                                    <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0">100%</p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">%</p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0">100.00</p>
-                                    </td>
-                                </tr>
-                                <!-- INICIO ITEM 2 -->
-                                <tr>
-                                    <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                </tr>
-                                <!-- INICIO ITEM 3 -->
-                                <tr>
-                                    <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                </tr>
-                                <!-- INICIO ITEM 4 -->
-                                <tr>
-                                    <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                </tr>
-                                <!-- INICIO ITEM 5 -->
-                                <tr>
-                                    <td class="ps-2 text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
-                    </div>
-                    
+
                 </div>
             </div>
         </div>
     </main>
 
     <!-- MODALS -----
-                    ------------------>
+    ------------------>
 
     <!-- MODAL EDT -->
     <div class="modal fade" id="edt-preventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -939,14 +940,12 @@
                                                 placeholder="Escriba sus datos..."></textarea>
                                         </div>
                                     </div>
-
                                     <div class="col-md-12 horas mt-2 w-20">
                                         <label for="" class="form-label">Horas</label>
                                         <input type="number" class="form-control">
                                     </div>
                                 </form>
                             </div>
-
                         </div>
                         <div class="guardar-cambios p-2 text-center" id="guardar-cambios" style="display: none">
                             <script>

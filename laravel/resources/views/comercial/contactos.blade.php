@@ -250,7 +250,6 @@
                                             id="cargo-contac">
                                     </div>
                                 </div>
-
                                 <div class="row mb-3">
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Dirección</label>
@@ -309,7 +308,6 @@
                                         <label for="" class="form-label">Telefono</label>
                                         <input class="form-control" placeholder="944674400" type="number"
                                             id="tel-contac">
-
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Cargo</label>
@@ -317,7 +315,6 @@
                                             id="cargo-contac">
                                     </div>
                                 </div>
-
                                 <div class="row mb-3">
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Dirección</label>
@@ -328,7 +325,6 @@
                                         <label for="" class="form-label">Clave</label>
                                         <input type="password" class="form-control text-left" placeholder="gp"
                                             id="clave-contac">
-
                                     </div>
                                 </div>
                             </form>
