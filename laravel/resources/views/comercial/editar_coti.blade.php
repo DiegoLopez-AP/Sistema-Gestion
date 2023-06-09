@@ -4,6 +4,9 @@
     <h5> <a href="{{ url('cotizaciones') }}">Cotizaciones</a> <i class="fas fa-caret-right"></i> Cotización GT-DS-5373 SISTEMA
         COTIZACIONES ALUPROF</h5>
     <div class="line_title"></div>
+    <div class="boton">
+        <a href="{{ url('cotizaciones') }}" class="btn bg-gradient-primary btn-sm px-4 py-2" type="button">Volver</a>
+    </div>
     <main class="ct-docs-content-col" role="main">
         <div class="ct-docs-page-title">
             <div class="card cartacolor">

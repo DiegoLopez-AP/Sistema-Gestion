@@ -60,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="buscar" id="myDIV" style="display: none"> --}}
+                    <div class="buscar" id="myDIV" style="display: none">
                         <!-- FUNCION BUSCAR -->
                         <script>
                             function myFunction() {
@@ -118,7 +118,7 @@
                                             Ver
                                         </th>
                                         <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                            Valor $
+                                            Monto Facturado
                                         </th>
                                         <th
                                             class="text-center text-uppercase text-white text-xxs font-weight-bolder sticky">

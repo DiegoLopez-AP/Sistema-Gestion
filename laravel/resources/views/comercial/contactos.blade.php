@@ -8,22 +8,22 @@
             <div class="card mb-2 cartacolor p-4">
                 <div class="card-body px-0 pt-0 pb-2">
                     <!-- FILTROS -->
-                    <div class="d-flex flex-row  justify-content-between pb-3">
-                        <select id="cliente" class="form-select p-1 me-2" aria-label="Seleccione Contacto">
-                            <option selected>Seleccione Cliente</option>
-                            <option value="cliente1">Cliente 1</option>
-                            <option value="cliente2">Cliente 2</option>
-                            <option value="cliente3">Cliente 3</option>
-                            <option value="cliente4">Cliente 4</option>
+                    <div class="filtros d-flex justify-content-between pb-2">
+                        <select name="" id="" class="form-select " style="height: 38px">
+                            <option value="1" selected>Cliente</option>
+                            <option value="2">Cliente</option>
+                            <option value="3">Cliente</option>
+                            <option value="4">Cliente</option>
                         </select>
-                        <div class="boton">
-                            <a href="#" class="btn bg-gradient-primary btn-sm mb-0 px-4 py-2" type="button">Excel</a>
-                        <button class="btn bg-gradient-primary btn-sm mb-0 px-4 py-2 ms-2" type="button"
-                            data-bs-toggle="modal" data-bs-target="#modal-agregar">Agregar Contacto</button>
+                        <div class="boton-agregar text-end align-items-center pt-2">
+                            <button class="btn bg-gradient-primary btn-circle" data-bs-toggle="modal"
+                                data-bs-target="#agregar-cliente">
+                                <i class="fas fa-plus"></i>
+                            </button>
                         </div>
                     </div>
-                    <!-- INICIO TABLA CONTACTOS-- 
-                    ----------------------------->
+                    <!-- INICIO TABLA CONTACTOS--
+                            ----------------------------->
                     <div class="table-responsive p-0">
                         <table class="table align-items-center table-striped table-hover mb-0">
                             <!-- TITULOS TABLA -->
@@ -41,7 +41,6 @@
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
                                         Telefono
                                     </th>
-
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
                                         Cargo
                                     </th>
@@ -82,7 +81,7 @@
                                     </td>
                                     <td class="text-center">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#modal-editar"><i
-                                                class="fas fa-pen text-xs"></i></a>
+                                                class="fas fa-pen text-warning"></i></a>
                                     </td>
                                 </tr>
                                 <!-- INICIO ITEM 2 -->
@@ -111,7 +110,7 @@
                                     </td>
                                     <td class="text-center">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#modal-editar"><i
-                                                class="fas fa-pen text-xs"></i></a>
+                                                class="fas fa-pen text-warning"></i></a>
                                     </td>
                                 </tr>
                                 <!-- INICIO ITEM 3 -->
@@ -139,7 +138,7 @@
                                     </td>
                                     <td class="text-center">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#modal-editar"><i
-                                                class="fas fa-pen text-xs"></i></a>
+                                                class="fas fa-pen text-warning"></i></a>
                                     </td>
                                 </tr>
                                 <!-- INICIO ITEM 4 -->
@@ -167,7 +166,7 @@
                                     </td>
                                     <td class="text-center">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#modal-editar"><i
-                                                class="fas fa-pen text-xs"></i></a>
+                                                class="fas fa-pen text-warning"></i></a>
                                     </td>
                                 </tr>
                                 <!-- INICIO ITEM 5 -->
@@ -195,11 +194,14 @@
                                     </td>
                                     <td class="text-center">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#modal-editar"><i
-                                                class="fas fa-pen text-xs"></i></a>
+                                                class="fas fa-pen text-warning"></i></a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="boton float-end pt-3">
+                            <button href="#" class="btn bg-gradient-primary btn-sm px-4 py-2" style="background: #01723a;" type="button">Excel<i class="fas fa-file-excel text-xs ms-1"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,7 +209,7 @@
     </main>
 
     <!-- MODALS -----
-    ------------------>
+            ------------------>
 
     <!-- MODAL AGREGAR CONTACTO -->
     <div class="modal fade" id="modal-agregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -290,28 +292,28 @@
                                 <div class="row mb-3">
                                     <div class="col-md-6 ">
                                         <label for="" class="form-label">Codigo</label>
-                                        <input type="text" class="form-control" placeholder="GP" id="codigo-contac">
+                                        <input type="text" class="form-control" value="GP" id="codigo-contac" disabled>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" placeholder="Gonzalo Paya Guzman"
+                                        <input type="text" class="form-control" value="Gonzalo Paya Guzman"
                                             id="nombre-contac">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Mail</label>
-                                        <input class="form-control" placeholder="egatica@g-talant.cl" type="email"
+                                        <input class="form-control" value="egatica@g-talant.cl" type="email"
                                             id="mail-contac">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Telefono</label>
-                                        <input class="form-control" placeholder="944674400" type="number"
+                                        <input class="form-control" value="944674400" type="number"
                                             id="tel-contac">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Cargo</label>
-                                        <input type="text" class="form-control" placeholder="gonzalo.paya@agua-0.cl"
+                                        <input type="text" class="form-control" value="gonzalo.paya@agua-0.cl"
                                             id="cargo-contac">
                                     </div>
                                 </div>
@@ -319,11 +321,11 @@
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Dirección</label>
                                         <input type="text" class="form-control"
-                                            placeholder="María Luisa Bombal 2008 Colina" id="direc-contac">
+                                            value="María Luisa Bombal 2008 Colina" id="direc-contac">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Clave</label>
-                                        <input type="password" class="form-control text-left" placeholder="gp"
+                                        <input type="password" class="form-control text-left" value="gp"
                                             id="clave-contac">
                                     </div>
                                 </div>
@@ -332,7 +334,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary">Guardar
                         cambios</button>
                 </div>

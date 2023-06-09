@@ -986,7 +986,7 @@
                                 <div class="row mb-3">
                                     <div class="col-md-4 ">
                                         <label for="" class="form-label">Rut</label>
-                                        <input type="text" class="form-control" placeholder="" id="rut-pre">
+                                        <input type="text" class="form-control" value="8.515.545-0" id="rut-pre" disabled>
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Razón
@@ -1002,7 +1002,7 @@
                                     <div class="col-md-3">
                                         <label for="" class="form-label">Nombre
                                             Contacto</label>
-                                        <input class="form-control" type="text" id="nomb-pre" placeholder="">
+                                        <input class="form-control" type="text" id="nomb-pre" value="Francisco Bergeret">
                                     </div>
                                     <div class="col-md-3">
                                         <label for="" class="form-label">Correo</label>
@@ -1011,11 +1011,11 @@
                                     <div class="col-md-3">
                                         <label for="" class="form-label">Nombre
                                             Proyecto</label>
-                                        <input class="form-control" type="text" id="nomb-proy" placeholder="">
+                                        <input class="form-control" type="text" id="nomb-proy" value="ASESORIA SOPORTE Y MANTENIMIENTO MAYO 2023">
                                     </div>
                                     <div class="col-md-3">
                                         <label for="" class="form-label">Fecha</label>
-                                        <input class="form-control" type="text" id="fecha-pre" placeholder="">
+                                        <input class="form-control" type="text" id="fecha-pre" value="16/05/2023">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -1028,7 +1028,7 @@
                                 <div class="row mb-3">
                                     <div class="col-md-8">
                                         <label for="formFileSm" class="form-label">Documentación</label>
-                                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                        <input class="form-control" id="formFileSm" type="file">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Preventa</label>
@@ -1060,6 +1060,12 @@
                                             <option value="1" selected>Cotización</option>
                                             <option value="2">Nota de Cobro</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Estado</label>
+                                        <input class="form-control" type="text" value="En proceso" disabled>
                                     </div>
                                 </div>
                             </form>
