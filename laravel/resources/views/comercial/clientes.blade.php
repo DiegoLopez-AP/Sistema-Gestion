@@ -296,7 +296,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary">Guardar Cambios</button>
                 </div>
             </div>
@@ -392,7 +392,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary">Guardar
                         Cambios</button>
                 </div>

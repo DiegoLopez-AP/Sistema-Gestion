@@ -17,7 +17,7 @@
                         </select>
                         <div class="boton-agregar text-end align-items-center pt-2">
                             <button class="btn bg-gradient-primary btn-circle" data-bs-toggle="modal"
-                                data-bs-target="#agregar-cliente">
+                                data-bs-target="#modal-agregar">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
@@ -269,7 +269,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary">Guardar Cambios</button>
                 </div>
             </div>

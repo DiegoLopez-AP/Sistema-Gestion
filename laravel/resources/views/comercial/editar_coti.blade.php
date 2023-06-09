@@ -264,7 +264,7 @@
                                             <td class="text-center text-sm sticky">
                                                 <!-- EDITAR PREVENTA -->
                                                 <a class="py-1" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#editar-preventa">
+                                                    data-bs-target="#editar-re">
                                                     <i class="fa fa-pen mx-2 text-warning"></i>
                                                 </a>
                                             </td>
@@ -306,7 +306,7 @@
                                         <td class="text-center text-sm sticky">
                                             <!-- EDITAR PREVENTA -->
                                             <a class="py-1" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#editar-preventa">
+                                                data-bs-target="#editar-re">
                                                 <i class="fa fa-pen mx-2 text-warning"></i>
                                             </a>
                                         </td>
@@ -347,7 +347,7 @@
                                         <td class="text-center text-sm sticky">
                                             <!-- EDITAR PREVENTA -->
                                             <a class="py-1" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#editar-preventa">
+                                                data-bs-target="#editar-re">
                                                 <i class="fa fa-pen mx-2 text-warning"></i>
                                             </a>
                                         </td>
@@ -388,7 +388,7 @@
                                         <td class="text-center text-sm sticky">
                                             <!-- EDITAR PREVENTA -->
                                             <a class="py-1" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#editar-preventa">
+                                                data-bs-target="#editar-re">
                                                 <i class="fa fa-pen mx-2 text-warning"></i>
                                             </a>
                                         </td>
@@ -429,7 +429,7 @@
                                         <td class="text-center text-sm sticky">
                                             <!-- EDITAR PREVENTA -->
                                             <a class="py-1" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#editar-preventa">
+                                                data-bs-target="#editar-re">
                                                 <i class="fa fa-pen mx-2 text-warning"></i>
                                             </a>
                                         </td>
@@ -468,7 +468,7 @@
     <!-- MODALS -----
     ------------------>
 
-    <!-- MODAL NUEVA DESCRIPCION -->
+    <!-- MODAL NUEVO REGISTRO -->
     <div class="modal fade" id="nuevo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -564,6 +564,108 @@
                 <div class="modal-footer pb-0">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary" onclick="nueva()">Guardar
+                        Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL EDITAR REGISTRO -->
+    <div class="modal fade" id="editar-re" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-fondo">
+                    <h5 class="modal-title  text-white" id="exampleModalLabel">Editar registro</h5>
+                    <button type="button" class="btn-close text-dark" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-white">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="formulario">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">N°</label>
+                                        <input type="number" class="form-control" value="1">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="" class="form-label">Titulo</label>
+                                        <input type="text" class="form-control" value="Asesoria Soporte Mayo 2023.">
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Tarifa</label>
+                                        <select name="" id="" class="form-select">
+                                            <option value="1">Seleccione</option>
+                                            <option value="2" selected>Soporte</option>
+                                            <option value="3">Analisis AWS</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Valor</label>
+                                        <input type="number" class="form-control" value="1.00">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">T. Horas</label>
+                                        <input type="text" class="form-control" value="568.00">
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Desarrollador</label>
+                                        <select name="" id="" class="form-select">
+                                            <option value="1">Seleccione</option>
+                                            <option value="2" selected>G-Talent</option>
+                                            <option value="3"></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">F. Inicio</label>
+                                        <input type="text" class="form-control" value="01/05/2023" disabled>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">F.Fin</label>
+                                        <input type="text" class="form-control" value="31/05/2023" disabled>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-12">
+                                        <label for="" class="form-label">Detalle</label>
+                                        <textarea class="form-control" name="" id="textarea" cols="30" rows="3"
+                                            placeholder="Escriba una breve descripción..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Estado</label>
+                                        <input type="text" class="form-control" value="Cerrado" disabled>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="edit_re p-2 text-center" id="edit_re" style="display: none">
+                            <script>
+                                function edit_re() {
+                                    var x = document.getElementById("edit_re");
+                                    if (x.style.display === "none") {
+                                        x.style.display = "block";
+                                    } else {
+                                        x.style.display = "none";
+                                    }
+                                }
+                            </script>
+                            <h6 class="text-success">El registro se ha editado correctamente.
+                                <span>
+                                    <i class="far fa-check-circle"></i>
+                                </span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn bg-gradient-primary" onclick="edit_re()">Guardar
                         Cambios</button>
                 </div>
             </div>

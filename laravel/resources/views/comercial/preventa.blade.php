@@ -169,7 +169,7 @@
                                             <p class="text-xs font-weight-bold mb-0">Iñaki Alaba</p>
                                         </td>
                                         <!-- ACCIONES -->
-                                        <td class="text-center text-sm sticky" onclick="distrib()">
+                                        <td class="text-center text-sm sticky">
                                             <!-- EDITAR PREVENTA -->
                                             <a class="py-1" href="#" data-bs-toggle="modal"
                                                 data-bs-target="#editar-preventa">
