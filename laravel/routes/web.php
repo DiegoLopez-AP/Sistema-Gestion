@@ -122,6 +122,10 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('comercial/preventa');
 	})->name('preventa');
 
+	Route::get('editar_coti', function(){
+		return view('comercial/editar_coti');
+	})->name('editar_coti');
+
 
 	//TODO RUTAS OPERACIONES
 	Route::get('indicador-op', function(){
