@@ -7,15 +7,21 @@
         <div class="ct-docs-page-title">
             <div class="card mb-2 cartacolor p-4">
                 <div class="card-body px-0 pt-0 pb-2">
-                    <div class="d-flex flex-row pb-2">
-                        <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
-                        <span class="py-1 px-2 my-2">
-                            <i class="fas fa-search"></i>
-                        </span>
-                        <button type="button" class="btn bg-gradient-primary m-2 px-4 py-2" data-bs-toggle="modal"
+                    <div class="filtros d-flex justify-content-between pb-1">
+                        <label class="visually-hidden" for="inlineFormInputGroupUsername"></label>
+                        <div class="input-group w-30">
+                            <input type="text" class="form-control" style="height: 35px;" placeholder="Buscar"
+                                aria-label="Recipient's username" aria-describedby="button-addon2"
+                                id="inputGroup-sizing-sm">
+                            <button class="btn bg-gradient-primary py-2" type="button" id="button-addon2"
+                                style="height: 35px;"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="boton-agregar text-end align-items-center pt-2">
+                            <button class="btn bg-gradient-primary btn-circle" data-bs-toggle="modal"
                             data-bs-target="#curriculum">
-                            Nuevo
-                        </button>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
                     </div>
                     <!-- INICIO TABLA CURRICULUM---
                                 ------------------------------->
@@ -329,9 +335,9 @@
                                 </div>
                                 <div class="accordion pt-4" id="accordionExample" >
                                     <div class="accordion-item">
-                                      <h2 class="accordion-header bg-dark" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                          Profesión
+                                      <h2 class="accordion-header bg-light" id="headingOne">
+                                        <button class="accordion-button text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          Profesión <i class="bx bxs-chevron-down arrow"></i>
                                         </button>
                                       </h2>
                                       <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -341,9 +347,9 @@
                                       </div>
                                     </div>
                                     <div class="accordion-item">
-                                      <h2 class="accordion-header bg-dark" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                          Resumen
+                                      <h2 class="accordion-header bg-light" id="headingTwo">
+                                        <button class="accordion-button collapsed text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Resumen <i class="bx bxs-chevron-down arrow"></i>
                                         </button>
                                       </h2>
                                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -353,9 +359,9 @@
                                       </div>
                                     </div>
                                     <div class="accordion-item">
-                                      <h2 class="accordion-header bg-dark" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                          Experiencia
+                                      <h2 class="accordion-header bg-light" id="headingThree">
+                                        <button class="accordion-button collapsed text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          Experiencia <i class="bx bxs-chevron-down arrow"></i>
                                         </button>
                                       </h2>
                                       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -364,6 +370,42 @@
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header bg-light" id="headingFour">
+                                          <button class="accordion-button collapsed text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Formación Academica <i class="bx bxs-chevron-down arrow"></i>
+                                          </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header bg-light" id="headingFive">
+                                          <button class="accordion-button collapsed text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Conocimientos <i class="bx bxs-chevron-down arrow"></i>
+                                          </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header bg-light" id="headingSix">
+                                          <button class="accordion-button collapsed text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Idiomas <i class="bx bxs-chevron-down arrow"></i>
+                                          </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                          </div>
+                                        </div>
+                                      </div>
                                   </div>
                             </div>
                         </form>

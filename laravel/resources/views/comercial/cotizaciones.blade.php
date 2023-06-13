@@ -170,16 +170,6 @@
                                             <a href="{{ url('editar_coti') }}">
                                                 <i class="fas fa-pen me-2 text-warning"></i>
                                             </a>
-                                            <a href="#" data-bs-toggle="modal"
-                                                data-bs-target="#aprobar-cotizacion">
-                                                <i class="fas fa-check me-2 text-success" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" title="Aprobar cotización"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal"
-                                                data-bs-target="#rechazar-cotizacion">
-                                                <i class="fas fa-times me-2 text-danger" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" title="Rechazar cotización"></i>
-                                            </a>
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#enviar-cotizacion">
                                                 <i class="fas fa-envelope-open" style="color: #0e50d7;"></i>
                                             </a>
@@ -227,16 +217,6 @@
                                             <a href="#" data-bs-toggle="modal"
                                                 data-bs-target="#editar-cotizacion"><i class="fas fa-pen me-2 text-warning"></i>
                                             </a>
-                                            <a href="#" data-bs-toggle="modal"
-                                                data-bs-target="#aprobar-cotizacion">
-                                                <i class="fas fa-check me-2 text-success" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" title="Aprobar cotización"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal"
-                                                data-bs-target="#rechazar-cotizacion">
-                                                <i class="fas fa-times me-2 text-danger" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" title="Rechazar cotización"></i>
-                                            </a>
                                             <a href="#">
                                                 <i class="fas fa-envelope-open" style="color: #0e50d7;"></i>
                                             </a>
@@ -281,16 +261,6 @@
                                         <td class="text-center sticky text-sm">
                                             <a href="#" data-bs-toggle="modal"
                                                 data-bs-target="#editar-cotizacion"><i class="fas fa-pen me-2 text-warning"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal"
-                                                data-bs-target="#aprobar-cotizacion">
-                                                <i class="fas fa-check me-2 text-success" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" title="Aprobar cotización"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal"
-                                                data-bs-target="#rechazar-cotizacion">
-                                                <i class="fas fa-times me-2 text-danger" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" title="Rechazar cotización"></i>
                                             </a>
                                             <a href="#">
                                                 <i class="fas fa-envelope-open" style="color: #0e50d7;"></i>
@@ -340,16 +310,6 @@
                                             <a href="#" data-bs-toggle="modal"
                                                 data-bs-target="#editar-cotizacion"><i class="fas fa-pen me-2 text-warning"></i>
                                             </a>
-                                            <a href="#" data-bs-toggle="modal"
-                                                data-bs-target="#aprobar-cotizacion">
-                                                <i class="fas fa-check me-2 text-success" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" title="Aprobar cotización"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal"
-                                                data-bs-target="#rechazar-cotizacion">
-                                                <i class="fas fa-times me-2 text-danger" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" title="Rechazar cotización"></i>
-                                            </a>
                                             <a href="#">
                                                 <i class="fas fa-envelope-open" style="color: #0e50d7;"></i>
                                             </a>
@@ -395,16 +355,6 @@
                                         <td class="text-center sticky text-sm">
                                             <a href="#" data-bs-toggle="modal"
                                                 data-bs-target="#editar-cotizacion"><i class="fas fa-pen me-2 text-warning"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal"
-                                                data-bs-target="#aprobar-cotizacion">
-                                                <i class="fas fa-check me-2 text-success" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" title="Aprobar cotización"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal"
-                                                data-bs-target="#rechazar-cotizacion">
-                                                <i class="fas fa-times me-2 text-danger" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" title="Rechazar cotización"></i>
                                             </a>
                                             <a href="#">
                                                 <i class="fas fa-envelope-open" style="color: #0e50d7;"></i>

@@ -7,19 +7,24 @@
         <div class="ct-docs-page-title">
             <div class="card mb-2 cartacolor p-4">
                 <div class="card-body px-0 pt-0 pb-2">
-                    <div class="d-flex flex-row pb-3">
-                        <input id="buscar" type="search" placeholder="Buscar Cliente"
-                            class="form-control1 my-2 py-1">
-                        <span class="py-1 px-2 my-2">
-                            <i class="fas fa-search"></i>
-                        </span>
-                        <a href="{{ url('formulario-ftrabajador') }}"
-                            class="btn bg-gradient-primary btn-sm m-2 px-4 justify-content-end{{ Request::is('formulario-ftrabajador') ?: '' }} justify-content-end"
-                            type="button">Nuevo
-                        </a>
+                    <div class="filtros d-flex justify-content-between pb-1">
+                        <label class="visually-hidden" for="inlineFormInputGroupUsername"></label>
+                        <div class="input-group w-30">
+                            <input type="text" class="form-control" style="height: 35px;" placeholder="Buscar"
+                                aria-label="Recipient's username" aria-describedby="button-addon2"
+                                id="inputGroup-sizing-sm">
+                            <button class="btn bg-gradient-primary py-2" type="button" id="button-addon2"
+                                style="height: 35px;"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="boton-agregar text-end align-items-center pt-2 ">
+                            <a href="{{ url('formulario-ftrabajador') }}"
+                                class="btn bg-gradient-primary btn-circle justify-content-end{{ Request::is('formulario-ftrabajador') ?: '' }} justify-content-end"
+                                type="button"><i class="fas fa-plus"></i>
+                            </a>
+                        </div>
                     </div>
-                    <!-- INICIO TABLA FICHA PERSONAL TRABAJADOR--- 
-                    ---------------------------------------------->
+                    <!-- INICIO TABLA FICHA PERSONAL TRABAJADOR---
+                        ---------------------------------------------->
                     <div class="table-responsive">
                         <table class="table align-items-center table-striped table-hover mb-0 " width="100%">
                             <!-- TITULOS TABLA -->
@@ -77,8 +82,7 @@
                                     </td>
                                     <td class="text-center">
                                         <a href="{{ url('formulario-ftrabajador') }}"
-                                            class="{{ Request::is('formulario-ftrabajador') ?: '' }}"
-                                            type="">
+                                            class="{{ Request::is('formulario-ftrabajador') ?: '' }}" type="">
                                             <i class="fas fa-user"></i>
                                         </a>
                                     </td>
@@ -108,8 +112,7 @@
                                     </td>
                                     <td class="text-center">
                                         <a href="{{ url('formulario-ftrabajador') }}"
-                                            class="{{ Request::is('formulario-ftrabajador') ?: '' }}"
-                                            type="">
+                                            class="{{ Request::is('formulario-ftrabajador') ?: '' }}" type="">
                                             <i class="fas fa-user"></i>
                                         </a>
                                     </td>

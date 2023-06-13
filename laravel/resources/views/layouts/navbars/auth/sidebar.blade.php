@@ -28,7 +28,7 @@
                 <i class='bx bxs-chevron-down arrow'></i>
             </div>
             <ul class="sub-menu">
-                <li><a class="link_name" href="#">Comercial</a></li>
+                <li class="text-white">Comercial</li>
                 <li><a class="active" href="{{ route('indicador-com') }}">Indicadores</a></li>
                 <li><a href="{{ route('preventa') }}">Preventa</a></li>
                 <li><a href="{{ route('cotizaciones') }}">Cotizaciones</a></li>
@@ -45,7 +45,7 @@
                 <i class='bx bxs-chevron-down arrow'></i>
             </div>
             <ul class="sub-menu wrapper">
-                <li><a class="link_name" href="#">Operaciones</a></li>
+                <li class="text-white">Operaciones</li>
                 <li><a href="{{ route('indicador-op') }}">Indicadores</a></li>
                 <li><a href="{{ route('proyectos') }}">Proyectos</a></li>
                 <li><a href="{{ route('costos') }}">Costos</a></li>
@@ -61,7 +61,7 @@
                 <i class='bx bxs-chevron-down arrow'></i>
             </div>
             <ul class="sub-menu wrapper">
-                <li><a class="link_name" href="#">Finanzas</a></li>
+                <li class="text-white">Finanzas</li>
                 <li><a href="{{ route('indicador-fin') }}">Indicadores</a></li>
                 <li><a href="{{ route('fechas-pago') }}">Fechas de pago</a></li>
                 <li><a href="{{ route('facturacion') }}">Facturación</a></li>
@@ -80,7 +80,7 @@
                 <i class='bx bxs-chevron-down arrow'></i>
             </div>
             <ul class="sub-menu wrapper">
-                <li><a class="link_name" href="#">RRHH</a></li>
+                <li class="text-white">RRHH</li>
                 <li><a href="{{ route('indicador-rrhh') }}">Indicadores</a></li>
                 <li><a href="{{ route('ficha-ptrabajador') }}">Ficha trabajador</a></li>
                 <li><a href="{{ route('ap-rech-vaca') }}">Apr.Rech.Vacaciones</a></li>
@@ -98,7 +98,7 @@
                 <i class='bx bxs-chevron-down arrow'></i>
             </div>
             <ul class="sub-menu wrapper">
-                <li><a class="link_name" href="#">Informes</a></li>
+                <li class="text-white">Informes</li>
                 <li><a href="{{ route('indicador-inf') }}">Indicadores</a></li>
                 <li><a href="{{ route('rentabilidad') }}">Rentabilidad</a></li>
                 <li><a href="{{ route('capacites') }}">Capacites</a></li>
@@ -114,7 +114,7 @@
                 <i class='bx bxs-chevron-down arrow'></i>
             </div>
             <ul class="sub-menu wrapper">
-                <li><a class="link_name" href="#">Administración</a></li>
+                <li class="text-white">Administración</li>
                 <li><a href="{{ route('usuarios') }}">Usuarios</a></li>
                 <li><a href="{{ route('permisos') }}">Permisos</a></li>
                 <li><a href="{{ route('indicadores-adm') }}">Indicadores</a></li>
@@ -131,7 +131,7 @@
                 <i class='bx bxs-chevron-down arrow'></i>
             </div>
             <ul class="sub-menu wrapper blank">
-                <li><a class="link_name" href="#">Editar</a></li>
+                <li class="text-white">Editar</li>
             </ul>
         </li>
     </ul>

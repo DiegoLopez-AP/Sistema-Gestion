@@ -43,6 +43,20 @@
                                     <input type="text" class="form-control " value="Terminada" disabled>
                                 </div>
                             </div>
+                            <div class="row pt-3">
+                                <div class="col-md-2">
+                                    <label for="" class="form-label">Estado de la cotización:</label>
+                                    <select class="form-select" name="" id="">
+                                        <option value="1" selected>Aprobada</option>
+                                        <option value="2">Rechazada</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-10">
+                                    <label class="form-label" for="">Descripción Estado:</label>
+                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="3"
+                                        placeholder="La cotización ha sido aprobada..."></textarea>
+                                </div>
+                            </div>
                             <h6 class="text-dark pt-4">Datos</h6>
                             <div class="line_separation"></div>
                             <div class="row ">
@@ -184,7 +198,7 @@
                             </div>
                         </div>
                         <!-- INICIO TABLA EDITAR COTIZACIÓN--
-                            ------------------------------------->
+                                ------------------------------------->
                         <div class="table-responsive">
                             <table class="table align-items-center table-striped table-hover mb-0 ">
                                 <!-- TITULOS TABLA -->
@@ -450,7 +464,7 @@
                             </script>
                             <div class=" py-2 ps-2 rounded" style="background: rgba(0, 186, 0, 0.089)">
                                 <h6 class="text-success">La Cotización ha sido editada exitosamente. <span><i
-                                class="fas fa-check-circle text-success"></i></span></h6>
+                                            class="fas fa-check-circle text-success"></i></span></h6>
                             </div>
                         </div>
                         <!-- BOTONES ANTERIOR Y SIGUIENTE -->
@@ -466,7 +480,7 @@
     </main>
 
     <!-- MODALS -----
-    ------------------>
+        ------------------>
 
     <!-- MODAL NUEVO REGISTRO -->
     <div class="modal fade" id="nuevo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

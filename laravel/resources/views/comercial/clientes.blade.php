@@ -382,7 +382,7 @@
                                         <label for="" class="form-label">Vigencia</label>
                                         <select class="form-select" name="" id="vigen-cli">
                                             <option value="1">Seleccione</option>
-                                            <option value="2">Vigente</option>
+                                            <option value="2" selected>Vigente</option>
                                             <option value="3">No Vigente</option>
                                         </select>
                                     </div>

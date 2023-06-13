@@ -239,11 +239,18 @@
                                         todos los contratos del empleado.</p>
                                 </div>
                                 <!-- DATOS PERSONALES -->
-                                <div class="datos p-2 ">
-                                    <h6 class="text-dark font-weight-bolder">ID: </h6>
-                                    <h6 class="text-dark font-weight-bolder">RUT: </h6>
-                                    <h6 class="text-dark font-weight-bolder">NOMBRE: </h6>
+                                <div class="row ps-2">
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="">ID: <span></span></label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="">Rut: <span></span></label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="">Nombre: <span></span></label>
+                                    </div>
                                 </div>
+                                <hr>
                                 <div class="paso_body text-start">
                                     <!-- FECHAS INGRESO Y SOLICITUD -->
                                     <div class="row p-3">
@@ -258,8 +265,8 @@
                                         </div>
                                     </div>
                                     <!-- DIAS HABILES -->
-                                    <div class="d-habiles py-1 my-2">
-                                        <h5 class="">Días Hábiles</h5>
+                                    <div class="d-habiles py-1 pt-2 my-2 bg-light">
+                                        <h6 class="text-dark fw-bold text-start ps-2">Días Hábiles</h6>
                                     </div>
                                     <div class="row mt-2 p-3">
                                         <div class="col-md-4">
@@ -281,59 +288,59 @@
                                         </div>
                                     </div>
                                     <!-- SALDOS ACUMULADOS -->
-                                    <div class="d-habiles py-1 my-2">
-                                        <h5 class="">Saldos Acumulados</h5>
+                                    <div class="d-habiles py-1 pt-2 my-2 bg-light">
+                                        <h6 class="text-dark fw-bold text-start ps-2">Saldos Acumulados</h6>
                                     </div>
                                     <div class="row mt-2 p-3">
                                         <div class="col-md-6">
-                                            <label class="form__label" for="">Periodos
+                                            <label class="form-label" for="">Periodos
                                                 Acumulados</label>
                                             <input class="form-control" type="number" id="per-acumulado"
                                                 name="per-acumulado">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form__label" for="">Saldo de días
+                                            <label class="form-label" for="">Saldo de días
                                                 acumulados</label>
                                             <input class="form-control" type="number" id="saldo-acum" name="saldo-acum">
                                         </div>
                                     </div>
                                     <!-- SOLICITUD -->
-                                    <div class="d-habiles py-1 my-2">
-                                        <h5 class="">Solicitud</h5>
+                                    <div class="d-habiles py-1 pt-2 my-2 bg-light">
+                                        <h6 class="text-dark fw-bold text-start ps-2">Solicitud</h6>
                                     </div>
                                     <div class="row mt-2 p-3">
-                                        <div class="col-md-3">
-                                            <label class="form__label" for="">N°Comprobante</label>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="">N°Comprobante</label>
                                             <input class="form-control" type="number" id="n-comprobante"
                                                 name="n-comprobante">
                                         </div>
                                         <div class="col-md-4">
-                                            <label class="form__label" for="">Fecha Inicio</label>
+                                            <label class="form-label" for="">Fecha Inicio</label>
                                             <input type="date" id="start" name="trip-start" class="form-control">
                                         </div>
                                         <div class="col-md-4">
-                                            <label class="form__label" for="">Fecha Termino</label>
+                                            <label class="form-label" for="">Fecha Termino</label>
                                             <input type="date" id="start" name="trip-start" class="form-control">
                                         </div>
                                     </div>
                                     <div class="row px-3 pb-3">
                                         <div class="col-md-4">
-                                            <label class="form__label" for="">Días Hábiles</label>
+                                            <label class="form-label" for="">Días Hábiles</label>
                                             <input class="form-control" type="number" id="d-habil" name="d-habil">
                                         </div>
                                         <div class="col-md-4">
-                                            <label class="form__label" for="">Días Inhábiles</label>
+                                            <label class="form-label" for="">Días Inhábiles</label>
                                             <input class="form-control" type="number" id="d-inhabil" name="d-inhabil">
                                         </div>
                                         <div class="col-md-4">
-                                            <label class="form__label" for="">Días Progresivos
+                                            <label class="form-label" for="">Días Progresivos
                                                 (hábiles)</label>
                                             <input class="form-control" type="number" id="d-habil" name="d-habil">
                                         </div>
                                     </div>
                                     <div class="row px-3 pb-3">
                                         <div class="col-md-12">
-                                            <label class="form__label" for="">Saldo Final</label>
+                                            <label class="form-label" for="">Saldo Final</label>
                                             <input class="form-control" type="number" id="sal-final" name="sal-final">
                                         </div>
                                     </div>
