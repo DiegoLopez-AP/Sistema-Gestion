@@ -727,7 +727,7 @@ select {
 
 
 /* KANBAN */
-* {
+.kanban_scroll * {
    
     box-sizing: border-box;
     font-family: sans-serif;
@@ -736,7 +736,7 @@ select {
     scrollbar-width: none; /* Firefox */
   }
   
-  *::-webkit-scrollbar {
+  .kanban_scroll *::-webkit-scrollbar {
     display: none;
   }
   

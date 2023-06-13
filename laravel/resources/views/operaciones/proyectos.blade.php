@@ -6,7 +6,7 @@
     <main class="ct-docs-content-col" role="main">
         <div class="ct-docs-page-title">
             <!-- BOARD -->
-            <div class="card">
+            <div class="card kanban_scroll">
                 <div class="card-header bg-fondo p-3">
                     <form id="todo-form">
                         <input type="text" placeholder="Agregar por iniciar..." id="todo-input" />
