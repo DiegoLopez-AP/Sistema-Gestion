@@ -7,10 +7,20 @@
         <div class="ct-docs-page-title">
             <div class="card mb-2 cartacolor p-4">
                 <div class="card-body px-0 pt-0 pb-2">
-                    <div class="d-flex flex-row justify-content-end pb-3">
-                        <a href="{{ url('#') }}"
-                            class="btn bg-gradient-primary btn-sm mb-0 px-4 py-2 {{ Request::is('#') ?: '' }} justify-content-end"
-                            type="button">Nuevo</a>
+                    <div class="filtros d-flex justify-content-between pb-1">
+                        <label class="visually-hidden" for="inlineFormInputGroupUsername"></label>
+                        <div class="input-group w-30">
+                            <input type="text" class="form-control" style="height: 35px;" placeholder="Buscar"
+                                aria-label="Recipient's username" aria-describedby="button-addon2"
+                                id="inputGroup-sizing-sm">
+                            <button class="btn bg-gradient-primary py-2" type="button" id="button-addon2"
+                                style="height: 35px;"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="boton-agregar text-end align-items-center pt-2">
+                            <button class="btn bg-gradient-primary btn-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
                     </div>
                     <!-- INICIO TABLA USUARIOS--- 
                     ---------------------------->
