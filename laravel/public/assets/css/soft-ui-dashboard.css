@@ -950,8 +950,8 @@ select {
   list-style: none;
   transition: all 0.4s ease;
 }
-.sidebar .nav-links li:hover{
-  background: #1d1b31;
+.sidebar .nav-links li a:hover{
+  color: #67748e !important;
 }
 .sidebar .nav-links li .iocn-link{
   display: flex;
@@ -1004,10 +1004,8 @@ select {
 }
 .sidebar .nav-links li .sub-menu a{
   color: #fff;
-  font-size: 15px;
   padding: 5px 0;
   white-space: nowrap;
-  opacity: 0.6;
   transition: all 0.3s ease;
 }
 .sidebar .nav-links li .sub-menu a:hover{
@@ -1235,3 +1233,15 @@ select {
   background: #000;
   margin-bottom: 20px;
 }
+
+
+ul li.active{
+  background: #003366;
+  width: 230px;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+
+
+
+

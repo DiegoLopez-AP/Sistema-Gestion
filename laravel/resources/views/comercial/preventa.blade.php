@@ -51,7 +51,7 @@
                     <!-- INICIO TABLA PREVENTA--
                         ----------------------------->
                     <div class="table-responsive">
-                        <table class="table align-items-center table-striped table-hover mb-0 ">
+                        <table class="table align-items-center table-striped table-hover table-cotizacion mb-0 ">
                             <!-- TITULOS TABLA -->
                             <thead class="colortabla">
                                 <tr class="colorletratabla">

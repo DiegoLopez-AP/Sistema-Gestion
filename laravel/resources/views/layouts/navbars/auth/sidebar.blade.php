@@ -11,12 +11,12 @@
     </div>
     <ul class="nav-links">
         <li>
-            <a href="{{ route('dashboard') }}">
+            <a class="" href="{{ route('dashboard') }}">
                 <i class="fas fa-tachometer-alt"></i>
                 <span class="link_name">Dashboard</span>
             </a>
             <ul class="sub-menu blank">
-                <li><a class="link_name" href="{{ route('dashboard') }}">Dashboard</a></li>
+                <li class="{{ (request()->is('dashboard')) ? 'active' : '' }}"><a class="link_name" href="{{ route('dashboard') }}">Dashboard</a></li>
             </ul>
         </li>
         <li>
@@ -29,11 +29,11 @@
             </div>
             <ul class="sub-menu">
                 <li class="text-white">Comercial</li>
-                <li><a class="active" href="{{ route('indicador-com') }}">Indicadores</a></li>
-                <li><a href="{{ route('preventa') }}">Preventa</a></li>
-                <li><a href="{{ route('cotizaciones') }}">Cotizaciones</a></li>
-                <li><a href="{{ route('clientes') }}">Clientes</a></li>
-                <li><a href="{{ route('contactos') }}">Contactos</a></li>
+                <li class="{{ (request()->is('indicador-com')) ? 'active' : '' }}"><a href="{{ route('indicador-com') }}">Indicadores</a></li>
+                <li class="{{ (request()->is('preventa')) ? 'active' : '' }}"><a href="{{ route('preventa') }}">Preventa</a></li>
+                <li class="{{ (request()->is('cotizaciones')) ? 'active' : '' }}"><a href="{{ route('cotizaciones') }}">Cotizaciones</a></li>
+                <li class="{{ (request()->is('clientes')) ? 'active' : '' }}"><a href="{{ route('clientes') }}">Clientes</a></li>
+                <li class="{{ (request()->is('contactos')) ? 'active' : '' }}"><a href="{{ route('contactos') }}">Contactos</a></li>
             </ul>
         </li>
         <li>
@@ -46,10 +46,10 @@
             </div>
             <ul class="sub-menu wrapper">
                 <li class="text-white">Operaciones</li>
-                <li><a href="{{ route('indicador-op') }}">Indicadores</a></li>
-                <li><a href="{{ route('proyectos') }}">Proyectos</a></li>
-                <li><a href="{{ route('costos') }}">Costos</a></li>
-                <li><a href="{{ route('carta-gantt') }}">Cartas gantt</a></li>
+                <li class="{{ (request()->is('indicador-op')) ? 'active' : '' }}"><a href="{{ route('indicador-op') }}">Indicadores</a></li>
+                <li class="{{ (request()->is('proyectos')) ? 'active' : '' }}"><a href="{{ route('proyectos') }}">Proyectos</a></li>
+                <li class="{{ (request()->is('costos')) ? 'active' : '' }}"><a href="{{ route('costos') }}">Costos</a></li>
+                <li class="{{ (request()->is('carta-gantt')) ? 'active' : '' }}"><a href="{{ route('carta-gantt') }}">Cartas gantt</a></li>
             </ul>
         </li>
         <li>
@@ -62,13 +62,13 @@
             </div>
             <ul class="sub-menu wrapper">
                 <li class="text-white">Finanzas</li>
-                <li><a href="{{ route('indicador-fin') }}">Indicadores</a></li>
-                <li><a href="{{ route('fechas-pago') }}">Fechas de pago</a></li>
-                <li><a href="{{ route('facturacion') }}">Facturación</a></li>
-                <li><a href="{{ route('proveedores') }}">Proveedores</a></li>
-                <li><a href="{{ route('flujo-caja') }}">Flujos de caja</a></li>
-                <li><a href="{{ route('orden-compra-cli') }}">Ordenes de compra Clientes</a></li>
-                <li><a href="{{ route('orden-compra-int') }}">Ordenes de compra Internas</a></li>
+                <li class="{{ (request()->is('indicador-fin')) ? 'active' : '' }}"><a href="{{ route('indicador-fin') }}">Indicadores</a></li>
+                <li class="{{ (request()->is('fechas-pago')) ? 'active' : '' }}"><a href="{{ route('fechas-pago') }}">Fechas de pago</a></li>
+                <li class="{{ (request()->is('facturacion')) ? 'active' : '' }}"><a href="{{ route('facturacion') }}">Facturación</a></li>
+                <li class="{{ (request()->is('proveedores')) ? 'active' : '' }}"><a href="{{ route('proveedores') }}">Proveedores</a></li>
+                <li class="{{ (request()->is('flujo-caja')) ? 'active' : '' }}"><a href="{{ route('flujo-caja') }}">Flujos de caja</a></li>
+                <li class="{{ (request()->is('orden-compra-cli')) ? 'active' : '' }}"><a href="{{ route('orden-compra-cli') }}">OC Clientes</a></li>
+                <li class="{{ (request()->is('orden-compra-int')) ? 'active' : '' }}"><a href="{{ route('orden-compra-int') }}">OC Internas</a></li>
             </ul>
         </li>
         <li>
@@ -81,12 +81,12 @@
             </div>
             <ul class="sub-menu wrapper">
                 <li class="text-white">RRHH</li>
-                <li><a href="{{ route('indicador-rrhh') }}">Indicadores</a></li>
-                <li><a href="{{ route('ficha-ptrabajador') }}">Ficha trabajador</a></li>
-                <li><a href="{{ route('ap-rech-vaca') }}">Apr.Rech.Vacaciones</a></li>
-                <li><a href="{{ route('curriculum') }}">Curriculum</a></li>
-                <li><a href="{{ route('solicitud-vacaciones') }}">Solicitud de Vacaciones</a></li>
-                <li><a href="{{ route('evaluacion-desemp') }}">Evaluación de Desempeño</a></li>
+                <li class="{{ (request()->is('indicador-rrhh')) ? 'active' : '' }}"><a href="{{ route('indicador-rrhh') }}">Indicadores</a></li>
+                <li class="{{ (request()->is('ficha-ptrabajador')) ? 'active' : '' }}"><a href="{{ route('ficha-ptrabajador') }}">Ficha trabajador</a></li>
+                <li class="{{ (request()->is('ap-rech-vaca')) ? 'active' : '' }}"><a href="{{ route('ap-rech-vaca') }}">Apr.Rech.Vacaciones</a></li>
+                <li class="{{ (request()->is('curriculum')) ? 'active' : '' }}"><a href="{{ route('curriculum') }}">Curriculum</a></li>
+                <li class="{{ (request()->is('solicitud-vacaciones')) ? 'active' : '' }}"><a href="{{ route('solicitud-vacaciones') }}">Solicitud de Vacaciones</a></li>
+                <li class="{{ (request()->is('evaluacion-desemp')) ? 'active' : '' }}"><a href="{{ route('evaluacion-desemp') }}">Evaluación de Desempeño</a></li>
             </ul>
         </li>
         <li>
@@ -99,9 +99,9 @@
             </div>
             <ul class="sub-menu wrapper">
                 <li class="text-white">Informes</li>
-                <li><a href="{{ route('indicador-inf') }}">Indicadores</a></li>
-                <li><a href="{{ route('rentabilidad') }}">Rentabilidad</a></li>
-                <li><a href="{{ route('capacites') }}">Capacites</a></li>
+                <li class="{{ (request()->is('indicador-inf')) ? 'active' : '' }}" ><a href="{{ route('indicador-inf') }}">Indicadores</a></li>
+                <li class="{{ (request()->is('rentabilidad')) ? 'active' : '' }}"><a href="{{ route('rentabilidad') }}">Rentabilidad</a></li>
+                <li class="{{ (request()->is('capacites')) ? 'active' : '' }}"><a href="{{ route('capacites') }}">Capacites</a></li>
             </ul>
         </li>
         <hr class="horizontal light mt-3">
@@ -115,11 +115,10 @@
             </div>
             <ul class="sub-menu wrapper">
                 <li class="text-white">Administración</li>
-                <li><a href="{{ route('usuarios') }}">Usuarios</a></li>
-                <li><a href="{{ route('permisos') }}">Permisos</a></li>
-                <li><a href="{{ route('indicadores-adm') }}">Indicadores</a></li>
-                <li><a href="{{ route('valores') }}">Valores</a></li>
-                <li><a href="{{ route('charts') }}">Graficos</a></li>
+                <li class="{{ (request()->is('usuarios')) ? 'active' : '' }}"><a href="{{ route('usuarios') }}">Usuarios</a></li>
+                <li class="{{ (request()->is('permisos')) ? 'active' : '' }}"><a href="{{ route('permisos') }}">Permisos</a></li>
+                <li class="{{ (request()->is('indicadores-adm')) ? 'active' : '' }}"><a href="{{ route('indicadores-adm') }}">Indicadores</a></li>
+                <li class="{{ (request()->is('valores')) ? 'active' : '' }}"><a href="{{ route('valores') }}">Valores</a></li>
             </ul>
         </li>
         <li>
@@ -136,3 +135,7 @@
         </li>
     </ul>
 </aside>
+
+<!-- SCRIPT ------------
+------------------------>
+
