@@ -1255,8 +1255,5 @@ body{
 }
 
 footer{
-  height: 60px;
-  position: absolute;
   bottom: 0;
-  right: 0px;
 }
