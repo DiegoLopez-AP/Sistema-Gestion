@@ -43,7 +43,7 @@
             @include('layouts.navbars.auth.sidebar')
             <main class="main-content position-relative">
                 @include('layouts.navbars.auth.nav')
-                <div class="container-fluid py-4">
+                <div class="container-fluid py-4" style="background: #e4e9f7">
                     @yield('content')
                     @include('layouts.footers.auth.footer')
                 </div>
