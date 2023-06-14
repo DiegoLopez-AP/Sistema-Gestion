@@ -1193,6 +1193,7 @@ select {
   left: 60%;
 }
 
+/* LINEA DE LOS TITULOS */
 .line_title {
   width: 120px;
   height: 5px;
@@ -1228,6 +1229,7 @@ select {
   letter-spacing: -.025rem;
 }
 
+/* LINEA DE SEPARACION */
 .line_separation {
   width: 120px;
   height: 5px;

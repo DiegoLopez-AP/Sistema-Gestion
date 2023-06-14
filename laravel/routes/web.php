@@ -182,6 +182,14 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('finanzas/orden-compra-int');
 	})->name('orden-compra-int');
 
+	Route::get('editar-factura', function(){
+		return view('finanzas/editar-factura');
+	})->name('editar-factura');
+
+	Route::get('editaroc-cliente', function(){
+		return view('finanzas/editaroc-cliente');
+	})->name('editaroc-cliente');
+
 
 
 	//TODO RUTAS  RRHH

@@ -1,11 +1,10 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h5> <a href="{{ url('cotizaciones') }}">Cotizaciones</a> <i class="fas fa-caret-right"></i> Cotización GT-DS-5373 SISTEMA
-        COTIZACIONES ALUPROF</h5>
+    <h5> <a href="{{ url('facturacion') }}">Facturación </a> <i class="fas fa-caret-right"></i> Factura 4479</h5>
     <div class="line_title"></div>
     <div class="boton">
-        <a href="{{ url('cotizaciones') }}" class="btn bg-gradient-primary btn-sm px-4 py-2" type="button">Volver</a>
+        <a href="{{ url('facturacion') }}" class="btn bg-gradient-primary btn-sm px-4 py-2" type="button">Volver</a>
     </div>
     <main class="ct-docs-content-col" role="main">
         <div class="ct-docs-page-title">
@@ -13,128 +12,62 @@
                 <div class="card-body">
                     <form id="formulario" class="pb-0">
                         <div class="pagina activa p-2 " id="pagina1">
-                            <h6 class="text-dark text-left fw-bold">Cotización: 5373
-                                <span class="float-end text-success">Terminada</span>
+                            <h6 class="text-dark text-left fw-bold">Factura: 4479
+                                <span class="float-end text-success"></span>
                             </h6>
                             <hr>
                             <div class="row">
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">NC o Cot</label>
-                                    <input type="text" class="form-control " value="Nota de cobro" disabled>
+                                <div class="col-md-4">
+                                    <label for="" class="form-label">Razón Social</label>
+                                    <input type="text" class="form-control " value="Copec S.A" disabled>
                                 </div>
-                                <div class="col-md-1">
-                                    <label for="" class="form-label">I.V.A %</label>
+                                <div class="col-md-4">
+                                    <label for="" class="form-label">Rut</label>
                                     <input type="text" class="form-control " placeholder="">
                                 </div>
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">Cliente:</label>
-                                    <input type="text" class="form-control " value="ALUPROF" disabled>
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="" class="form-label">Tema</label>
-                                    <input type="text" class="form-control " value="SISTEMA COTIZACIONES">
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">N° Cotización:</label>
-                                    <input type="text" class="form-control " value="5373" disabled>
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">Estado:</label>
-                                    <input type="text" class="form-control " value="Terminada" disabled>
+                                <div class="col-md-4">
+                                    <label for="" class="form-label">Dirección</label>
+                                    <input type="text" class="form-control text-truncate" value="El Bosque Norte N°0211 / Isidora Goyenechea N°2915, Piso 20" disabled>
                                 </div>
                             </div>
                             <div class="row pt-3">
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">Estado de la cotización:</label>
-                                    <select class="form-select" name="" id="">
-                                        <option value="1" selected>Aprobada</option>
-                                        <option value="2">Rechazada</option>
-                                    </select>
+                                <div class="col-md-4">
+                                    <label for="" class="form-label">Telefono</label>
+                                    <input type="text" class="form-control " value="6907000">
                                 </div>
-                                <div class="col-md-10">
-                                    <label class="form-label" for="">Descripción Estado:</label>
-                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="3"
-                                        placeholder="La cotización ha sido aprobada..."></textarea>
+                                <div class="col-md-4">
+                                    <label for="" class="form-label">N°Factura</label>
+                                    <input type="text" class="form-control " value="4479" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="" class="form-label">Tipo Factura</label>
+                                    <input type="text" class="form-control " value="Factura Exenta" disabled>
                                 </div>
                             </div>
                             <h6 class="text-dark pt-4">Datos</h6>
                             <div class="line_separation"></div>
                             <div class="row ">
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">Rut cliente:</label>
-                                    <input type="text" class="form-control " value="99.520.000-7" disabled>
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">Fecha Comprometida</label>
-                                    <input type="date" class="form-control " placeholder="">
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">Jefe de Proyecto:</label>
-                                    <input type="text" class="form-control " value="Tamara Ureta" disabled>
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">Fecha Cotización:</label>
-                                    <input type="date" class="form-control " value="08/06/2023" disabled>
+                                <div class="col-md-4">
+                                    <label for="" class="form-label">Fecha Emisión</label>
+                                    <input type="text" class="form-control " value="02/06/2023">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="" class="form-label">Responsable:</label>
-                                    <input type="text" class="form-control" value="Tamara Valeria Ureta Peralta">
+                                    <label for="" class="form-label">Fecha Vencimiento</label>
+                                    <input type="text" class="form-control " value="07/07/2023">
                                 </div>
                             </div>
                             <div class="row pt-3">
                                 <div class="col-md-4">
-                                    <label for="" class="form-label">Fecha de Envío:</label>
-                                    <input type="text" class="form-control " value="--" disabled>
+                                    <label for="" class="form-label">Neto</label>
+                                    <input type="text" class="form-control " value="3863513" disabled>
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="" class="form-label">Fecha OC compra:</label>
-                                    <input type="text" class="form-control " value="--" disabled>
+                                    <label for="" class="form-label">IVA</label>
+                                    <input type="text" class="form-control " value="0" disabled>
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="" class="form-label">Fecha Facturación:</label>
-                                    <input type="text" class="form-control " value="--" disabled>
-                                </div>
-                            </div>
-                            <div class="row pt-3">
-                                <div class="col-md-6">
-                                    <label for="" class="form-label">Nº Orden Compra:</label>
-                                    <input type="text" class="form-control " value="--" disabled>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="" class="form-label">Nº Factura Asociada:</label>
-                                    <input type="text" class="form-control " value="--" disabled>
-                                </div>
-                            </div>
-                            <div class="row pt-3">
-                                <div class="col-md-3">
-                                    <label for="" class="form-label">Total Horas:</label>
-                                    <input type="text" class="form-control " value="568" disabled>
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="" class="form-label">Total U.F:</label>
-                                    <input type="text" class="form-control " value="568.00" disabled>
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="" class="form-label">Total Pesos:</label>
-                                    <input type="text" class="form-control fw-normal" value="20482506.00">
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="" class="form-label">Valor U.F:</label>
-                                    <input type="text" class="form-control " value="36060.75" disabled>
-                                </div>
-                            </div>
-                            <div class="row pt-3">
-                                <div class="col-md-12">
-                                    <label for="" class="form-label">Info Anexa:</label>
-                                    <textarea class="form-control" name="" id="textarea" cols="30" rows="3"
-                                        placeholder="Escriba una breve descripción..."></textarea>
-                                </div>
-                            </div>
-                            <div class="row pt-3">
-                                <div class="col-md-12">
-                                    <label for="" class="form-label">Archivo: <span class="fw-bold ps-2"
-                                            style="color: #0e50d7;">(20Mb. Máx.)</span></label>
-                                    <input type="file" class="form-control">
+                                    <label for="" class="form-label">Total</label>
+                                    <input type="text" class="form-control " value="3863513" disabled>
                                 </div>
                             </div>
                             <div class="boton pt-4 text-end">
@@ -160,16 +93,16 @@
                                 </div>
                             </div>
                             <!-- BOTON SIGUIENTE -->
-                            <div class="paso_footer pt-4">
+                            <div class="paso_footer pt-5">
                                 <hr class="pb-0">
                                 <button class="btn bg-gradient-primary mb-0 px-4" type="button"
                                     onclick="mostrarPagina(2)">Siguiente</button>
                             </div>
                         </div>
                     </form>
-                    <div class="pagina " id="pagina2">
+                    <div class="pagina" id="pagina2">
+                        <!-- FUNCION MODIFICAR 
                         <div class="mostrar" id="distrib" style="display: none">
-                            <!-- FUNCION MODIFICAR -->
                             <script>
                                 function distrib() {
                                     var x = document.getElementById("distrib");
@@ -185,6 +118,7 @@
                                             class="fas fa-check-circle text-success"></i></span></h6>
                             </div>
                         </div>
+                        ------->
                         <div class="enviar" id="enviar" style="display: none">
                             <!-- FUNCION ENVIAR -->
                             <script>
@@ -207,9 +141,6 @@
                                 <button href="#" class="btn bg-gradient-primary btn-sm " type="button"
                                     onclick="distrib()">Modificar
                                 </button>
-                                <button href="#" class="btn bg-gradient-primary btn-sm" type="button"
-                                    onclick="enviar()">Enviar Nota de Cobro
-                                </button>
                                 <button href="#" class="btn btn-danger btn-sm" type="button">PDF
                                 </button>
                             </div>
@@ -228,34 +159,19 @@
                                 <thead class="colortabla">
                                     <tr class="colorletratabla">
                                         <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
-                                            N°
+                                            Orden Compra
                                         </th>
                                         <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                            Titulo
+                                            N°Cot.
                                         </th>
                                         <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
-                                            Tarifa
+                                            Cantidad
+                                        </th>
+                                        <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                            Precio Unitario
                                         </th>
                                         <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
                                             Valor
-                                        </th>
-                                        <th class="text-center text-uppercase  text-white text-xxs font-weight-bolder">
-                                            T.Horas
-                                        </th>
-                                        <th class="text-center text-uppercase  text-white text-xxs font-weight-bolder">
-                                            Total
-                                        </th>
-                                        <th class="text-center text-uppercase  text-white text-xxs font-weight-bolder">
-                                            Desarrollador
-                                        </th>
-                                        <th class="text-center text-uppercase  text-white text-xxs font-weight-bolder">
-                                            F. Inicio
-                                        </th>
-                                        <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                            F. Fin
-                                        </th>
-                                        <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
-                                            Estado
                                         </th>
                                         <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
                                             Acción
@@ -266,36 +182,20 @@
                                     <!-- INICIO ITEM 1 -->
                                     <tr>
                                         <a href="#">
-                                            <td class="ps-2 text-left">
-                                                <p class="text-xs font-weight-bold mb-0">1</p>
+                                            <td class="text-left">
+                                                <p class="text-xs font-weight-bold mb-0">9300105934</p>
                                             </td>
                                             <td class="text-left">
-                                                <p class="text-xs font-weight-bold mb-0">Asesoria Soporte Mayo
-                                                    2023.</p>
+                                                <p class="text-xs font-weight-bold mb-0">5239</p>
                                             </td>
                                             <td class="text-left">
-                                                <p class="text-xs font-weight-bold mb-0">Soporte</p>
+                                                <p class="text-xs font-weight-bold mb-0">108.00</p>
                                             </td>
                                             <td class="text-left">
-                                                <p class="text-xs font-weight-bold mb-0">1.00</p>
-                                            </td>
-                                            <td class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">568.00</p>
-                                            </td>
-                                            <td class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">568.00</p>
-                                            </td>
-                                            <td class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">G-Talent</p>
-                                            </td>
-                                            <td class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">01/05/2023</p>
+                                                <p class="text-xs font-weight-bold mb-0">3863513.00</p>
                                             </td>
                                             <td class="text-left">
-                                                <p class="text-xs font-weight-bold mb-0">31/05/2023</p>
-                                            </td>
-                                            <td class="text-left">
-                                                <p class="text-xs font-weight-bold mb-0">Cerrado</p>
+                                                <p class="text-xs font-weight-bold mb-0">3863513</p>
                                             </td>
                                             <!-- ACCIONES -->
                                             <td class="text-center text-sm sticky">
@@ -309,21 +209,6 @@
                                     </tr>
                                     <!-- INICIO ITEM 2 -->
                                     <tr>
-                                        <td class="ps-2 text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
                                         <td class="text-left">
                                             <p class="text-xs font-weight-bold mb-0"></p>
                                         </td>
@@ -350,21 +235,6 @@
                                     </tr>
                                     <!-- INICIO ITEM 3 -->
                                     <tr>
-                                        <td class="ps-2 text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
                                         <td class="text-left">
                                             <p class="text-xs font-weight-bold mb-0"></p>
                                         </td>
@@ -391,21 +261,6 @@
                                     </tr>
                                     <!-- INICIO ITEM 4 -->
                                     <tr>
-                                        <td class="ps-2 text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
                                         <td class="text-left">
                                             <p class="text-xs font-weight-bold mb-0"></p>
                                         </td>
@@ -432,21 +287,6 @@
                                     </tr>
                                     <!-- INICIO ITEM 5 -->
                                     <tr>
-                                        <td class="ps-2 text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
-                                        <td class="text-left">
-                                            <p class="text-xs font-weight-bold mb-0"></p>
-                                        </td>
                                         <td class="text-left">
                                             <p class="text-xs font-weight-bold mb-0"></p>
                                         </td>
@@ -486,7 +326,7 @@
                                 }
                             </script>
                             <div class=" py-2 ps-2 rounded" style="background: rgba(0, 186, 0, 0.089)">
-                                <h6 class="text-success">La Cotización ha sido editada exitosamente. <span><i
+                                <h6 class="text-success">La Factura ha sido editada exitosamente. <span><i
                                             class="fas fa-check-circle text-success"></i></span></h6>
                             </div>
                         </div>
@@ -520,60 +360,31 @@
                             <form class="formulario">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <label for="" class="form-label">N°</label>
-                                        <input type="number" class="form-control">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <label for="" class="form-label">Titulo</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">Tarifa</label>
+                                        <label for="" class="form-label">Orden de Commpra</label>
                                         <select name="" id="" class="form-select">
                                             <option value="1" selected>Seleccione</option>
-                                            <option value="2">Soporte</option>
-                                            <option value="3">Analisis AWS</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">Valor</label>
-                                        <input type="number" class="form-control">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">T. Horas</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">Desarrollador</label>
-                                        <select name="" id="" class="form-select">
-                                            <option value="1" selected>Seleccione</option>
-                                            <option value="2"></option>
+                                            <option value="2">9300105934</option>
                                             <option value="3"></option>
                                         </select>
                                     </div>
                                     <div class="col-md-4">
-                                        <label for="" class="form-label">F. Inicio</label>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">F.Fin</label>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-12">
-                                        <label for="" class="form-label">Detalle</label>
-                                        <textarea class="form-control" name="" id="textarea" cols="30" rows="3"
-                                            placeholder="Escriba una breve descripción..."></textarea>
+                                        <label for="" class="form-label">N°Cot.</label>
+                                        <select name="" id="" class="form-select">
+                                            <option value="1" selected>Seleccione</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="row pt-3">
                                     <div class="col-md-4">
-                                        <label for="" class="form-label">Estado</label>
+                                        <label for="" class="form-label">Cantidad</label>
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Precio Unitario</label>
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Valor</label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
@@ -622,61 +433,26 @@
                             <form class="formulario">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <label for="" class="form-label">N°</label>
-                                        <input type="number" class="form-control" value="1">
+                                        <label for="" class="form-label">Orden Compra</label>
+                                        <input type="number" class="form-control" value="9300105934" disabled>
                                     </div>
-                                    <div class="col-md-8">
-                                        <label for="" class="form-label">Titulo</label>
-                                        <input type="text" class="form-control" value="Asesoria Soporte Mayo 2023.">
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">N°Cot.</label>
+                                        <input type="number" class="form-control" value="5239" disabled>
                                     </div>
                                 </div>
                                 <div class="row pt-3">
                                     <div class="col-md-4">
-                                        <label for="" class="form-label">Tarifa</label>
-                                        <select name="" id="" class="form-select">
-                                            <option value="1">Seleccione</option>
-                                            <option value="2" selected>Soporte</option>
-                                            <option value="3">Analisis AWS</option>
-                                        </select>
+                                        <label for="" class="form-label">Cantidad</label>
+                                        <input type="number" class="form-control" value="108.00">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Precio Unitario</label>
+                                        <input type="number" class="form-control" value="3863513.00">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Valor</label>
-                                        <input type="number" class="form-control" value="1.00">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">T. Horas</label>
-                                        <input type="text" class="form-control" value="568.00">
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">Desarrollador</label>
-                                        <select name="" id="" class="form-select">
-                                            <option value="1">Seleccione</option>
-                                            <option value="2" selected>G-Talent</option>
-                                            <option value="3"></option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">F. Inicio</label>
-                                        <input type="text" class="form-control" value="01/05/2023" disabled>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">F.Fin</label>
-                                        <input type="text" class="form-control" value="31/05/2023" disabled>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-12">
-                                        <label for="" class="form-label">Detalle</label>
-                                        <textarea class="form-control" name="" id="textarea" cols="30" rows="3"
-                                            placeholder="Escriba una breve descripción..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">Estado</label>
-                                        <input type="text" class="form-control" value="Cerrado" disabled>
+                                        <input type="text" class="form-control" value="3863513">
                                     </div>
                                 </div>
                             </form>
