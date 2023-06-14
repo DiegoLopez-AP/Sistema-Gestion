@@ -1022,6 +1022,7 @@ select {
   display: block;
   pointer-events: none;
   transition: 0s;
+  width: 230px;
 }
 .sidebar.close .nav-links li:hover .sub-menu{
   top: 0;
@@ -1099,7 +1100,7 @@ select {
 .main-content{
   position: relative;
   background: #E4E9F7;
-  height: 100%;
+  height: 100vh;
   left: 230px;
   width: calc(100% - 230px);
   transition: all 0.5s ease;
@@ -1235,13 +1236,25 @@ select {
 }
 
 
-ul li.active{
+.sidebar .nav-links ul li.active{
   background: #003366;
   width: 230px;
   margin-left: -20px;
   padding-left: 20px;
 }
 
+.sidebar .nav-links ul li.active a:hover{
+  color: white !important;
+}
 
+body{
+  height: 100%;
+  bottom: 60px;
+}
 
-
+footer{
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
