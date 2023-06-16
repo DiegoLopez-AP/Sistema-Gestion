@@ -205,6 +205,10 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('rrhh/formulario-ftrabajador');
 	})->name('formulario-ftrabajador');
 
+	Route::get('editar-ftrabjador', function(){
+		return view('rrhh/editar-ftrabjador');
+	})->name('editar-ftrabjador');
+
 	Route::get('ap-rech-vaca', function(){
 		return view('rrhh/ap-rech-vaca');
 	})->name('ap-rech-vaca');
@@ -220,6 +224,10 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('evaluacion-desemp', function(){
 		return view('rrhh/evaluacion-desemp');
 	})->name('evaluacion-desemp');
+
+	Route::get('organigrama', function(){
+		return view('rrhh/organigrama');
+	})->name('organigrama');
 
 
 

@@ -31,10 +31,16 @@
                             <thead class="colortabla">
                                 <tr class="colorletratabla">
                                     <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
-                                        N°Factura
+                                        N° Factura
                                     </th>
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
                                         Tipo
+                                    </th>
+                                    <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
+                                        N° Cotización
+                                    </th>
+                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                        Cliente
                                     </th>
                                     <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
                                         Contacto
@@ -71,6 +77,12 @@
                                         </td>
                                         <td class="text-left">
                                             <p class="text-xs font-weight-bold mb-0">Factura Exenta</p>
+                                        </td>
+                                        <td class="ps-2 text-left" >
+                                            <p class="text-xs font-weight-bold mb-0">4479</p>
+                                        </td>
+                                        <td class="ps-2 text-left" >
+                                            <p class="text-xs font-weight-bold mb-0">COPEC</p>
                                         </td>
                                         <td class="text-left" >
                                             <p class="text-xs font-weight-bold mb-0">02/06/2023</p>
@@ -115,6 +127,12 @@
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">5375</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
@@ -187,6 +205,12 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
                                     <!-- ACCIONES -->
                                     <td class="text-center text-sm sticky">
                                         <!-- EDITAR PREVENTA -->
@@ -234,6 +258,12 @@
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
                                     <!-- ACCIONES -->
                                     <td class="text-center text-sm sticky">
                                         <!-- EDITAR PREVENTA -->
@@ -256,6 +286,12 @@
                                 <tr>
                                     <td class="ps-2 text-left">
                                         <p class="text-xs font-weight-bold mb-0">5336</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-left">
                                         <p class="text-xs font-weight-bold mb-0"></p>
@@ -386,7 +422,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary" onclick="nuevapre()">Guardar
                         Cambios</button>
                 </div>

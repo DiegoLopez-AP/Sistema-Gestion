@@ -204,11 +204,11 @@
                         </div>
                         <div class="d-flex flex-row  justify-content-between pb-3">
                             <div class="boton">
-                                <button href="#" class="btn bg-gradient-primary btn-sm " type="button"
+                                <!--<button href="#" class="btn bg-gradient-primary btn-sm " type="button"
                                     onclick="distrib()">Modificar
-                                </button>
+                                </button>-->
                                 <button href="#" class="btn bg-gradient-primary btn-sm" type="button"
-                                    onclick="enviar()">Enviar Nota de Cobro
+                                    onclick="enviar()">Enviar
                                 </button>
                                 <button href="#" class="btn btn-danger btn-sm" type="button">PDF
                                 </button>
@@ -510,7 +510,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-fondo">
-                    <h5 class="modal-title  text-white" id="exampleModalLabel">Agregar registro</h5>
+                    <h5 class="modal-title  text-white" id="exampleModalLabel">Agregar Detalles</h5>
                     <button type="button" class="btn-close text-dark" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
@@ -519,10 +519,6 @@
                         <div class="card-body">
                             <form class="formulario">
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">N°</label>
-                                        <input type="number" class="form-control">
-                                    </div>
                                     <div class="col-md-8">
                                         <label for="" class="form-label">Titulo</label>
                                         <input type="text" class="form-control">
@@ -599,7 +595,7 @@
                     </div>
                 </div>
                 <div class="modal-footer pb-0">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary" onclick="nueva()">Guardar
                         Cambios</button>
                 </div>
@@ -612,7 +608,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-fondo">
-                    <h5 class="modal-title  text-white" id="exampleModalLabel">Editar registro</h5>
+                    <h5 class="modal-title  text-white" id="exampleModalLabel">Editar Detalles</h5>
                     <button type="button" class="btn-close text-dark" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
@@ -621,10 +617,6 @@
                         <div class="card-body">
                             <form class="formulario">
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="" class="form-label">N°</label>
-                                        <input type="number" class="form-control" value="1">
-                                    </div>
                                     <div class="col-md-8">
                                         <label for="" class="form-label">Titulo</label>
                                         <input type="text" class="form-control" value="Asesoria Soporte Mayo 2023.">
@@ -701,7 +693,7 @@
                     </div>
                 </div>
                 <div class="modal-footer pb-0">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary" onclick="edit_re()">Guardar
                         Cambios</button>
                 </div>

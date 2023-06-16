@@ -138,9 +138,9 @@
                         </div>
                         <div class="d-flex flex-row  justify-content-between pb-3">
                             <div class="boton">
-                                <button href="#" class="btn bg-gradient-primary btn-sm " type="button"
+                                <!--<button href="#" class="btn bg-gradient-primary btn-sm " type="button"
                                     onclick="distrib()">Modificar
-                                </button>
+                                </button>-->
                                 <button href="#" class="btn btn-danger btn-sm" type="button">PDF
                                 </button>
                             </div>

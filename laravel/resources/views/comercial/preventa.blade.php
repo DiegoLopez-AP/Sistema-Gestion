@@ -1043,7 +1043,7 @@
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-md-4">
-                                        <label for="" class="form-label">Tipo</label>
+                                        <label for="" class="form-label">Linea de negocio</label>
                                         <select class="form-select" name="" id="vigen-pre">
                                             <option value="1" selected>Nuevo</option>
                                             <option value="2">Control de cambio</option>
@@ -1057,14 +1057,21 @@
                                         </select>
                                     </div>
                                     <div class="col-md-4">
+                                        <label for="" class="form-label">Procedencia</label>
+                                        <select class="form-select" name="" id="vigen-pre">
+                                            <option value="1" selected>Seleccione</option>
+                                            <option value="2"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
                                         <label for="" class="form-label">NC o COT</label>
                                         <select class="form-select" name="" id="vigen-pre">
                                             <option value="1" selected>Cotización</option>
                                             <option value="2">Nota de Cobro</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="row mb-3">
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Estado</label>
                                         <input class="form-control" type="text" value="En proceso" disabled>
@@ -1092,7 +1099,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary" onclick="preedit()">Guardar
                         Cambios</button>
                 </div>
@@ -1171,7 +1178,7 @@
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-md-4">
-                                        <label for="" class="form-label">Tipo</label>
+                                        <label for="" class="form-label">Linea de negocio</label>
                                         <select class="form-select" name="" id="vigen-pre">
                                             <option value="1" selected>Nuevo</option>
                                             <option value="2">Control de cambio</option>
@@ -1184,6 +1191,15 @@
                                             <option value="2">Sin Diseño</option>
                                         </select>
                                     </div>
+                                    <div class="col-md-4">
+                                        <label for="" class="form-label">Procedencia</label>
+                                        <select class="form-select" name="" id="vigen-pre">
+                                            <option value="1" selected>Seleccione</option>
+                                            <option value="2"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
                                     <div class="col-md-4">
                                         <label for="" class="form-label">NC o COT</label>
                                         <select class="form-select" name="" id="vigen-pre">
@@ -1214,14 +1230,14 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary" onclick="nuevapre()">Guardar
                         Cambios</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- MODAL ENVIAR COTIZACIÓN -->
+    <!-- MODAL ENVIAR PREVENTA -->
     <div class="modal fade" id="enviar-preventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -1233,7 +1249,7 @@
                 <div class="modal-body bg-white">
                     <div class="check text-center">
                         <span><i class="far fa-check-circle text-success"></i></span>
-                        <h6 class="text-success">La preventa se ha enviado correctamente.</h6>
+                        <h6 class="text-success fw-bold">La preventa se ha enviado correctamente.</h6>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -1279,7 +1295,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary">Guardar
                         Cambios</button>
                 </div>

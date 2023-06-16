@@ -108,23 +108,23 @@ FLUCTUACIONES
                     </form>
                     <div class="pagina " id="pagina2">
                         <!-- FUNCION MODIFICAR
-                                                    <div class="mostrar" id="distrib" style="display: none">
-                                                        <script>
-                                                            function distrib() {
-                                                                var x = document.getElementById("distrib");
-                                                                if (x.style.display === "none") {
-                                                                    x.style.display = "block";
-                                                                } else {
-                                                                    x.style.display = "none";
-                                                                }
-                                                            }
-                                                        </script>
-                                                        <div class=" mb-3 py-2 ps-2 rounded" style="background: rgba(0, 186, 0, 0.089)">
-                                                            <h6 class="text-success">Los datos han sido modificados con exito. <span><i
-                                                                        class="fas fa-check-circle text-success"></i></span></h6>
-                                                        </div>
-                                                    </div>
-                                                    ------->
+                                                            <div class="mostrar" id="distrib" style="display: none">
+                                                                <script>
+                                                                    function distrib() {
+                                                                        var x = document.getElementById("distrib");
+                                                                        if (x.style.display === "none") {
+                                                                            x.style.display = "block";
+                                                                        } else {
+                                                                            x.style.display = "none";
+                                                                        }
+                                                                    }
+                                                                </script>
+                                                                <div class=" mb-3 py-2 ps-2 rounded" style="background: rgba(0, 186, 0, 0.089)">
+                                                                    <h6 class="text-success">Los datos han sido modificados con exito. <span><i
+                                                                                class="fas fa-check-circle text-success"></i></span></h6>
+                                                                </div>
+                                                            </div>
+                                                            ------->
                         <div class="enviar" id="enviar" style="display: none">
                             <!-- FUNCION ENVIAR -->
                             <script>
@@ -144,9 +144,9 @@ FLUCTUACIONES
                         </div>
                         <div class="d-flex flex-row  justify-content-between pb-3">
                             <div class="boton">
-                                <button href="#" class="btn bg-gradient-primary btn-sm " type="button"
+                                <!--<button href="#" class="btn bg-gradient-primary btn-sm " type="button"
                                     onclick="distrib()">Modificar
-                                </button>
+                                </button>-->
                                 <button href="#" class="btn btn-danger btn-sm" type="button">PDF
                                 </button>
                             </div>
@@ -158,7 +158,7 @@ FLUCTUACIONES
                             </div>
                         </div>
                         <!-- INICIO TABLA EDITAR COTIZACIÓN--
-                                                            ------------------------------------->
+                                                                ------------------------------------->
                         <div class="table-responsive">
                             <table class="table align-items-center table-striped table-hover mb-0">
                                 <!-- TITULOS TABLA -->
@@ -359,13 +359,14 @@ FLUCTUACIONES
                         <div class="accordion mt-5" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header bg-light rounded-top" id="headingOne">
-                                    <button class="accordion-button text-dark fw-bold" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="accordion-button text-dark fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
                                         Facturas <i class='bx bxs-chevron-down arrow'></i>
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <div class="table-responsive">
                                             <table class="table table-hover table-striped">
@@ -452,7 +453,7 @@ FLUCTUACIONES
     </main>
 
     <!-- MODALS -----
-                                    ------------------>
+                                        ------------------>
 
     <!-- MODAL NUEVO REGISTRO -->
     <div class="modal fade" id="nuevo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

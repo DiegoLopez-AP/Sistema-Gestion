@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <h3 id="line-chart-with-gradient-example">Line chart with gradient example</h3>
+        <h5 id="line-chart-with-gradient-example">Line chart with gradient example</h5>
         <div class="card mb-3">
             <div class="card-body p-3">
                 <div class="chart">
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <h3 id="bar-chart-example">Bar chart example</h3>
+        <h5 id="bar-chart-example">Bar chart example</h5>
         <div class="card mb-3">
             <div class="card-body p-3">
                 <div class="chart">
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <h3 id="bar-chart-horizontal-example">Bar chart horizontal example</h3>
+        <h5 id="bar-chart-horizontal-example">Bar chart horizontal example</h5>
         <div class="card mb-3">
             <div class="card-body p-3">
                 <div class="chart">
@@ -48,7 +48,7 @@
             </div>
         </div>
 
-        <h3 id="mixed-chart-example">Mixed chart example</h3>
+        <h5 id="mixed-chart-example">Mixed chart example</h5>
         <div class="card mb-3">
             <div class="card-body p-3">
                 <div class="chart">
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <h3 id="bubble-chart-example">Bubble chart example</h3>
+        <h5 id="bubble-chart-example">Bubble chart example</h5>
         <div class="card mb-3">
             <div class="card-body p-3">
                 <div class="chart">
@@ -68,7 +68,7 @@
             </div>
         </div>
 
-        <h3 id="doughnut-chart-example">Doughnut chart example</h3>
+        <h5 id="doughnut-chart-example">Doughnut chart example</h5>
         <div class="card mb-3">
             <div class="card-body p-3">
                 <div class="chart">
@@ -78,7 +78,7 @@
             </div>
         </div>
 
-        <h3 id="pie-chart-example">Pie chart example</h3>
+        <h5 id="pie-chart-example">Pie chart example</h5>
         <div class="card mb-3">
             <div class="card-body p-3">
                 <div class="chart">
@@ -88,7 +88,7 @@
             </div>
         </div>
 
-        <h3 id="radar-chart-example">Radar chart example</h3>
+        <h5 id="radar-chart-example">Radar chart example</h5>
         <div class="card mb-3">
             <div class="card-body p-5">
                 <div class="chart">
@@ -98,7 +98,7 @@
             </div>
         </div>
 
-        <h3 id="polar-chart-example">Polar chart example</h3>
+        <h5 id="polar-chart-example">Polar chart example</h5>
         <div class="card mb-3">
             <div class="card-body p-5">
                 <div class="chart">

@@ -81,9 +81,13 @@
                                         <p class="text-xs font-weight-bold mb-0">Vigente</p>
                                     </td>
                                     <td class="text-center">
-                                        <a href="{{ url('formulario-ftrabajador') }}"
-                                            class="{{ Request::is('formulario-ftrabajador') ?: '' }}" type="">
-                                            <i class="fas fa-user"></i>
+                                        <a href="{{ url('editar-ftrabjador') }}"
+                                            class="{{ Request::is('editar-ftrabjador') ?: '' }}" type="">
+                                            <i class="fas fa-user mx-2"></i>
+                                        </a>
+                                        <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#eliminar-trabajador">
+                                            <i class="fas fa-trash text-secondary"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -111,9 +115,13 @@
                                         <p class="text-xs font-weight-bold mb-0">Vigente</p>
                                     </td>
                                     <td class="text-center">
-                                        <a href="{{ url('formulario-ftrabajador') }}"
-                                            class="{{ Request::is('formulario-ftrabajador') ?: '' }}" type="">
-                                            <i class="fas fa-user"></i>
+                                        <a href="{{ url('editar-ftrabjador') }}"
+                                            class="{{ Request::is('editar-ftrabjador') ?: '' }}" type="">
+                                            <i class="fas fa-user mx-2"></i>
+                                        </a>
+                                        <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#eliminar-trabajador">
+                                            <i class="fas fa-trash text-secondary"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -124,4 +132,28 @@
             </div>
         </div>
     </main>
+
+    <!-- MODAL --------------
+    ------------------------->
+
+    <!-- MODAL ELIMINAR TRABJADOR -->
+    <div class="modal fade" id="eliminar-trabajador" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-fondo">
+                    <h5 class="modal-title  text-white" id="exampleModalLabel">Eliminar</h5>
+                    <button type="button" class="btn-close text-dark" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-white">
+                    <div class="check text-center">
+                        <span><i class="far fa-times-circle text-danger"></i></span>
+                        <h6 class="text-danger">Trabjador eliminado.</h6>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

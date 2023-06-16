@@ -1,7 +1,7 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-    <h5 class="m-2">RRHH <i class="fas fa-caret-right"></i> Curriculum</h5>
+    <h5>RRHH <i class="fas fa-caret-right"></i> Curriculum</h5>
     <div class="line_title"></div>
     <main class="ct-docs-content-col" role="main">
         <div class="ct-docs-page-title">
@@ -411,7 +411,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                         <button type="button" class="btn bg-gradient-primary">Guardar
                             Cambios</button>
                     </div>

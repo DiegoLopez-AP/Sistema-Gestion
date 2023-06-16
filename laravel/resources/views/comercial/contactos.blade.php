@@ -9,13 +9,18 @@
                 <div class="card-body px-0 pt-0 pb-2">
                     <!-- FILTROS -->
                     <div class="filtros d-flex justify-content-between pb-2">
-                        <select name="" id="" class="form-select " style="height: 38px">
-                            <option value="1" selected>Cliente</option>
-                            <option value="2">Cliente</option>
-                            <option value="3">Cliente</option>
-                            <option value="4">Cliente</option>
-                        </select>
-                        <div class="boton-agregar text-end align-items-center pt-2">
+                        <div class="buscar-contacto">
+                        <input class="form-control" style="height: 35px;" list="datalistOptions" id="exampleDataList"
+                            placeholder="Buscar Contacto">
+                        <datalist id="datalistOptions">
+                            <option value="Contacto 1">
+                            <option value="Contacto 2">
+                            <option value="Contacto 3">
+                            <option value="Contacto 4">
+                            <option value="Contacto 5">
+                        </datalist>
+                        </div>
+                        <div class="boton-agregar text-end align-items-center pt-1">
                             <button class="btn bg-gradient-primary btn-circle" data-bs-toggle="modal"
                                 data-bs-target="#modal-agregar">
                                 <i class="fas fa-plus"></i>
@@ -23,7 +28,7 @@
                         </div>
                     </div>
                     <!-- INICIO TABLA CONTACTOS--
-                            ----------------------------->
+                                ----------------------------->
                     <div class="table-responsive p-0">
                         <table class="table align-items-center table-striped table-hover mb-0">
                             <!-- TITULOS TABLA -->
@@ -200,7 +205,9 @@
                             </tbody>
                         </table>
                         <div class="boton float-end pt-3">
-                            <button href="#" class="btn bg-gradient-primary btn-sm px-4 py-2" style="background: #01723a;" type="button">Excel<i class="fas fa-file-excel text-xs ms-1"></i></button>
+                            <button href="#" class="btn bg-gradient-primary btn-sm px-4 py-2"
+                                style="background: #01723a;" type="button">Excel<i
+                                    class="fas fa-file-excel text-xs ms-1"></i></button>
                         </div>
                     </div>
                 </div>
@@ -209,7 +216,7 @@
     </main>
 
     <!-- MODALS -----
-            ------------------>
+                ------------------>
 
     <!-- MODAL AGREGAR CONTACTO -->
     <div class="modal fade" id="modal-agregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -226,42 +233,35 @@
                                 <div class="row mb-3">
                                     <div class="col-md-6 ">
                                         <label for="" class="form-label">Codigo</label>
-                                        <input type="text" class="form-control" placeholder="Ingrese Codigo"
-                                            id="codigo-contac">
+                                        <input type="text" class="form-control" id="codigo-contac">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" placeholder="Ingrese Nombre"
-                                            id="nombre-contac">
+                                        <input type="text" class="form-control" id="nombre-contac">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Mail</label>
-                                        <input class="form-control" placeholder="Ingrese mail" type="email"
-                                            id="mail-contac">
+                                        <input class="form-control" type="email" id="mail-contac">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Telefono</label>
-                                        <input class="form-control" placeholder="Ingrese Telefono" type="number"
-                                            id="tel-contac">
+                                        <input class="form-control" type="number" id="tel-contac">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Cargo</label>
-                                        <input type="text" class="form-control" placeholder="Ingrese Cargo"
-                                            id="cargo-contac">
+                                        <input type="text" class="form-control" id="cargo-contac">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Dirección</label>
-                                        <input type="text" class="form-control" placeholder="Ingrese Dirección"
-                                            id="direc-contac">
+                                        <input type="text" class="form-control" id="direc-contac">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Clave</label>
-                                        <input type="password" class="form-control" placeholder="Ingrese Clave"
-                                            id="clave-contac">
+                                        <input type="password" class="form-control" id="clave-contac">
                                     </div>
                                 </div>
                             </form>
@@ -269,7 +269,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary">Guardar Cambios</button>
                 </div>
             </div>
@@ -292,7 +292,8 @@
                                 <div class="row mb-3">
                                     <div class="col-md-6 ">
                                         <label for="" class="form-label">Codigo</label>
-                                        <input type="text" class="form-control" value="GP" id="codigo-contac" disabled>
+                                        <input type="text" class="form-control" value="GP" id="codigo-contac"
+                                            disabled>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Nombre</label>
@@ -308,8 +309,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Telefono</label>
-                                        <input class="form-control" value="944674400" type="number"
-                                            id="tel-contac">
+                                        <input class="form-control" value="944674400" type="number" id="tel-contac">
                                     </div>
                                     <div class="col-md-4">
                                         <label for="" class="form-label">Cargo</label>
@@ -320,13 +320,13 @@
                                 <div class="row mb-3">
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Dirección</label>
-                                        <input type="text" class="form-control"
-                                            value="María Luisa Bombal 2008 Colina" id="direc-contac">
+                                        <input type="text" class="form-control" value="María Luisa Bombal 2008 Colina"
+                                            id="direc-contac">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="" class="form-label">Clave</label>
                                         <input type="password" class="form-control text-left" value="gp"
-                                            id="clave-contac">
+                                            id="clave-contac" disabled>
                                     </div>
                                 </div>
                             </form>
@@ -334,7 +334,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary">Guardar
                         cambios</button>
                 </div>

@@ -56,7 +56,7 @@
             <div class="iocn-link">
                 <a href="#">
                     <i class="fas fa-coins"></i>
-                    <span class="link_name">Finanzas</span>
+                    <span class="link_name ps-1">Finanzas</span>
                 </a>
                 <i class='bx bxs-chevron-down arrow'></i>
             </div>
@@ -87,6 +87,7 @@
                 <li class="{{ (request()->is('curriculum')) ? 'active' : '' }}"><a href="{{ route('curriculum') }}">Curriculum</a></li>
                 <li class="{{ (request()->is('solicitud-vacaciones')) ? 'active' : '' }}"><a href="{{ route('solicitud-vacaciones') }}">Solicitud de Vacaciones</a></li>
                 <li class="{{ (request()->is('evaluacion-desemp')) ? 'active' : '' }}"><a href="{{ route('evaluacion-desemp') }}">Evaluación de Desempeño</a></li>
+                <li class="{{ (request()->is('organigrama')) ? 'active' : '' }}"><a href="{{ route('organigrama') }}">Organigrama</a></li>
             </ul>
         </li>
         <li>

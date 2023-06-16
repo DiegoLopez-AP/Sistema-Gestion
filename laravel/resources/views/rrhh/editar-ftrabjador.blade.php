@@ -1,7 +1,7 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-<h5> <a href="{{ url('ficha-ptrabajador') }}">Ficha Personal Trabajador</a> <i class="fas fa-caret-right"></i> Nueva Ficha</h5>
+<h5> <a href="{{ url('ficha-ptrabajador') }}">Ficha Personal Trabajador</a> <i class="fas fa-caret-right"></i> Trabajador ACEVEDO FLORES MIGUEL ANGEL</h5>
     <div class="line_title"></div>
     <div class="boton">
         <a href="{{ url('ficha-ptrabajador') }}" class="btn bg-gradient-primary btn-sm px-4 py-2" type="button">Volver</a>

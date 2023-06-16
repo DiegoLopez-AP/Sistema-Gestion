@@ -171,7 +171,10 @@
                                                 <i class="fas fa-pen me-2 text-warning"></i>
                                             </a>
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#enviar-cotizacion">
-                                                <i class="fas fa-envelope-open" style="color: #0e50d7;"></i>
+                                                <i class="fas fa-envelope-open me-2" style="color: #0e50d7;"></i>
+                                            </a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#enviar-facturaciones">
+                                                <i class="fas fa-dollar-sign text-success"></i>
                                             </a>
                                         </td>
                                     </tr>
@@ -218,7 +221,10 @@
                                                 data-bs-target="#editar-cotizacion"><i class="fas fa-pen me-2 text-warning"></i>
                                             </a>
                                             <a href="#">
-                                                <i class="fas fa-envelope-open" style="color: #0e50d7;"></i>
+                                                <i class="fas fa-envelope-open me-2" style="color: #0e50d7;"></i>
+                                            </a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#enviar-facturaciones">
+                                                <i class="fas fa-dollar-sign text-success"></i>
                                             </a>
                                         </td>
                                     </tr>
@@ -263,7 +269,10 @@
                                                 data-bs-target="#editar-cotizacion"><i class="fas fa-pen me-2 text-warning"></i>
                                             </a>
                                             <a href="#">
-                                                <i class="fas fa-envelope-open" style="color: #0e50d7;"></i>
+                                                <i class="fas fa-envelope-open me-2" style="color: #0e50d7;"></i>
+                                            </a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#enviar-facturaciones">
+                                                <i class="fas fa-dollar-sign text-success"></i>
                                             </a>
                                         </td>
                                     </tr>
@@ -311,7 +320,10 @@
                                                 data-bs-target="#editar-cotizacion"><i class="fas fa-pen me-2 text-warning"></i>
                                             </a>
                                             <a href="#">
-                                                <i class="fas fa-envelope-open" style="color: #0e50d7;"></i>
+                                                <i class="fas fa-envelope-open me-2" style="color: #0e50d7;"></i>
+                                            </a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#enviar-facturaciones">
+                                                <i class="fas fa-dollar-sign text-success"></i>
                                             </a>
                                         </td>
                                     </tr>
@@ -357,7 +369,10 @@
                                                 data-bs-target="#editar-cotizacion"><i class="fas fa-pen me-2 text-warning"></i>
                                             </a>
                                             <a href="#">
-                                                <i class="fas fa-envelope-open" style="color: #0e50d7;"></i>
+                                                <i class="fas fa-envelope-open me-2" style="color: #0e50d7;"></i>
+                                            </a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#enviar-facturaciones">
+                                                <i class="fas fa-dollar-sign text-success"></i>
                                             </a>
                                         </td>
                                     </tr>
@@ -673,10 +688,138 @@
                 <div class="modal-body bg-white">
                     <div class="check text-center">
                         <span><i class="far fa-check-circle text-success"></i></span>
-                        <h6 class="text-success">La cotización se ha enviado correctamente.</h6>
+                        <h6 class="text-success fw-bold">La cotización se ha enviado correctamente.</h6>
                     </div>
                 </div>
                 <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL ENVIAR A FACTURACIONES -->
+    <div class="modal fade" id="enviar-facturaciones" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-fondo">
+                    <h5 class="modal-title  text-white" id="exampleModalLabel">Enviar a Facturaciones</h5>
+                    <button type="button" class="btn-close text-dark" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-white">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <div class="row pt-2 rounded bg-light">
+                                <div class="col-md-3">
+                                    <label class="form-label" for="">Duración: 3 meses</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label" for="">Horas: 480 horas</label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-dark" scope="col"></th>
+                                            <th class="text-dark" scope="col">#</th>
+                                            <th class="text-dark" scope="col">Descripción</th>
+                                            <th class="text-dark" scope="col">Fecha</th>
+                                            <th class="text-dark" scope="col">Horas</th>
+                                            <th class="text-dark" scope="col">%</th>
+                                            <th class="text-dark" scope="col">Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              </div>
+                                            </td>
+                                            <th scope="row">1</th>
+                                            <td>Documentación de Sistema de Gestión</td>
+                                            <td>08/06/2023</td>
+                                            <td>{Horas}</td>
+                                            <td>20%</td>
+                                            <td>Finalizado</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              </div>
+                                            </td>
+                                            <th scope="row">2</th>
+                                            <td>Diseño de Sistema de Gestión</td>
+                                            <td>08/06/2023</td>
+                                            <td>{Horas}</td>
+                                            <td>40%</td>
+                                            <td>Finalizado</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              </div>
+                                            </td>
+                                            <th scope="row">3</th>
+                                            <td>Back-oficce de Sistema de Gestión</td>
+                                            <td>08/06/2023</td>
+                                            <td>{Horas}</td>
+                                            <td>40%</td>
+                                            <td>Finalizado</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--<button type="button" class=" btn bg-gradient-primary step_button step_button--next mt-1"
+                                onclick="mostrar()"><i class="fa fa-plus"> </i>
+                            </button>-->
+                            <div class="editar-edt" id="mostrar" style="display: none">
+                                <script>
+                                    function mostrar() {
+                                        var x = document.getElementById("mostrar");
+                                        if (x.style.display === "none") {
+                                            x.style.display = "block";
+                                        } else {
+                                            x.style.display = "none";
+                                        }
+                                    }
+                                </script>
+                                <form action="">
+                                    <h6>Horas</h6>
+                                    <div class="row ">
+                                        <div class="col-md-12">
+                                            <label for="" class="form-label">Descripción del servicio</label>
+                                            <textarea class="form-control" name="" id="textarea" cols="30" rows="2"
+                                                placeholder="Escriba sus datos..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 horas mt-2 w-20">
+                                        <label for="" class="form-label">Horas</label>
+                                        <input type="number" class="form-control">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="guardar-cambios p-2 text-center" id="guardar-cambios" style="display: none">
+                            <script>
+                                function guardar() {
+                                    var x = document.getElementById("guardar-cambios");
+                                    if (x.style.display === "none") {
+                                        x.style.display = "block";
+                                    } else {
+                                        x.style.display = "none";
+                                    }
+                                }
+                            </script>
+                            <h6 class="text-success">La Cotización ha sido enviada. <span><i
+                                        class="far fa-check-circle"></i></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn bg-gradient-primary" onclick="guardar()">Enviar</button>
+                </div>
             </div>
         </div>
     </div>

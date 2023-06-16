@@ -9,7 +9,6 @@
                 <div class="card-body px-0 pt-0 pb-2">
                     <!-- FILTROS -->
                     <div class="filtros d-flex justify-content-between pb-1">
-                        <label class="visually-hidden" for="inlineFormInputGroupUsername"></label>
                         <div class="input-group w-30">
                             <input type="text" class="form-control" style="height: 35px;" placeholder="Buscar"
                                 aria-label="Recipient's username" aria-describedby="button-addon2"
@@ -296,7 +295,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary">Guardar Cambios</button>
                 </div>
             </div>
@@ -392,7 +391,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn bg-gradient-primary">Guardar
                         Cambios</button>
                 </div>
