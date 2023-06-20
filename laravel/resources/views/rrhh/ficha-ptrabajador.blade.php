@@ -83,7 +83,7 @@
                                     <td class="text-center">
                                         <a href="{{ url('editar-ftrabjador') }}"
                                             class="{{ Request::is('editar-ftrabjador') ?: '' }}" type="">
-                                            <i class="fas fa-user mx-2"></i>
+                                            <i class="fas fa-pen text-warning mx-2"></i>
                                         </a>
                                         <a href="#" data-bs-toggle="modal"
                                         data-bs-target="#eliminar-trabajador">
@@ -117,7 +117,7 @@
                                     <td class="text-center">
                                         <a href="{{ url('editar-ftrabjador') }}"
                                             class="{{ Request::is('editar-ftrabjador') ?: '' }}" type="">
-                                            <i class="fas fa-user mx-2"></i>
+                                            <i class="fas fa-pen text-warning mx-2"></i>
                                         </a>
                                         <a href="#" data-bs-toggle="modal"
                                         data-bs-target="#eliminar-trabajador">

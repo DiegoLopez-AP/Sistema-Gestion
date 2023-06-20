@@ -1361,3 +1361,9 @@ footer{
   font-size: 1em;
   font-weight: bold;
 }
+
+/* FLUJO DE CAJA */
+
+.bg-tabla{
+  background-color: var(--bs-success);
+}
