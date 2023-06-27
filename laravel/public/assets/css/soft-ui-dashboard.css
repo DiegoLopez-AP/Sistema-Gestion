@@ -225,11 +225,6 @@ a:hover {
 
 }
 
-/* .cartacolor{
-    border: #003366 1px solid;
-} */
-
-
 /* Formulario */
 /* Estilos generales para el formulario */
 .form {
@@ -525,10 +520,6 @@ select {
     
 }
 
-/* .ancho-modal{
-    min-width: 900px !important;
-} */
-
 .btn-subir{
     margin-top: 32px;
 }
@@ -551,6 +542,7 @@ select {
     text-align: left;
 }
 
+/* ESTILOS VACACIONES */
 .des-vaca{
     text-align: left;
     color: var(--bs-gray);
@@ -644,7 +636,7 @@ select {
     color: #fff;
 }
 
-/* TODO ESTILOS TABLA COTIZACION */
+/* ESTILOS TABLA COTIZACION */
 
 .table-responsive{
     display: block;  
@@ -848,12 +840,6 @@ select {
         border-top-right-radius: 5px;
   }
 
-
-
-
-
-
-
 /* indicadores operaciones */
 
 .progress {
@@ -887,6 +873,7 @@ select {
 }
 
 /* SIDEBAR NUEVO */
+
 /* Google Fonts Import Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
@@ -1202,7 +1189,6 @@ select {
 }
 
 /* BOTON CIRCULAR */
-
 .btn-circle.btn-xl {
   width: 70px;
   height: 70px;
@@ -1237,7 +1223,6 @@ select {
   margin-bottom: 20px;
 }
 
-
 .sidebar .nav-links ul li.active{
   background: #003366;
   width: 230px;
@@ -1259,7 +1244,6 @@ footer{
 }
 
 /* ORGANIGRAMA */
-
 .organigrama * {
   margin: 0px;
   padding: 0px;
@@ -1363,7 +1347,6 @@ footer{
 }
 
 /* FLUJO DE CAJA */
-
 .bg-tabla{
   background-color: var(--bs-success);
 }

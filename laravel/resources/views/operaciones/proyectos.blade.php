@@ -359,9 +359,10 @@
     <div class="line_title"></div>
     <main class="ct-docs-content-col" role="main">
         <div class="ct-docs-page-title">
-            <!-- BOARD -->
+            <!-- TABLERO KANBAN -->
             <div class='app' style="background: #e4e9f7">
                 <main class='project'>
+                    <!-- FILTROS -->
                     <div class='project-info pt-0'>
                         <div class="input-group w-30">
                             <input type="text" class="form-control bg-white" style="height: 35px;" placeholder="Buscar"
@@ -378,6 +379,7 @@
                         </div>
                     </div>
                     <div class='project-tasks'>
+                        <!-- COLUMNA POR INICIAR -->
                         <div class='project-column'>
                             <div class='project-column-heading'>
                                 <h2 class='project-column-heading__title'>Por iniciar</h2><button
@@ -393,7 +395,7 @@
                             <a href="" data-bs-toggle="modal" data-bs-target="#proyecto">
                                 <div class='task pb-1 ' draggable='true'>
                                     <div class='task__tags'><span
-                                            class='task__tag task__tag--copyright'>Copywriting</span><button
+                                            class='task__tag task__tag--copyright'>Fábrica</span><button
                                             class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                     <p>Konsep hero title yang menarik</p>
                                     <div class='task__stats'>
@@ -406,7 +408,7 @@
                                 </div>
                             </a>
                             <div class='task' draggable='true'>
-                                <div class='task__tags'><span class='task__tag task__tag--design'>UI Design</span><button
+                                <div class='task__tags'><span class='task__tag task__tag--design'>Infraestructura</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Icon di section our services</p>
                                 <div class='task__stats'>
@@ -419,7 +421,7 @@
                             </div>
                             <div class='task' draggable='true'>
                                 <div class='task__tags'><span
-                                        class='task__tag task__tag--copyright'>Copywriting</span><button
+                                        class='task__tag task__tag--copyright'>Fábrica</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Konsep hero title yang menarik</p>
                                 <div class='task__stats'>
@@ -431,6 +433,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- COLUMNA EN CURSO -->
                         <div class='project-column'>
                             <div class='project-column-heading'>
                                 <h2 class='project-column-heading__title'>En curso</h2><button
@@ -438,7 +441,7 @@
                             </div>
 
                             <div class='task' draggable='true'>
-                                <div class='task__tags'><span class='task__tag task__tag--design'>UI Design</span><button
+                                <div class='task__tags'><span class='task__tag task__tag--design'>Infraestructura</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Replace lorem ipsum text in the final designs</p>
                                 <div class='task__stats'>
@@ -452,7 +455,7 @@
 
                             <div class='task' draggable='true'>
                                 <div class='task__tags'><span
-                                        class='task__tag task__tag--illustration'>Illustration</span><button
+                                        class='task__tag task__tag--illustration'>Outsourcing</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Create and generate the custom SVG illustrations.</p>
                                 <div class='task__stats'>
@@ -466,7 +469,7 @@
 
                             <div class='task' draggable='true'>
                                 <div class='task__tags'><span
-                                        class='task__tag task__tag--copyright'>Copywriting</span><button
+                                        class='task__tag task__tag--copyright'>Fábrica</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Proof read the legal page and check for and loopholes</p>
                                 <div class='task__stats'>
@@ -480,7 +483,7 @@
 
                             <div class='task' draggable='true'>
                                 <div class='task__tags'><span
-                                        class='task__tag task__tag--illustration'>Illustration</span><button
+                                        class='task__tag task__tag--illustration'>Outsourcing</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Create the landing page graphics for the hero slider.</p>
                                 <div class='task__stats'>
@@ -493,6 +496,7 @@
                             </div>
 
                         </div>
+                        <!-- COLUMNA STAND BY -->
                         <div class='project-column'>
                             <div class='project-column-heading'>
                                 <h2 class='project-column-heading__title'>Stand by</h2><button
@@ -501,7 +505,7 @@
 
                             <div class='task' draggable='true'>
                                 <div class='task__tags'><span
-                                        class='task__tag task__tag--copyright'>Copywriting</span><button
+                                        class='task__tag task__tag--copyright'>Fábrica</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Check the company we copied doesn't think we copied them.</p>
                                 <div class='task__stats'>
@@ -513,7 +517,7 @@
                                 </div>
                             </div>
                             <div class='task' draggable='true'>
-                                <div class='task__tags'><span class='task__tag task__tag--design'>UI Design</span><button
+                                <div class='task__tags'><span class='task__tag task__tag--design'>Infraestructura</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Design the about page.</p>
                                 <div class='task__stats'>
@@ -526,7 +530,7 @@
                             </div>
                             <div class='task' draggable='true'>
                                 <div class='task__tags'><span
-                                        class='task__tag task__tag--illustration'>Illustration</span><button
+                                        class='task__tag task__tag--illustration'>Outsourcing</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Move that one image 5px down to make Phil Happy.</p>
                                 <div class='task__stats'>
@@ -538,6 +542,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- COLUMNA QA CLIENTE -->
                         <div class='project-column'>
                             <div class='project-column-heading'>
                                 <h2 class='project-column-heading__title'>QA Cliente</h2><button
@@ -546,7 +551,7 @@
 
                             <div class='task' draggable='true'>
                                 <div class='task__tags'><span
-                                        class='task__tag task__tag--illustration'>Illustration</span><button
+                                        class='task__tag task__tag--illustration'>Outsourcing</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Send Advert illustrations over to production company.</p>
                                 <div class='task__stats'>
@@ -560,7 +565,7 @@
 
                             <div class='task' draggable='true'>
                                 <div class='task__tags'><span
-                                        class='task__tag task__tag--illustration'>Illustration</span><button
+                                        class='task__tag task__tag--illustration'>Infraestructura</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Dawn wants to move the text 3px to the right.</p>
                                 <div class='task__stats'>
@@ -574,7 +579,7 @@
 
                             <div class='task' draggable='true'>
                                 <div class='task__tags'><span
-                                        class='task__tag task__tag--copyright'>Copywriting</span><button
+                                        class='task__tag task__tag--copyright'>Fábrica</span><button
                                         class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
                                 <p>Amend the contract details.</p>
                                 <div class='task__stats'>
@@ -587,53 +592,54 @@
                             </div>
 
                         </div>
-
                     </div>
                 </main>
                 <aside class='task-details'>
+                    <!-- PROGRESO DE LAS TAREAS -->
                     <div class='tag-progress'>
-                        <h2>Task Progress</h2>
+                        <h2>Progreso de las tareas</h2>
                         <div class='tag-progress'>
-                            <p>Copywriting <span>3/8</span></p>
+                            <p>Fábrica <span>3/8</span></p>
                             <progress class="progress progress--copyright" max="8" value="3"> 3 </progress>
                         </div>
                         <div class='tag-progress'>
-                            <p>Illustration <span>6/10</span></p>
+                            <p>Outsourcing <span>6/10</span></p>
                             <progress class="progress progress--illustration" max="10" value="6"> 6
                             </progress>
                         </div>
                         <div class='tag-progress'>
-                            <p>UI Design <span>2/7</span></p>
+                            <p>Infraestructura<span>2/7</span></p>
                             <progress class="progress progress--design" max="7" value="2"> 2 </progress>
                         </div>
                     </div>
+                    <!-- ACTIVIDAD RECIENTE -->
                     <div class='task-activity'>
-                        <h2>Recent Activity</h2>
+                        <h2>Actividad Reciente</h2>
                         <ul>
                             <li>
                                 <span class='task-icon task-icon--attachment'><i class="fas fa-paperclip"></i></span>
-                                <b>Andrea </b>uploaded 3 documents
-                                <time datetime="2021-11-24T20:00:00">Aug 10</time>
+                                <b>Andrea </b>Subió 3 documentos
+                                <time datetime="2023-06-24T20:00:00">Jun 27</time>
                             </li>
                             <li>
                                 <span class='task-icon task-icon--comment'><i class="fas fa-comment"></i></span>
-                                <b>Karen </b> left a comment
-                                <time datetime="2021-11-24T20:00:00">Aug 10</time>
+                                <b>Karen </b> Dejó un comentario
+                                <time datetime="2021-11-24T20:00:00">Jun 26</time>
                             </li>
                             <li>
                                 <span class='task-icon task-icon--edit'><i class="fas fa-pencil-alt"></i></span>
-                                <b>Karen </b>uploaded 3 documents
-                                <time datetime="2021-11-24T20:00:00">Aug 11</time>
+                                <b>Karen </b>Subió 3 doumentos
+                                <time datetime="2021-11-24T20:00:00">Jun 25</time>
                             </li>
                             <li>
                                 <span class='task-icon task-icon--attachment'><i class="fas fa-paperclip"></i></span>
-                                <b>Andrea </b>uploaded 3 documents
-                                <time datetime="2021-11-24T20:00:00">Aug 11</time>
+                                <b>Andrea </b>Dejó un comentario
+                                <time datetime="2021-11-24T20:00:00">Jun 24</time>
                             </li>
                             <li>
                                 <span class='task-icon task-icon--comment'><i class="fas fa-comment"></i></span>
                                 <b>Karen </b> left a comment
-                                <time datetime="2021-11-24T20:00:00">Aug 12</time>
+                                <time datetime="2021-11-24T20:00:00">Jun 23</time>
                             </li>
                         </ul>
                     </div>
@@ -788,7 +794,7 @@
         </div>
     </main>
 
-    <!--JS-->
+    <!--JS KANBAN-->
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -858,7 +864,7 @@
     </script>
 
     <!-- MODALS -----
-        ------------------>
+    ------------------>
 
     <!-- MODAL PROYECTO -->
     <div class="modal fade" id="proyecto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

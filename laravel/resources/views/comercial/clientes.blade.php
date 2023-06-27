@@ -214,7 +214,7 @@
     <!-- MODALS -----
     ------------------>
 
-    <!-- MODAL AGREAGAR CLIENTE  -->
+    <!-- MODAL AGREGAR CLIENTE  -->
     <div class="modal fade" id="agregar-cliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg ">
             <div class="modal-content">
@@ -301,8 +301,7 @@
             </div>
         </div>
     </div>
-
-    <!-- TODO MODAL EDITAR CLIENTE -->
+    <!-- MODAL EDITAR CLIENTE -->
     <div class="modal fade" id="editar-cliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg ">
             <div class="modal-content">

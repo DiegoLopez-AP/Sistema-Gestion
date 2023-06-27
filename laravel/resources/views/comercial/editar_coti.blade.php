@@ -11,6 +11,7 @@
         <div class="ct-docs-page-title">
             <div class="card cartacolor">
                 <div class="card-body">
+                    <!--FORMULARIO EDITAR COTIZACION-->
                     <form id="formulario" class="pb-0">
                         <div class="pagina activa p-2 " id="pagina1">
                             <h6 class="text-dark text-left fw-bold">Cotización: 5373
@@ -167,6 +168,7 @@
                             </div>
                         </div>
                     </form>
+                    <!--PAGINA 2-->
                     <div class="pagina " id="pagina2">
                         <div class="mostrar" id="distrib" style="display: none">
                             <!-- FUNCION MODIFICAR -->
@@ -496,7 +498,6 @@
                             <button class=" btn bg-gradient-primary" type="submit" onclick="editar()">Guardar</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -602,7 +603,6 @@
             </div>
         </div>
     </div>
-
     <!-- MODAL EDITAR REGISTRO -->
     <div class="modal fade" id="editar-re" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">

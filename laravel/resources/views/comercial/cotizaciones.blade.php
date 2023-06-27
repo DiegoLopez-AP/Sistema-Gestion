@@ -386,7 +386,7 @@
     </main>
 
     <!-- MODALS -----
-                    ------------------>
+    ------------------>
 
     <!-- MODAL NUEVA COTIZACIÓN -->
     <div class="modal fade" id="nueva-cotizacion" tabindex="-1" aria-labelledby="nueva-cotizacion" aria-hidden="true">

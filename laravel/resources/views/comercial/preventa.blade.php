@@ -7,31 +7,7 @@
         <div class="ct-docs-page-title">
             <div class="card mb-2 cartacolor p-4">
                 <div class="card-body px-0 pt-0 pb-2">
-                    <!-- Filtro ---
-                    <form action="">
-                        <div class="row align-items-center g-2">
-                            <div class="col-4">
-                                <label for="form-label" class="form-label">Proveedor</label>
-                                <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-                                    <option selected>Proveedor</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="col-4 float-start">
-                                <label for="form-label" class="form-label">Atención</label>
-                                <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-                                    <option selected>Atención</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-                    <hr>
-                    -------->
+                    <!--FILTROS-->
                     <div class="filtros d-flex justify-content-between pb-1">
                         <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
                         <div class="input-group w-30">
@@ -49,7 +25,7 @@
                         </div>
                     </div>
                     <!-- INICIO TABLA PREVENTA--
-                        ----------------------------->
+                    ----------------------------->
                     <div class="table-responsive">
                         <table class="table align-items-center table-striped table-hover table-cotizacion mb-0 ">
                             <!-- TITULOS TABLA -->

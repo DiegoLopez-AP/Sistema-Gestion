@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <!-- INICIO TABLA CONTACTOS--
-                                ----------------------------->
+                    ----------------------------->
                     <div class="table-responsive p-0">
                         <table class="table align-items-center table-striped table-hover mb-0">
                             <!-- TITULOS TABLA -->
@@ -216,7 +216,7 @@
     </main>
 
     <!-- MODALS -----
-                ------------------>
+    ------------------>
 
     <!-- MODAL AGREGAR CONTACTO -->
     <div class="modal fade" id="modal-agregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -275,7 +275,6 @@
             </div>
         </div>
     </div>
-
     <!-- MODAL EDITAR CONTACTO -->
     <div class="modal fade" id="modal-editar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">

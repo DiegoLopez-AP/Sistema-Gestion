@@ -447,7 +447,6 @@
         });
     }
 </script>
-
 <!-- GRAFICO RESUMEN DE COSTOS -->
 <script type="text/javascript">
     // Line chart
