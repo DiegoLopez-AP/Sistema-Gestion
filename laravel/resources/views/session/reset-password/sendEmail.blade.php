@@ -1,7 +1,7 @@
 @extends('layouts.user_type.guest')
 
 @section('content')
-    <main class="main-content  mt-0  bg-fondo">
+    <main class="login mt-0 bg-fondo">
         <section>
             <div class="page-header min-vh-100">
                 <div class="container">
