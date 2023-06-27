@@ -8,20 +8,42 @@
             <!-- BOARD -->
             <div class="card kanban_scroll">
                 <div class="card-header bg-fondo p-3">
-                    <form id="todo-form">
-                        <input type="text" placeholder="Agregar por iniciar..." id="todo-input" />
-                        <button type="submit">Agregar +</button>
-                    </form>
+                    <!--
+                            <form id="todo-form">
+                                <input type="text" placeholder="Agregar por iniciar..." id="todo-input" />
+                                <button type="submit">Agregar +</button>
+                            </form>
+                        -->
                 </div>
                 <div class="card-body board px-0">
                     <div class="container ">
                         <div class="lanes d-flex">
                             <div class="swim-lane" id="todo-lane">
                                 <h3 class="heading">Por iniciar</h3>
+                                <div class="card">
+                                    <div class="card-body pb-0 p-0">
+                                        <div class="d-flex mb-2 mt-3">
+                                            <span class="ps-3">
+                                                <img src="../assets/img/small-logos/logo-slack.svg"
+                                                    class="flex-shrink-0 me-3  bg-white rounded" alt="..."
+                                                    height="45px">
+                                            </span>
+                                            <div class="">
+                                                <h6 class="text-dark fw-bold">{Nombre del proyecto}</h6>
+                                            </div>
+                                        </div>
+                                        <hr class="pt-0 mb-0">
+                                        <div class="">
+                                            <a href="#" class="btn btn-link w-100 mb-0 fw-bold bg-gradient-primary" data-bs-toggle="modal"
+                                                data-bs-target="#proyecto" style="color: #fff; border-top-left-radius: 0px; border-top-right-radius: 0px">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="swim-lane">
                                 <h3 class="heading">En curso</h3>
+
                             </div>
 
                             <div class="swim-lane">
@@ -47,8 +69,8 @@
                     </div>
                 </div>
                 <div class="card-body px-0 pb-2">
-                    <!-- INICIO TABLA AVANCE--- 
-                    ---------------------------->
+                    <!-- INICIO TABLA AVANCE---
+                                                            ---------------------------->
                     <div class="table-responsive">
                         <table class="table table-hover align-items-center mb-0">
                             <!-- TITULOS TABLA -->
@@ -184,8 +206,115 @@
     </main>
 
     <!-- MODALS -----
-    ------------------>
+            ------------------>
 
+    <!-- MODAL PROYECTO -->
+    <div class="modal fade" id="proyecto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-fondo">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">Proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex position-relative  bg-light proyecto">
+                        <span class="ps-3 pt-2 pb-2">
+                            <img src="../assets/img/small-logos/logo-slack.svg"
+                                class="flex-shrink-0 me-3  bg-white rounded-3" alt="..." height="35px">
+                        </span>
+                        <div class="pt-3">
+                            <h6 class="text-dark fw-bold">{Nombre proyecto}</h6>
+                        </div>
+                    </div>
+                    <div class="row pt-3 pb-0">
+                        <div class="col-md-12">
+                            <label class="form-label" for=""><i class="fas fa-pen pe-1 text-xs"></i>Añadir Descripción:</label>
+                            <textarea class="form-control" style="border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;" name="" id="textarea" cols="90" rows="3"
+                                placeholder="Añada una descrición del proyecto">El proyecto consiste en la creación de una plataforma educativa digital interactiva que tiene como objetivo facilitar el acceso a la educación de calidad. Esta plataforma proporcionará contenido educativo diverso y adaptado a diferentes niveles académicos, permitiendo a los estudiantes aprender de manera interactiva y personalizada.</textarea>
+                        </div>
+                        <!--
+                            <div class="text-end pt-3">
+                                <button type="button" class="btn btn-secondary btn-sm">Guardar</button>
+                            </div>
+                        ---->
+                    </div>
+                    <!-- TABLA MIEMBROS -->
+                    <div class="accordion mt-3" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne" style="background-color: #f2f2f2">
+                                <button class="accordion-button collapsed text-dark fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <i class="fas fa-users pe-1 text-xs"></i>Miembros /<span class="text-black-50 ps-2">{Grupo}</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body mt-2">
+                                    <!--
+                                                                <div class="filtros d-flex justify-content-between pb-1">
+                                                                    <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                                                                    <div class="input-group w-30">
+                                                                        <input type="text" class="form-control" style="height: 35px;" placeholder="Buscar"
+                                                                            aria-label="Recipient's username" aria-describedby="button-addon2"
+                                                                            id="inputGroup-sizing-sm">
+                                                                        <button class="btn bg-gradient-primary py-2" type="button" id="button-addon2"
+                                                                            style="height: 35px;"><i class="fas fa-search"></i></button>
+                                                                    </div>
+                                                                    <div class="boton-agregar text-end align-items-center pt-2">
+                                                                        <button class="btn bg-gradient-primary btn-circle" data-bs-toggle="modal"
+                                                                            data-bs-target="#nueva-preventa">
+                                                                            <i class="fas fa-plus"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                                --->
+                                    <div class="table-responsive ">
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-dark" scope="col">#</th>
+                                                    <th class="text-dark" scope="col">Miembro</th>
+                                                    <th class="text-dark" scope="col">Grupo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>
+                                                        Nombre
+                                                    </td>
+                                                    <td>Grupo 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>
+                                                        Nombre
+                                                    </td>
+                                                    <td>Grupo 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>
+                                                        Nombre
+                                                    </td>
+                                                    <td>Grupo 1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn bg-gradient-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- MODAL PERSONA 1 -->
     <div class="modal fade" id="persona1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg ">
@@ -323,5 +452,4 @@
             </div>
         </div>
     </div>
-
 @endsection
