@@ -1367,3 +1367,12 @@ footer{
 .bg-tabla{
   background-color: var(--bs-success);
 }
+
+.line_project {
+  width: 100%;
+  height: 25px;
+  background: #003366;
+  margin-bottom: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
