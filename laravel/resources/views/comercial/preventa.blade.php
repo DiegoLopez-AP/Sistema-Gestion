@@ -567,7 +567,7 @@
         <div class="modal-dialog modal-lg ">
             <div class="modal-content">
                 <div class="modal-header bg-fondo">
-                    <h5 class="modal-title  text-white" id="exampleModalLabel">EDT</h5>
+                    <h5 class="modal-title  text-white" id="exampleModalLabel">Estimación de Tiempo</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body modal-color">
@@ -686,7 +686,7 @@
                             <div class="tema bg-light mb-3 p-2 pb-0 rounded">
                                 <div class="row ">
                                     <div class="col-md-4 text-center">
-                                        <label for="" class="form-label">Cliente:
+                                        <label for="" class="form-label float-left">Cliente:
                                             <span class="text-black">
                                                 LIPIGAS
                                             </span>
@@ -720,7 +720,7 @@
                                         <button class="accordion-button collapsed text-dark fw-bold" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
-                                            Estimación de tiempo /<span class="text-black-50 ps-2">{Horas}</span>
+                                            <i class="fas fa-clock pe-1"></i>Estimación de tiempo /<span class="text-black-50 ps-2">{Horas}</span>
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse"
@@ -1152,7 +1152,7 @@
                                 <div class="row mb-3">
                                     <div class="col-md-3">
                                         <label for="" class="form-label">Fecha</label>
-                                        <input class="form-control" type="text" id="fecha-pre" placeholder="">
+                                        <input class="form-control" type="date" id="fecha-pre" placeholder="">
                                     </div>
                                 </div>
                                 <div class="row mb-3">

@@ -9,11 +9,11 @@
             <div class="card kanban_scroll">
                 <div class="card-header bg-fondo p-3">
                     <!--
-                            <form id="todo-form">
-                                <input type="text" placeholder="Agregar por iniciar..." id="todo-input" />
-                                <button type="submit">Agregar +</button>
-                            </form>
-                        -->
+                        <form id="todo-form">
+                            <input type="text" placeholder="Agregar por iniciar..." id="todo-input" />
+                            <button type="submit">Agregar +</button>
+                        </form>
+                    -->
                 </div>
                 <div class="card-body board px-0">
                     <div class="container ">
@@ -230,7 +230,7 @@
                         <div class="col-md-12">
                             <label class="form-label" for=""><i class="fas fa-pen pe-1 text-xs"></i>Añadir Descripción:</label>
                             <textarea class="form-control" style="border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;" name="" id="textarea" cols="90" rows="3"
-                                placeholder="Añada una descrición del proyecto">El proyecto consiste en la creación de una plataforma educativa digital interactiva que tiene como objetivo facilitar el acceso a la educación de calidad. Esta plataforma proporcionará contenido educativo diverso y adaptado a diferentes niveles académicos, permitiendo a los estudiantes aprender de manera interactiva y personalizada.</textarea>
+                                placeholder="Añada una descrición del proyecto">El proyecto consiste en la creación de un sistema de gestión interactivo que tiene como objetivo facilitar las tareas diarias de las distintas áreas de la empresa...</textarea>
                         </div>
                         <!--
                             <div class="text-end pt-3">
@@ -252,7 +252,7 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body mt-2">
                                     <!--
-                                                                <div class="filtros d-flex justify-content-between pb-1">
+                                                                <div class="filtros d-flex justify-content-between pb-1">http://127.0.0.1:8000/proyectos#
                                                                     <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
                                                                     <div class="input-group w-30">
                                                                         <input type="text" class="form-control" style="height: 35px;" placeholder="Buscar"
@@ -348,20 +348,18 @@
                             <div class="d-flex position-relative  bg-light proyecto">
                                 <span class="ps-3 pb-3 pt-3">
                                     <img src="../assets/img/small-logos/logo-slack.svg"
-                                        class="flex-shrink-0 me-3  bg-white rounded-3" alt="...">
+                                        class="flex-shrink-0 me-3  bg-white rounded-3" alt="..." height="75px">
                                 </span>
                                 <div class="pt-3 px-2">
                                     <h6 class="text-dark fw-bold mt-0">{Nombre del proyecto}</h6>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                         Minus quidem soluta repellendus optio maiores perspiciatis
-                                        dolore consequatur inventore adipisci voluptate aperiam
-                                        quaerat accusamus perferendis dolorum animi, id facilis.
-                                        Delectus, quae?</p>
+                                        dolore.</p>
                                 </div>
                             </div>
-                            <div class="identificacion-cli pt-3">
-                                <h6 class="text-dark font-weight-bold text-left ">
-                                    Tabla de horas de carga (proyectos)</h6>
+                            <div class="identificacion-cli pt-2 pb-1 bg-light mt-4" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
+                                <h6 class="text-dark font-weight-bold text-left">
+                                    <i class="fas fa-clock px-1"></i>Tabla de horas de carga /<span class="text-black-50 ps-2">Proyectos</span></h6>
                             </div>
                             <div class="table-responsive pt-2">
                                 <table class="table table-hover">

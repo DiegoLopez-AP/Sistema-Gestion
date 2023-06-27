@@ -247,7 +247,7 @@
                     <div class="paso_footer">
                         <button class=" btn btn-secondary mt-4 px-4" type="button"
                             onclick="mostrarPagina(2)">Anterior</button>
-                        <button class=" btn bg-gradient-primary mt-4 px-4" type="submit">Enviar</button>
+                        <button class=" btn bg-gradient-primary mt-4 px-4" type="button">Enviar</button>
                     </div>
 
                 </div>

@@ -5,15 +5,47 @@
 <div class="line_title"></div>
 <main class="ct-docs-content-col" role="main">
     <div class="ct-docs-page-title">
-        <div class="card mb-3">
-            <div class="card-header bg-fondo ps-3 pt-2">
-                <h6 class="text-white">Ventas por unidad de negocio</h6>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-header bg-fondo ps-3 pt-2">
+                        <h6 class="text-white">Ventas por unidad de negocio</h6>
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="chart">
+                            <canvas id="line-chart" class="chart-canvas" height="375"
+                                style="display: block; box-sizing: border-box; height: 300px; width: 547.1px;"
+                                width="683"></canvas>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-body p-3">
-                <div class="chart">
-                    <canvas id="line-chart" class="chart-canvas" height="375"
-                        style="display: block; box-sizing: border-box; height: 300px; width: 547.1px;"
-                        width="683"></canvas>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-header bg-fondo ps-3 pt-2">
+                        <h6 class="text-white">Ventas</h6>
+                    </div>
+                    <div class="card-body p-3">
+                            <div class="chart">
+                                <canvas id="pie-chart" class="chart-canvas" height="375" width="683"
+                                    style="display: block; box-sizing: border-box; height: 300px; width: 547.1px;"></canvas>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3">
+                    <div class="card-header bg-fondo ps-3 pt-2">
+                        <h6 class="text-white">Ventas</h6>
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="chart">
+                            <canvas id="bar-chart" class="chart-canvas" height="375" width="683"
+                                style="display: block; box-sizing: border-box; height: 300px; width: 547.1px;"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

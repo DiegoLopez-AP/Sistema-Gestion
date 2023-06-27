@@ -204,11 +204,11 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="boton float-end pt-3">
-                            <button href="#" class="btn bg-gradient-primary btn-sm px-4 py-2"
-                                style="background: #01723a;" type="button">Excel<i
-                                    class="fas fa-file-excel text-xs ms-1"></i></button>
-                        </div>
+                    </div>
+                    <div class="boton float-end pt-3">
+                        <button href="#" class="btn bg-gradient-primary btn-sm px-4 py-2"
+                            style="background: #01723a;" type="button">Excel<i
+                                class="fas fa-file-excel text-xs ms-1"></i></button>
                     </div>
                 </div>
             </div>
