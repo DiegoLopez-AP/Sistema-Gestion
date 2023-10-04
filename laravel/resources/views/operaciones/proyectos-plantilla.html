@@ -1,0 +1,608 @@
+<div class="kanban-container">
+    <ul class="kanban-list">
+      <li class="kanban-column kanban-column-onhold">
+      <span class="kanban-column-header header-onhold">
+        <h2>To Do</h2>
+      </span>
+      <div class="kanban-options"></div>
+      <ul class="drag-inner-list">
+        <li class="drag-item" draggable="true"></li>
+        <li class="drag-item" draggable="true"></li>
+        <li class="drag-item" draggable="true"></li>
+        <li class="drag-item" draggable="true"></li>
+        <li class="drag-item" draggable="true"></li>
+      </ul>
+      </li>
+
+      <li class="kanban-column kanban-column-approved">
+      <span class="kanban-column-header header-approved">
+        <h2>Approved</h2>
+      </span>
+      <div class="kanban-options"></div>
+
+      <ul class="drag-inner-list">
+        <li class="drag-item" draggable="true"></li>
+      </ul>
+      </li>
+
+    </ul>
+  </div>
+
+  <h5 class="m-2">Operaciones/Proyectos</h5>
+
+
+    <div class="card">
+        <div class="card-header  p-2 titulo-proy">
+            <div class="row">
+                <div class="col-lg-6 col-7">
+                    <p class="text-sm mb-0">
+                        <i class="fa fa-check text-info" aria-hidden="true"></i>
+                        <span class="font-weight-bold text-white ms-1">Proyectos</span> del mes
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="card-body px-0 pb-2">
+            <div class="table-responsive">
+                <table class="table table-hover align-items-center mb-0">
+                    <thead>
+                        <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Proyectos</th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                Equipo</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Estado</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Progreso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="d-flex px-2 py-1">
+                                        <div>
+                                            <img src="../assets/img/small-logos/logo-xd.svg" class="avatar avatar-sm me-3"
+                                                alt="xd">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 1</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="avatar-group mt-2">
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
+                                            <img src="../assets/img/team-1.jpg" alt="team1">
+                                        </a>
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
+                                            <img src="../assets/img/team-2.jpg" alt="team2">
+                                        </a>
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alexander Smith">
+                                            <img src="../assets/img/team-3.jpg" alt="team3">
+                                        </a>
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
+                                            <img src="../assets/img/team-4.jpg" alt="team4">
+                                        </a>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <label for=""
+                                        class="text-danger font-weight-bold badge badge-danger text-xs">Pendiente</label>
+                                </a>
+                            </td>
+                            <td class="align-middle">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="progress-wrapper w-75 mx-auto">
+                                        <div class="progress-info">
+                                            <div class="progress-percentage">
+                                                <span class="text-xs font-weight-bold">60%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-danger w-60" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="d-flex px-2 py-1">
+                                        <div>
+                                            <img src="../assets/img/small-logos/logo-atlassian.svg"
+                                                class="avatar avatar-sm me-3" alt="atlassian">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 2</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="avatar-group mt-2">
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
+                                            <img src="../assets/img/team-2.jpg" alt="team5">
+                                        </a>
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
+                                            <img src="../assets/img/team-4.jpg" alt="team6">
+                                        </a>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <label for=""
+                                        class="text-dark font-weight-bold badge badge-secondary text-xs">Cotizado</label>
+                                </a>
+                            </td>
+                            <td class="align-middle">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="progress-wrapper w-75 mx-auto">
+                                        <div class="progress-info">
+                                            <div class="progress-percentage">
+                                                <span class="text-xs font-weight-bold ">10%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-dark w-10" role="progressbar"
+                                                aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="d-flex px-2 py-1">
+                                        <div>
+                                            <img src="../assets/img/small-logos/logo-slack.svg"
+                                                class="avatar avatar-sm me-3" alt="team7">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 3</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="avatar-group mt-2">
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
+                                            <img src="../assets/img/team-3.jpg" alt="team8">
+                                        </a>
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
+                                            <img src="../assets/img/team-1.jpg" alt="team9">
+                                        </a>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <label for=""
+                                        class="text-success font-weight-bold badge badge-success text-xs">Finalizado</label>
+                                </a>
+                            </td>
+                            <td class="align-middle">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="progress-wrapper w-75 mx-auto">
+                                        <div class="progress-info">
+                                            <div class="progress-percentage">
+                                                <span class="text-xs font-weight-bold">100%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-success w-100" role="progressbar"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="d-flex px-2 py-1">
+                                        <div>
+                                            <img src="../assets/img/small-logos/logo-spotify.svg"
+                                                class="avatar avatar-sm me-3" alt="spotify">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 4</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="avatar-group mt-2">
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
+                                            <img src="../assets/img/team-4.jpg" alt="user1">
+                                        </a>
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
+                                            <img src="../assets/img/team-3.jpg" alt="user2">
+                                        </a>
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alexander Smith">
+                                            <img src="../assets/img/team-4.jpg" alt="user3">
+                                        </a>
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
+                                            <img src="../assets/img/team-1.jpg" alt="user4">
+                                        </a>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <label for=""
+                                        class="text-success font-weight-bold badge badge-success text-xs">Finalizado</label>
+                                </a>
+                            </td>
+                            <td class="align-middle">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="progress-wrapper w-75 mx-auto">
+                                        <div class="progress-info">
+                                            <div class="progress-percentage">
+                                                <span class="text-xs font-weight-bold">100%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-success w-100" role="progressbar"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="d-flex px-2 py-1">
+                                        <div>
+                                            <img src="../assets/img/small-logos/logo-jira.svg"
+                                                class="avatar avatar-sm me-3" alt="jira">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 5</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="avatar-group mt-2">
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
+                                            <img src="../assets/img/team-4.jpg" alt="user5">
+                                        </a>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <label for=""
+                                        class="text-dark font-weight-bold badge badge-secondary text-xs">Cotizado</label>
+                                </a>
+                            </td>
+                            <td class="align-middle">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="progress-wrapper w-75 mx-auto">
+                                        <div class="progress-info">
+                                            <div class="progress-percentage">
+                                                <span class="text-xs font-weight-bold">5%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-dark w-5" role="progressbar"
+                                                aria-valuenow="5" aria-valuemin="0" aria-valuemax="5"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="d-flex px-2 py-1">
+                                        <div>
+                                            <img src="../assets/img/small-logos/logo-invision.svg"
+                                                class="avatar avatar-sm me-3" alt="invision">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="mb-0 text-sm text-black-50">Proyecto 6</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="avatar-group mt-2">
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
+                                            <img src="../assets/img/team-1.jpg" alt="user6">
+                                        </a>
+                                        <a href="javascript:;" class="avatar avatar-xs rounded-circle"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
+                                            <img src="../assets/img/team-4.jpg" alt="user7">
+                                        </a>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <label for=""
+                                        class="text-danger font-weight-bold badge badge-danger text-xs">Pendiente</label>
+                                </a>
+                            </td>
+                            <td class="align-middle">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="progress-wrapper w-75 mx-auto">
+                                        <div class="progress-info">
+                                            <div class="progress-percentage">
+                                                <span class="text-xs font-weight-bold">40%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-danger w-40" role="progressbar"
+                                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="40"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    {{-- ? MODAL --}}
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-fondo text-white">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">{Nombre Proyecto}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-4">
+                        <div class="col-md-12 mb-lg-0 ">
+                            <div class="card">
+                                <div class="card-body p-3">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="d-flex flex-column h-100">
+
+                                                <h5 class="font-weight-bolder">Descripción del proyecto</h5>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex flex-column ">
+                                                <select name="" id="" class="form-select">
+                                                    <option value="">Seleccione Tipo de proyecto</option>
+                                                    <option value="">Software</option>
+                                                    <option value="">Infraestructura</option>
+                                                    <option value="">Outsourcing</option>
+                                                    <option value="">Soporte de Hardware</option>
+                                                    <option value="">Soporte de Software</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 ms-auto text-center  mt-lg-0">
+                                            <div class=" border-radius-lg ">
+                                                <select name="" id="" class="form-select">
+                                                    <option value="1">Seleccione Estado</option>
+                                                    <option value="2">Cotizado</option>
+                                                    <option value="3">Pendiente</option>
+                                                    <option value="4">Finalizado</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-md-12">
+                                            <div class="d-flex flex-column h-100">
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                    Adipisci, deserunt aspernatur, labore placeat natus voluptatum
+                                                    recusandae </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+
+                                    </div>
+                                    {{-- TODO DEFINIR ROLES --}}
+                                    <div class="row ">
+                                        <div class="col-lg-12 col-md-12 mb-md-0 mb-4">
+
+                                            <div class="table-responsive">
+                                                <table class="table align-items-center mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th
+                                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                                Equipo</th>
+                                                            <th
+                                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                                                Especialidad</th>
+                                                            <th
+                                                                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                                Rol</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex pe-2 py-1">
+                                                                    <div>
+                                                                        <img src="../assets/img/team-1.jpg"
+                                                                            class="avatar avatar-sm rounded-circle me-3"
+                                                                            alt="xd">
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-center">
+                                                                        <h6 class="mb-0 text-sm text-dark">Nombre
+                                                                            1</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <label for=""
+                                                                    class="especialidad">Back-End</label>
+                                                            </td>
+                                                            <td class="align-middle text-center text-sm">
+                                                                <select name="" id=""
+                                                                    class="form-select">
+                                                                    <option value="">Seleccione Rol</option>
+                                                                    <option value="">Jefe de proyecto</option>
+                                                                    <option value="">Comercial</option>
+                                                                    <option value="">Desarrollador</option>
+
+                                                                </select>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex pe-2 py-1">
+                                                                    <div>
+                                                                        <img src="../assets/img/team-2.jpg"
+                                                                            class="avatar avatar-sm rounded-circle me-3"
+                                                                            alt="xd">
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-center">
+                                                                        <h6 class="mb-0 text-sm text-dark">Nombre
+                                                                            2</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <label for=""
+                                                                    class="especialidad">Front-End</label>
+                                                            </td>
+                                                            <td class="align-middle text-center text-sm w-20">
+                                                                <select name="" id=""
+                                                                    class="form-select">
+                                                                    <option value="">Seleccione Rol</option>
+                                                                    <option value="">Jefe de proyecto</option>
+                                                                    <option value="">Comercial</option>
+                                                                    <option value="">Desarrollador</option>
+
+                                                                </select>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex pe-2 py-1">
+                                                                    <div>
+                                                                        <img src="../assets/img/team-3.jpg"
+                                                                            class="avatar avatar-sm rounded-circle me-3"
+                                                                            alt="xd">
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-center">
+                                                                        <h6 class="mb-0 text-sm text-dark">Nombre
+                                                                            3</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <label for="" class="especialidad">Base de
+                                                                    datos</label>
+                                                            </td>
+                                                            <td class="align-middle text-center text-sm">
+                                                                <select name="" id=""
+                                                                    class="form-select">
+                                                                    <option value="">Seleccione Rol</option>
+                                                                    <option value="">Jefe de proyecto</option>
+                                                                    <option value="">Comercial</option>
+                                                                    <option value="">Desarrollador</option>
+
+                                                                </select>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex pe-2 py-1">
+                                                                    <div>
+                                                                        <img src="../assets/img/team-4.jpg"
+                                                                            class="avatar avatar-sm rounded-circle me-3"
+                                                                            alt="xd">
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-center">
+                                                                        <h6 class="mb-0 text-sm text-dark">Nombre
+                                                                            4</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <label for=""
+                                                                    class="especialidad">Infraestructura</label>
+                                                            </td>
+                                                            <td class="align-middle text-center text-sm">
+                                                                <select name="" id=""
+                                                                    class="form-select">
+                                                                    <option value="">Seleccione Rol</option>
+                                                                    <option value="">Jefe de proyecto</option>
+                                                                    <option value="">Comercial</option>
+                                                                    <option value="">Desarrollador</option>
+
+                                                                </select>
+                                                            </td>
+
+                                                        </tr>
+
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td><a href="#" type="button" class="ps-2"><i
+                                                                        class="fas fa-plus"></i></a> </td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                                <div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn bg-gradient-primary">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

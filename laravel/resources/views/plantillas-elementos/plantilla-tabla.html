@@ -1,0 +1,559 @@
+<h5>Comercial/Preventa</h5>
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-2 mx-2 cartacolor p-4 py-4">
+                <div class="card-header mb-1">
+                    <!-- TODO FILTROS TABLA -->
+                    <div class="d-flex flex-row p-2 ps-0">
+                        {{-- <input id="buscar" type="search" placeholder="Buscar Cliente" class="form-control1 my-2 py-1">
+                        <span class="py-1 px-2 my-2">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <div class="icono agregar px-2 my-2 pt-1">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#agregar-cliente"><i
+                                    class="fas fa-plus"></i></a>
+                        </div> --}}
+                        {{-- TODO MODAL AGREAGAR CLIENTE ------------------------------------------------------------------------------------------- --}}
+                        <div class="modal fade" id="agregar-cliente" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg ">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-fondo">
+                                        <h5 class="modal-title  text-white" id="exampleModalLabel">Agregar Cliente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body modal-color">
+                                        <div class="card">
+                                            <div class="card-body py-0">
+                                                <form class="formulario mt-3 ">
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-4 ">
+                                                            <label for="" class="form-label">Rut</label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Ingrese Rut" id="rut-cli">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="" class="form-label">Indicador</label>
+                                                            <select class="form-select" name="" id="indica-cli">
+                                                                <option value="1">Seleccione Indicador</option>
+                                                                <option value="2">U.F</option>
+                                                                <option value="3">Dolar</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="" class="form-label">Dias de pago</label>
+                                                            <input class="form-control" placeholder="Ingrese Día de pago"
+                                                                id="diapago-cli" type="number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                            <label for="" class="form-label">Nombre Fantasia</label>
+                                                            <input class="form-control"
+                                                                placeholder="Ingrese Nombre fantasia" type="text"
+                                                                id="nomfanta-cli">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="" class="form-label">Razón Social</label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Ingrese Razón social" id="razonsoci-cli">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-4">
+                                                            <label for="" class="form-label">Dirección</label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Ingrese Dirección" id="direc-contac">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="" class="form-label">Giro</label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Ingrese Giro" id="giro-cli">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="" class="form-label">Telefono</label>
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Ingrese Telefono" id="telefono-cli">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                            <label for="" class="form-label">Pag. Web</label>
+                                                            <input type="url" class="form-control"
+                                                                placeholder="Ingrese Pagina web" id="pagweb-cli">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="" class="form-label">Vigencia</label>
+                                                            <select class="form-select" name="" id="vigen-cli">
+                                                                <option value="1">Seleccione Vigencia</option>
+                                                                <option value="2">Vigente</option>
+                                                                <option value="3">No Vigente</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="limpiar text-end mt-4">
+                                                        <button type="reset" class="btn btn-danger">Limpiar</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn bg-gradient-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn bg-gradient-primary">Guardar Cambios</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- TODO INICIO TABLA -->
+                </div>
+                <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive ">
+                        <table class="table align-items-center table-striped table-hover mb-0 ">
+                            <thead class="colortabla">
+                                <!-- TODO TITULOS TABLA -->
+                                <tr class="colorletratabla">
+                                    <th class="text-uppercase text-white text-xxs font-weight-bolder ps-2">
+                                        ID
+                                    </th>
+                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                        Cliente
+                                    </th>
+                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                        Contacto
+                                    </th>
+                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                        Fecha
+                                    </th>
+                                    <th class="text-left text-uppercase  text-white text-xxs font-weight-bolder">
+                                        Días
+                                    </th>
+                                    <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
+                                        Moneda
+                                    </th>
+                                    <th class="text-left text-uppercase text-white text-xxs font-weight-bolder">
+                                        Estado
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
+                                        Archivo
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
+                                        EDT
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
+                                        Preventa
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
+                                        Cotización
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder">
+                                        Comercial
+                                    </th>
+                                    <th class="text-center text-uppercase text-white text-xxs font-weight-bolder sticky">
+                                        Acciones
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- TODO ITEM 1 TABLA -->
+                                <tr>
+                                    <td class="ps-2 text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-preventa">
+                                            <i class="fa fa-paperclip"></i>
+                                        </a>
+                                    </td>
+                                    <td class="text-center text-sm">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-preventa">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#editar-preventa">
+                                            <i class="fa fa-dollar-sign"></i>
+                                        </a>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm sticky">
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-pen mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-plus mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                    </td>
+                                    {{-- TODO MODAL EDITAR CLIENTE--------------------------------------------------------------------------------- --}}
+                                    <div class="modal fade" id="editar-cliente" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg ">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-fondo">
+                                                    <h5 class="modal-title  text-white" id="exampleModalLabel">Agregar
+                                                        Cliente</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body modal-color">
+                                                    <div class="card">
+                                                        <div class="card-body py-0">
+                                                            <form class="formulario mt-3 ">
+                                                                <div class="row mb-3">
+                                                                    <div class="col-md-4 ">
+                                                                        <label for=""
+                                                                            class="form-label">Rut</label>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="96.839.120-8" id="rut-cli">
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <label for=""
+                                                                            class="form-label">Indicador</label>
+                                                                        <select class="form-select" name=""
+                                                                            id="indica-cli">
+                                                                            {{-- <option value="1">Seleccione Indicador</option> --}}
+                                                                            <option value="2">U.F</option>
+                                                                            <option value="3">Dolar</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <label for="" class="form-label">Dias de
+                                                                            pago</label>
+                                                                        <input class="form-control" id="diapago-cli"
+                                                                            type="number" placeholder="30">
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <div class="col-md-6">
+                                                                        <label for="" class="form-label">Nombre
+                                                                            Fantasia</label>
+                                                                        <input class="form-control" type="text"
+                                                                            id="nomfanta-cli" placeholder="ALQUIMIA S.A">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label for="" class="form-label">Razón
+                                                                            Social</label>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Alquimia S.A" id="razonsoci-cli">
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <div class="col-md-4">
+                                                                        <label for=""
+                                                                            class="form-label">Dirección</label>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Doctor Garcia
+                                                                        Guerrero 1192"
+                                                                            id="direc-contac">
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <label for=""
+                                                                            class="form-label">Giro</label>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Servicios
+                                                                        , Industria, Quimíca"
+                                                                            id="giro-cli">
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <label for=""
+                                                                            class="form-label">Telefono</label>
+                                                                        <input type="number" class="form-control"
+                                                                            placeholder="7730000" id="telefono-cli">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row mb-3">
+                                                                    <div class="col-md-6">
+                                                                        <label for="" class="form-label">Pag.
+                                                                            Web</label>
+                                                                        <input type="url" class="form-control"
+                                                                            placeholder="www.aguasalquimia.cl"
+                                                                            id="pagweb-cli">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label for=""
+                                                                            class="form-label">Vigencia</label>
+                                                                        <select class="form-select" name=""
+                                                                            id="vigen-cli">
+                                                                            {{-- <option value="1">Seleccione Vigencia
+                                                                        </option> --}}
+                                                                            <option value="2">Vigente</option>
+                                                                            <option value="3">No Vigente</option>
+                                                                        </select>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="limpiar text-end mt-4">
+                                                                    <button type="reset"
+                                                                        class="btn btn-danger">Limpiar</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn bg-gradient-secondary"
+                                                        data-bs-dismiss="modal">Cerrar</button>
+                                                    <button type="button" class="btn bg-gradient-primary">Guardar
+                                                        Cambios</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <!-- TODO ITEM 2 TABLA -->
+                                <tr>
+                                    <td class="ps-2 text-left">
+                                        <p class="text-xs font-weight-bold mb-0">5375</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm sticky">
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-pen mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-plus mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!-- TODO ITEM 3 TABLA -->
+                                <tr>
+                                    <td class="ps-2 text-left">
+                                        <p class="text-xs font-weight-bold mb-0">5350</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm sticky">
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-pen mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-plus mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!-- TODO ITEM 4 TABLA -->
+                                <tr>
+                                    <td class="ps-2 text-left">
+                                        <p class="text-xs font-weight-bold mb-0">5349</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm sticky">
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-pen mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-plus mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!-- TODO ITEM 5 TABLA -->
+                                <tr>
+                                    <td class="ps-2 text-left">
+                                        <p class="text-xs font-weight-bold mb-0">5336</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center text-sm sticky">
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-pen mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-plus mx-2"></i>
+                                        </a>
+                                        <a class="py-1" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#editar-preventa">
+                                            <i class="fa fa-envelope-open mx-2"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

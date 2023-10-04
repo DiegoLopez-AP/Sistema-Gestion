@@ -68,12 +68,12 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('dashboard');
 	})->name('sign-up');
 
+});
 
 	// RUTAS HTML
 	Route::get('plantilla', function() {
 		return view('plantilla');
 	})->name('plantilla');
-});
 
 	Route::get('formulario-captacion', function(){
 		return view('formulario-captacion');
@@ -100,6 +100,181 @@ Route::group(['middleware' => 'auth'], function () {
 	})->name('carpeta-documentos');
 
 
+
+	//TODO RUTAS COMERCIAL
+	Route::get('indicador-com', function(){
+		return view('comercial/indicador-com');
+	})->name('indicador-com');
+
+	Route::get('cotizaciones', function(){
+		return view('comercial/cotizaciones');
+	})->name('cotizaciones');
+
+	Route::get('clientes', function(){
+		return view('comercial/clientes');
+	})->name('clientes');
+
+	Route::get('contactos', function(){
+		return view('comercial/contactos');
+	})->name('contactos');
+
+	Route::get('preventa', function(){
+		return view('comercial/preventa');
+	})->name('preventa');
+
+	Route::get('editar_coti', function(){
+		return view('comercial/editar_coti');
+	})->name('editar_coti');
+
+
+	//TODO RUTAS OPERACIONES
+	Route::get('indicador-op', function(){
+		return view('operaciones/indicador-op');
+	})->name('indicador-op');
+
+	Route::get('proyectos', function(){
+		return view('operaciones/proyectos');
+	})->name('proyectos');
+
+	Route::get('costos', function(){
+		return view('operaciones/costos');
+	})->name('costos');
+
+	Route::get('carta-gantt', function(){
+		return view('operaciones/carta-gantt');
+	})->name('carta-gantt');
+
+
+	//TODO RUTAS FINANZAS
+	Route::get('indicador-fin', function(){
+		return view('finanzas/indicador-fin');
+	})->name('indicador-fin');
+
+	Route::get('fechas-pago', function(){
+		return view('finanzas/fechas-pago');
+	})->name('fechas-pago');
+
+	Route::get('facturacion', function(){
+		return view('finanzas/facturacion');
+	})->name('facturacion');
+
+	Route::get('cobranzas', function(){
+		return view('finanzas/cobranzas');
+	})->name('cobranzas');
+
+	Route::get('proveedores', function(){
+		return view('finanzas/proveedores');
+	})->name('proveedores');
+
+	Route::get('flujo-caja', function(){
+		return view('finanzas/flujo-caja');
+	})->name('flujo-caja');
+	
+	Route::get('flujo-caja', function(){
+		return view('finanzas/flujo-caja');
+	})->name('flujo-caja');
+
+	Route::get('orden-compra-cli', function(){
+		return view('finanzas/orden-compra-cli');
+	})->name('orden-compra-cli');
+
+	Route::get('orden-compra-int', function(){
+		return view('finanzas/orden-compra-int');
+	})->name('orden-compra-int');
+
+	Route::get('editar-factura', function(){
+		return view('finanzas/editar-factura');
+	})->name('editar-factura');
+
+	Route::get('editaroc-cliente', function(){
+		return view('finanzas/editaroc-cliente');
+	})->name('editaroc-cliente');
+
+
+
+	//TODO RUTAS  RRHH
+	Route::get('indicador-rrhh', function(){
+		return view('rrhh/indicador-rrhh');
+	})->name('indicador-rrhh');
+
+	Route::get('ficha-ptrabajador', function(){
+		return view('rrhh/ficha-ptrabajador');
+	})->name('ficha-ptrabajador');
+
+	Route::get('formulario-ftrabajador', function(){
+		return view('rrhh/formulario-ftrabajador');
+	})->name('formulario-ftrabajador');
+
+	Route::get('editar-ftrabjador', function(){
+		return view('rrhh/editar-ftrabjador');
+	})->name('editar-ftrabjador');
+
+	Route::get('ap-rech-vaca', function(){
+		return view('rrhh/ap-rech-vaca');
+	})->name('ap-rech-vaca');
+
+	Route::get('curriculum', function(){
+		return view('rrhh/curriculum');
+	})->name('curriculum');
+
+	Route::get('solicitud-vacaciones', function(){
+		return view('rrhh/solicitud-vacaciones');
+	})->name('solicitud-vacaciones');
+	
+	Route::get('evaluacion-desemp', function(){
+		return view('rrhh/evaluacion-desemp');
+	})->name('evaluacion-desemp');
+
+	Route::get('organigrama', function(){
+		return view('rrhh/organigrama');
+	})->name('organigrama');
+
+
+
+	//TODO RUTAS INFORMES
+	Route::get('indicador-inf', function(){
+		return view('informes/indicador-inf');
+	})->name('indicador-inf');
+
+	Route::get('rentabilidad', function(){
+		return view('informes/rentabilidad');
+	})->name('rentabilidad');
+
+	Route::get('capacites', function(){
+		return view('informes/capacites');
+	})->name('capacites');
+
+
+	//TODO RUTAS ADMINISTRACIÓN
+	Route::get('usuarios', function(){
+		return view('administracion/usuarios');
+	})->name('usuarios');
+
+	Route::get('permisos', function(){
+		return view('administracion/permisos');
+	})->name('permisos');
+
+	Route::get('indicadores-adm', function(){
+		return view('administracion/indicadores-adm');
+	})->name('indicadores-adm');
+
+	Route::get('valores', function(){
+		return view('administracion/valores');
+	})->name('valores');
+
+	Route::get('charts', function(){
+		return view('administracion/charts');
+	})->name('charts');
+
+	
+
+	
+
+
+
+	
+
+
 Route::group(['middleware' => 'guest'], function () {
     Route::get('/register', [RegisterController::class, 'create']);
     Route::post('/register', [RegisterController::class, 'store']);
@@ -115,6 +290,7 @@ Route::group(['middleware' => 'guest'], function () {
 Route::get('/login', function () {
     return view('session/login-session');
 })->name('login');
+
 
 
 
